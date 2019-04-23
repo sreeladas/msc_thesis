@@ -1,0 +1,75 @@
+% Created 2018-09-16 Sun 15:49
+\documentclass[openany, oneside, 12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\usepackage{cite, tocbibind, subfiles, float, amsmath, textcomp, graphicx, wrapfig, enumitem, cancel, datetime, tabularx, titlesec, hyperref, natbib, setspace, subfigure}
+\tolerance=1000
+\usdate
+\usepackage[letterpaper, portrait, top = 1in, left = 1in, right = 1.25in, bottom = 1.5in, headheight=23pt]{geometry}
+\linespread{1.5}
+\newcommand{\tx}[1]{\textrm{#1}}
+\newcommand{\e}[1]{\times 10^{#1}}
+\newcommand{\disp}{\textit{Disp }}
+\newcommand{\vegas}{\textit{VEGAS }}
+\newcommand{\ed}{\textit{EventDisplay}}
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
+  \newpage\fi\fi\fi}
+\makeatother
+% \setkomafont{disposition}{\rmfamily\bfseries\boldmath}
+\title{\Huge Reconstruction of Gamma-ray Direction using Boosted Decision Trees and the \disp Parameter \vspace{14pt}}
+\author{\Large Sreela Das, 260772871 \\ \large Master of Science \\ \large Department of Physics \vspace{33pt}}                
+\date{\large McGill University \\ \large Montr\'eal, Qu\'ebec \\ \large \today \vspace{33pt}\\
+  A thesis submitted to McGill University in partial fulfillment of the requirements of the degree of Master of Science\\ \vspace{30pt}\textcopyright \hspace{5pt}Sreela Das, 2019}
+\begin{document}
+\clearpage
+\frontmatter
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+\pagenumbering{gobble}
+\maketitle
+\clearpage
+\pagenumbering{roman}
+\raggedright
+\chapter{Acknowledgments}
+\subfile{acknowledgments}
+\clearpage
+\chapter{Abstract}
+\subfile{abstract}
+\clearpage
+\chapter{Abr\'eg\'e}
+% Something something
+\clearpage
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+\raggedbottom
+
+\setlength\parindent{24pt}
+\setlength\parskip{10pt}
+\pagestyle{plain}
+
+\chapter{Introduction}
+\subfile{introduction}
+
+\chapter{Simulation and Analysis Packages}
+\subfile{simulation}
+
+\chapter{Analysis Methods}
+\subfile{analysis}
+
+% \chapter{Overview of Results}
+% \subfile{results}
+
+% \chapter{Conclusions}
+% \subfile{conclusions}
+
+% \backmatter
+% \chapter{Appendix A}
+
+\bibliographystyle{unsrt}
+\bibliography{thesis}
+\end{document}
+

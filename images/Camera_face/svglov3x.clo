@@ -1,0 +1,124 @@
+% SVJour3x DOCUMENT CLASS OPTION SVGLOV3x -- for standardised journals
+%
+% This is an enhancement for the LaTeX
+% SVJour3x document class for Springer journals
+% (This is a modified version for preprints more efficiently filling
+% the A4 or letter size paper.)
+%
+%%
+%%
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\ProvidesFile{svglov3x.clo}
+              [2006/02/03 v3.1
+      style option for standardised journals (preprint variant)]
+\typeout{SVJour Class option: svglov3x.clo, preprint variant}
+\def\validfor{svjour3x}
+\ExecuteOptions{final,12pt,runningheads}
+% No size changing allowed, hence a "copy" of size12.clo is included
+\renewcommand\normalsize{%
+\if@twocolumn
+%   \@setfontsize\normalsize\@xpt{12.5pt}%
+   \@setfontsize\normalsize\@xiipt{15pt}%
+\else
+   \if@smallext
+%      \@setfontsize\normalsize\@xpt\@xiipt
+      \@setfontsize\normalsize\@xiipt\@xivpt
+   \else
+%      \@setfontsize\normalsize{9.5pt}{11.5pt}%
+      \@setfontsize\normalsize{12pt}{15pt}%
+   \fi
+\fi
+   \abovedisplayskip=3 mm plus6pt minus 4pt
+   \belowdisplayskip=3 mm plus6pt minus 4pt
+   \abovedisplayshortskip=0.0 mm plus6pt
+   \belowdisplayshortskip=2 mm plus4pt minus 4pt
+   \let\@listi\@listI}
+\normalsize
+\newcommand\small{%
+\if@twocolumn
+   \@setfontsize\small{8.5pt}\@xpt
+   \@setfontsize\small{11pt}\@xivpt
+\else
+   \if@smallext
+%     \@setfontsize\small\@viiipt{9.5pt}%
+     \@setfontsize\small\@xpt{12.5pt}%
+   \else
+%      \@setfontsize\small\@viiipt{9.25pt}%
+      \@setfontsize\small\@xpt{12.5pt}%
+   \fi
+\fi
+   \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \parsep 0\p@ \@plus1\p@ \@minus\p@
+               \topsep 4\p@ \@plus2\p@ \@minus4\p@
+               \itemsep0\p@}%
+   \belowdisplayskip \abovedisplayskip
+}
+\let\footnotesize\small
+%\newcommand\scriptsize{\@setfontsize\scriptsize\@viipt\@viiipt}
+\newcommand\scriptsize{\@setfontsize\scriptsize\@viiipt{9.5pt}}
+%\newcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
+\newcommand\tiny{\@setfontsize\tiny\@vipt\@viiipt}
+\if@twocolumn
+%   \newcommand\large{\@setfontsize\large\@xiipt\@xivpt}
+%   \newcommand\LARGE{\@setfontsize\LARGE{16pt}{18pt}}
+   \newcommand\large{\@setfontsize\large\@xivpt{16.5pt}}
+   \newcommand\LARGE{\@setfontsize\LARGE{17pt}{20pt}}
+\else
+%   \newcommand\large{\@setfontsize\large\@xipt\@xiipt}
+%   \newcommand\LARGE{\@setfontsize\LARGE{13pt}{15pt}}
+   \newcommand\large{\@setfontsize\large\@xivpt{16.5pt}}
+   \newcommand\LARGE{\@setfontsize\LARGE{17pt}{20pt}}
+\fi
+%\newcommand\Large{\@setfontsize\Large\@xivpt{16dd}}
+%\newcommand\huge{\@setfontsize\huge\@xxpt{25}}
+%\newcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
+\newcommand\Large{\@setfontsize\Large{17pt}{19dd}}
+\newcommand\huge{\@setfontsize\huge\@xxpt{25}}
+\newcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
+%
+\def\runheadhook{\rlap{\smash{\lower6.5pt\hbox to\textwidth{\hrulefill}}}}
+\if@twocolumn
+%\setlength{\textwidth}{17.4cm}
+\setlength{\textwidth}{19.0cm}
+%\setlength{\textheight}{234mm}
+\setlength{\textheight}{264mm}
+\AtEndOfClass{\setlength\columnsep{6mm}}
+\else
+   \if@smallext
+%      \setlength{\textwidth}{11.9cm}
+      \setlength{\textwidth}{17.9cm}
+%      \setlength{\textheight}{19.4cm}
+      \setlength{\textheight}{25.0cm}
+   \else
+%      \setlength{\textwidth}{12.2cm}
+      \setlength{\textwidth}{16.2cm}
+%      \setlength{\textheight}{19.8cm}
+      \setlength{\textheight}{23.6cm}
+   \fi
+\fi
+%
+\AtBeginDocument{%
+\@ifundefined{@journalname}
+ {\typeout{Unknown journal: specify \string\journalname\string{%
+<name of your journal>\string} in preambel^^J}}{}}
+%
+\endinput
+%%
+%% End of file `svglov3x.clo'.

@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{Park:2017uxb}
+Nahee Park.
+\newblock {Status of ground based gamma-ray observations}.
+\newblock {\em PoS}, ICRC2017:1116, 2018.
+
+\bibitem{veritas_web}
+VERITAS collaboration.
+\newblock Veritas website.
+
+\bibitem{EAS_2018}
+S.~{Mollerach} and E.~{Roulet}.
+\newblock {Progress in high-energy cosmic ray physics}.
+\newblock {\em Progress in Particle and Nuclear Physics}, 98:85--118, Jan 2018.
+
+\bibitem{antonelli2009}
+LA~Antonelli, P~Blasi, G~Bonanno, O~Catalano, S~Covino, A~De~Angelis,
+  B~De~Lotto, M~Ghigo, G~Ghisellini, GL~Israel, et~al.
+\newblock The next generation of cherenkov telescopes. a white paper for the
+  italian national institute for astrophysics (inaf).
+\newblock {\em arXiv preprint arXiv:0906.4114}, 2009.
+
+\bibitem{DaviesCotton}
+J.~M. {Davies} and E.~S. {Cotton}.
+\newblock {Design of the quartermaster solar furnace}.
+\newblock {\em Solar Energy}, 1:16--22, April 1957.
+
+\bibitem{Kieda:2013wom}
+Dave~B. Kieda.
+\newblock {The Gamma Ray Detection sensitivity of the upgraded VERITAS
+  Observatory}.
+\newblock In {\em {Proceedings, 33rd International Cosmic Ray Conference
+  (ICRC2013): Rio de Janeiro, Brazil, July 2-9, 2013}}, page 0700, 2013.
+
+\bibitem{Hillas:1985}
+A.~M. {Hillas}.
+\newblock {Cerenkov light images of EAS produced by primary gamma}.
+\newblock {\em International Cosmic Ray Conference}, 3, August 1985.
+
+\bibitem{Hofmann:1999dx}
+W.~Hofmann.
+\newblock {Data analysis techniques for stereo IACT systems}.
+\newblock {\em AIP Conf. Proc.}, 515(1):318--322, 2000.
+
+\bibitem{Vincent:2015bnj}
+Stephane Vincent.
+\newblock {A Monte Carlo template-based analysis for very high definition
+  imaging atmospheric Cherenkov telescopes as applied to the VERITAS telescope
+  array}.
+\newblock {\em PoS}, ICRC2015:844, 2016.
+
+\bibitem{deNaurois}
+Mathieu {de Naurois} and Lo{\"\i}c {Rolland}.
+\newblock {A high performance likelihood reconstruction of
+  {\ensuremath{\gamma}}-rays for imaging atmospheric Cherenkov telescopes}.
+\newblock {\em Astroparticle Physics}, 32:231--252, Dec 2009.
+
+\end{thebibliography}

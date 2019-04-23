@@ -1,0 +1,137 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+
+\usepackage{graphicx,subfigure,url,pdfpages}
+
+% example themes
+\usetheme{Frankfurt}
+\usecolortheme{seahorse}
+\usecolortheme{rose}
+
+% remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\title{DISP}
+\author{Sreela}
+
+\begin{document}
+
+% \frame[plain]{\titlepage}
+
+% \begin{frame}[plain]{Outline}
+%   \tableofcontents
+% \end{frame}
+
+% \section{}
+% \begin{frame}{MAError}
+%     \begin{figure}[htbp]
+%     \centering    
+%     \subfigure{\includegraphics[width=0.48\linewidth]{TMVA_Disp_gamma/MAError_zen20}}
+%     \subfigure{\includegraphics[width=0.48\linewidth]{TMVA_Disp_gamma/MAError_zen30}}
+%     \subfigure{\includegraphics[width=0.48\linewidth]{TMVA_Disp_gamma/MAError_zen50}}
+%     \subfigure{\includegraphics[width=0.48\linewidth]{TMVA_Disp_gamma/MAError_zen60}}
+%     \caption{Calculated MA Error for zenith angles 20 (top-left), 30 (top-right), 50 (bottom-left) and 60 (bottom-right)}
+%   \end{figure}
+% \end{frame}
+% {
+%   \setbeamercolor{background canvas}{bg=}
+%   \includepdf[pages=7]{dirReconstruction.pdf}
+%   \includepdf[pages=8]{dirReconstruction.pdf}
+% }
+
+% \begin{frame}{MAError}
+%     \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.90\linewidth]{TMVA_Disp_gamma/MAError_impact_dist}
+%     \caption{Calculated MA Err
+%       or against impact distance in mirror plane}
+%   \end{figure}
+% \end{frame}
+% \begin{frame}{Angular Resolution (Azimuth)}
+%   \begin{figure}[htbp]
+%     \centering
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevAz_reg}}
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevAz_disp}}
+%     \caption{Deviation of reconstructed azimuth from simulated value for the standard method (left) and the disp method (right)}
+%   \end{figure}
+
+% \end{frame}
+% \begin{frame}{Angular Resolution (Zenith)}
+%   \begin{figure}[htbp]
+%     \centering
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevZen_reg}}
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevZen_disp}}
+%     \caption{Deviation of reconstructed zenith from simulated value for the standard method (left) and the disp method (right)}
+%   \end{figure}
+
+% \end{frame}
+% \begin{frame}{Angular Resolution (Deg Sq)}
+%   \begin{figure}[htbp]
+%     \centering
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevSq_reg}}
+%     \subfigure{\includegraphics[width=.48\linewidth]{DevSq_disp}}
+%     \caption{Deviation of reconstructed angle (in deg sq) from simulated value for the standard method (left, 68\% containment at ${0.145^\circ}^2$) and the disp method (right, 68\% containment at ${0.045^\circ}^2$).}
+%   \end{figure}
+% \end{frame}
+
+\begin{frame}{68\% Containment vs Zenith}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.85\linewidth]{../python/disp_vs_reg}
+  \caption{68\% containment as a function of zenith angle for the regular method (blue) and the disp method (red)}
+\end{figure}
+\end{frame}
+
+\begin{frame}{68\% Containment vs Energy}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.85\linewidth]{../python/disp_vs_energy}
+  \caption{68\% containment as a function of energy range}
+\end{figure}
+\end{frame}
+
+\begin{frame}{68\% Containment vs Energy}
+  \begin{figure}[htbp]
+    \centering
+    \subfigure{\includegraphics[width=.32\linewidth]{../python/disp_vs_energy_SZA}}
+    \subfigure{\includegraphics[width=.32\linewidth]{../python/disp_vs_energy_MZA}}
+    \subfigure{\includegraphics[width=.32\linewidth]{../python/disp_vs_energy_LZA}}
+    \caption{68\% containment as a function of energy range for the simulated zenith angle}
+  \end{figure}
+\end{frame}
+
+% \begin{frame}{68\% Containment vs Energy and Zenith}
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=.85\linewidth]{../python/energy_zenith_dev}
+%   \caption{68\% containment distribution as a function of energy range and zenith}
+% \end{figure}
+% \end{frame}
+
+\begin{frame}{68\% Containment for Data Files (Crab coast to coast 2018)}
+\begin{figure}[htbp]
+  \centering
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/reg_SZA_Dev_Sq}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/reg_MZA_Dev_Sq}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/reg_LZA_Dev_Sq}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_SZA_Dev_Sq}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_MZA_Dev_Sq}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_LZA_Dev_Sq}}
+  \caption{68\% containment for crab runs, Method0 (top) (\(0^\circ\)-\(30^\circ\), \(30^\circ\)-\(55^\circ\), \(55^\circ\)-\(90^\circ\)) (2.70, 2.54, 2.30), Method5t (bottom) (2.54, 2.86, 2.94)}
+\end{figure}
+\end{frame}
+\begin{frame}{68\% Containment for Data Files (Crab coast to coast 2018-2019)}
+\begin{figure}[htbp]
+  \centering
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_both_SZA}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_both_MZA}}
+    \subfigure{\includegraphics[width=.26\linewidth]{../python/newdisp_both_LZA}}
+  \caption{68\% containment for crab runs 2018-2019, Method5t (bottom) (2.54, 2.84, 2.94)}
+\end{figure}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

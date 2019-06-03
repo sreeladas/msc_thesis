@@ -32,10 +32,23 @@ The focus of this work will be on the direction reconstruction part of stage 4.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.6\linewidth]{images/Method0_res}
-  \caption[Angular resolution of Method0]{Angular resolution of Method0 direction reconstruction against energy scale and zenith angle.}
+  \caption[Angular resolution of Method0]{Angular resolution of Method0 direction reconstruction against energy scale and zenith angle. Picture taken from \cite{veritas_web}}
   \label{fig:disp_res}
 \end{figure}
-The standard method (henceforth method0) of shower direction reconstruction is based on the intersections of the major axes of Hillas ellipses. This method carries a lot of stereoscopic information and is in general very powerful. However, since for large zenith angles (LZA), one expects shower images (and therefore Hillas ellipses) in the camera plane to be close to parallel, small uncertainties in major axis determination result in large uncertainties in the fiducial location of the reconstructed gamma ray in the camera plane (the ``shower location''). As shown in Fig. \ref{fig:disp_res}, for lower energies and larger zenith angles, there is a substantial drop in angular resolution.
+The standard method (henceforth method0) of shower direction reconstruction is based on the intersections of the major axes of Hillas ellipses. This method carries a lot of stereoscopic information and is in general very powerful. However, for large zenith angles (LZA), one expects shower images (and therefore Hillas ellipses) in the camera plane to be from the same region in the lightpool (see Fig. \ref{fig:LZA_lightpool}). close to parallel, small uncertainties in major axis determination result in large uncertainties in the fiducial location of the reconstructed gamma ray in the camera plane (the ``shower location''). As shown in Fig. \ref{fig:disp_res}, for lower energies and larger zenith angles, there is a substantial drop in angular resolution.
+
+\begin{figure}[htbp]
+  \centering
+  \subfigure[The light pool for Cherenkov showers at small zenith angle versus at large zenith angle. Picture taken from \cite{hess_web}]{
+  \includegraphics[width=.8\linewidth]{images/LZA_lightpool}
+}
+\subfigure[The Hillas ellipses resulting from two telescopes at LZA]{
+  \includegraphics[width=.60\linewidth]{images/LZA_stereo_ellipse}
+}
+  \caption[Stereoscopic reconstruction at LZA]{The stereoscopic method is less effective at large zenith angles due to the lightpool from these events being much larger than the coverage of the telescopes. This results in the telescopes being in the same region of the light pool and therefore nearly parallel Hillas ellipses. In such cases, the stereoscopic method of reconstruction will have a large uncertainty in the point of intersection of these two axis, which corresponds to a large uncertainty in the reconstructed direction.}
+  \label{fig:LZA_lightpool}
+\end{figure}
+
 
 To compensate for this loss of predictive power, the \disp \textit{method}, calculates the \disp parameter (quasi-analytically, using lookup tables and interpolating, or using \textbf{boosted decision trees}) for each individual telescope image to determine two potential locations for the arrival direction -- along the major axis on either side of the weighted centroid of the image (see Fig. \ref{fig:hillas_ellipse}). The method then compares this pair of coordinates (one at the head, and one at the tail) for each pair of telescopes in the event reconstruction to find the pair of coordinates, one from either telescope, closest to each other (see Fig \ref{fig:head_tail} for visual explanation). The mean of this pair of coordinates is determined to be the reconstructed shower direction.
 \begin{figure}[htbp]
@@ -58,8 +71,18 @@ To compensate for this loss of predictive power, the \disp \textit{method}, calc
 
 
 \section{Boosted Decision Trees}
-Decision trees use a predictive model, which maps parameters for an event to the value of the \disp parameter for the event. The predictive model may be based on Monte Carlo simulations (as in the case of this work) or analytic calculations. To avoid having multiple identical trees, a higher weight is assigned to events that are canonically hard to discriminate. This means that within the training, more time is spent on discriminating between events that are hard to distinguish and this assigning of weights to preferentially train more on specific parts of parameter space is referred to as boosting.
+Decision trees use a predictive model, which maps parameters for an event to the value of the \disp parameter for the event. The predictive model may be based on Monte Carlo simulations (as in the case of this work) or analytic calculations. A basic algorithm for boosted decision tree (BDT) learning takes an input sample of data, generates a decision tree, uses a boosting algorithm to better discriminate mis-modeled inputs, and runs tests to provide some measures of it's own performance. BDTs are especially robust for variables with non-linear correlations and have a fast application to data, relative to some of the other algorithms. This section contains a brief description of these individual steps.
 
-The implementation of the \disp method in \vegas (and \ed) uses the ROOT Toolkit for Multi-Variate Analysis (TMVA) package. The TMVA package contains implementations of several complex algorithms including neural networks, Fisher discriminants and boosted decision trees (BDTs). BDTs are especially robust for variables with non-linear correlations and have a fast application to data, relative to some of the other algorithms.
+\subsection{Training}
+Decision trees are a type of supervised learning algorithms. For our purposes, this means the algorithm is provided with a training sample comprised of the values of the parameters used for the reconstruction of each event along with the true value (from simulations) of the parameter to be reconstructed. The training process then generates the correlation matrices for the dependent variables. With this information the algorithm is able to create a decision tree where each non-leaf node denotes a test on an attribute and each branch represents an outcome of the test, at each step using a test that best splits the input data.
+
+\subsection{Boosting}
+To avoid having multiple identical trees, a higher weight is assigned to events that are canonically hard to discriminate. This means that within the training, more time is spent on discriminating between events that are hard to distinguish and this assigning of weights to preferentially train more on specific parts of parameter space is referred to as boosting.
+
+\subsection{Testing}
+The implementation of the \disp method in \vegas (and \ed) uses the ROOT Toolkit for Multi-Variate Analysis (TMVA) package. The TMVA package contains implementations of several complex algorithms including neural networks, Fisher discriminants and boosted decision trees (BDTs). The TMVA package contains a built-in testing step to measure certain parameters to help determine the goodness of the training. This step is used to measure deviations of the reconstruction of the testing data-set and the training data-set. A large difference between the performance on the training and testing sets could mean the method has been trained on noise in the training data-set rather than on relevant parameters. This misinterpretation of noise in the training sample as relevant effects is referred to as \it{overtraining}.
+
+\section{Noise in Simulations}
+
 
 \end{document}

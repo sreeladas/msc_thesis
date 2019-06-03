@@ -100,16 +100,16 @@ The shower image parameters are the input to the direction reconstruction that i
 \item the image axis -- defined as the line minimizing the signal-weighted sum of squares of perpendicular distance between triggering pixels (see \ref{fig:image_axis}).
 \item the time gradient -- a measure of the difference in time of arrival, along the image axis, of the signal at a pixel (see \ref{fig:time_gradient}).
 \item the length of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels parallel to the image axis \cite{Hillas:1985}.
-\item the width of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of teh signal-weighted triggered pixels perpendicular to the image axis. The length and width together provide the major and minor axis of an ellipse containing the majority of the signal, and are referred to as the Hillas parameters and the Hillas ellipse.
+\item the width of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels perpendicular to the image axis. The length and width together provide the major and minor axis of an ellipse containing the majority of the signal, and are referred to as the Hillas parameters and the Hillas ellipse.
 \end{itemize}
 A number of other parameters are used in the complete reconstruction of the shower, but these are the most relevant to the direction reconstruction, and specifically to the direction reconstruction process using the boosted decision tree (BDT) angular reconstruction.
 \begin{figure}[htbp]
   \centering
-    \subfigure[Image axis parameter for a shower]{ 
-      \includegraphics[width=0.45\linewidth]{images/placeholder}
+    \subfigure[The image axis parameter is the line of best fit for the shower image on a single telescope. This best fit is measured by minimizing the signal-weighted sum of squares of residuals. Picture taken from \cite{veritas_web}]{ 
+      \includegraphics[width=0.45\linewidth]{images/img_axis}
       \label{fig:image_axis}
     }  
-    \subfigure[Time gradient parameter for a shower]{ 
+    \subfigure[Time gradient parameter for a shower.]{ 
       \includegraphics[width=0.45\linewidth]{images/placeholder}
       \label{fig:time_gradient}
     }

@@ -32,20 +32,20 @@ The focus of this work will be on the direction reconstruction part of stage 4.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.6\linewidth]{images/Method0_res}
-  \caption[Angular resolution of Method0]{Angular resolution of Method0 direction reconstruction against energy scale and zenith angle. Picture taken from \cite{veritas_web}}
+  \caption[Angular resolution of Method0.]{Angular resolution of Method0 direction reconstruction against energy scale and zenith angle. Picture taken from \cite{veritas_web}.}
   \label{fig:disp_res}
 \end{figure}
 The standard method (henceforth method0) of shower direction reconstruction is based on the intersections of the major axes of Hillas ellipses. This method carries a lot of stereoscopic information and is in general very powerful. However, for large zenith angles (LZA), one expects shower images (and therefore Hillas ellipses) in the camera plane to be from the same region in the lightpool (see Fig. \ref{fig:LZA_lightpool}). close to parallel, small uncertainties in major axis determination result in large uncertainties in the fiducial location of the reconstructed gamma ray in the camera plane (the ``shower location''). As shown in Fig. \ref{fig:disp_res}, for lower energies and larger zenith angles, there is a substantial drop in angular resolution.
 
 \begin{figure}[htbp]
   \centering
-  \subfigure[The light pool for Cherenkov showers at small zenith angle versus at large zenith angle. Picture taken from \cite{hess_web}]{
+  \subfigure[The light pool for Cherenkov showers at small zenith angle versus at large zenith angle. Picture taken from \cite{hess_web}.]{
   \includegraphics[width=.8\linewidth]{images/LZA_lightpool}
 }
-\subfigure[The Hillas ellipses resulting from two telescopes at LZA]{
+\subfigure[The Hillas ellipses resulting from two telescopes at LZA.]{
   \includegraphics[width=.60\linewidth]{images/LZA_stereo_ellipse}
 }
-  \caption[Stereoscopic reconstruction at LZA]{The stereoscopic method is less effective at large zenith angles due to the lightpool from these events being much larger than the coverage of the telescopes. This results in the telescopes being in the same region of the light pool and therefore nearly parallel Hillas ellipses. In such cases, the stereoscopic method of reconstruction will have a large uncertainty in the point of intersection of these two axis, which corresponds to a large uncertainty in the reconstructed direction.}
+  \caption[Stereoscopic reconstruction at LZA.]{The stereoscopic method is less effective at large zenith angles due to the lightpool from these events being much larger than the coverage of the telescopes. This results in the telescopes being in the same region of the light pool and therefore nearly parallel Hillas ellipses. In such cases, the stereoscopic method of reconstruction will have a large uncertainty in the point of intersection of these two axis, which corresponds to a large uncertainty in the reconstructed direction.}
   \label{fig:LZA_lightpool}
 \end{figure}
 
@@ -53,19 +53,19 @@ The standard method (henceforth method0) of shower direction reconstruction is b
 To compensate for this loss of predictive power, the \disp \textit{method}, calculates the \disp parameter (quasi-analytically, using lookup tables and interpolating, or using \textbf{boosted decision trees}) for each individual telescope image to determine two potential locations for the arrival direction -- along the major axis on either side of the weighted centroid of the image (see Fig. \ref{fig:hillas_ellipse}). The method then compares this pair of coordinates (one at the head, and one at the tail) for each pair of telescopes in the event reconstruction to find the pair of coordinates, one from either telescope, closest to each other (see Fig \ref{fig:head_tail} for visual explanation). The mean of this pair of coordinates is determined to be the reconstructed shower direction.
 \begin{figure}[htbp]
   \centering
-\subfigure[First pair of telescopes in reconstruction, with the pair of closest coordinates]{
+\subfigure[First pair of telescopes in reconstruction, with the pair of closest coordinates.]{
   \includegraphics[width=.31\linewidth]{images/head_tail_1}
 }
-\subfigure[Second pair of telescopes in reconstruction, with the pair of closest coordinates]{
+\subfigure[Second pair of telescopes in reconstruction, with the pair of closest coordinates.]{
   \includegraphics[width=.31\linewidth]{images/head_tail_2}
 }
-\subfigure[Third pair of telescopes in reconstruction, with the pair of closest coordinates]{
+\subfigure[Third pair of telescopes in reconstruction, with the pair of closest coordinates.]{
   \includegraphics[width=.31\linewidth]{images/head_tail_3}
 }
-\subfigure[All telescopes in reconstruction, with the pair of closest coordinates from \textit{all} pairs of telescopes]{
+\subfigure[All telescopes in reconstruction, with the pair of closest coordinates from \textit{all} pairs of telescopes.]{
   \includegraphics[width=.6\linewidth]{images/head_tail_full}
 }
-  \caption[Combining multiple telescopes in \disp reconstruction]{Iterating through the unique pairs of telescopes, the closest coordinate pair is chosen, and the mean of those coordinates is determined to be the direction of the initiating particle.}
+  \caption[Combining multiple telescopes in \disp reconstruction.]{Iterating through the unique pairs of telescopes, the closest coordinate pair is chosen, and the mean of those coordinates is determined to be the direction of the initiating particle.}
   \label{fig:head_tail}
 \end{figure}
 
@@ -80,9 +80,11 @@ Decision trees are a type of supervised learning algorithms. For our purposes, t
 To avoid having multiple identical trees, a higher weight is assigned to events that are canonically hard to discriminate. This means that within the training, more time is spent on discriminating between events that are hard to distinguish and this assigning of weights to preferentially train more on specific parts of parameter space is referred to as boosting.
 
 \subsection{Testing}
-The implementation of the \disp method in \vegas (and \ed) uses the ROOT Toolkit for Multi-Variate Analysis (TMVA) package. The TMVA package contains implementations of several complex algorithms including neural networks, Fisher discriminants and boosted decision trees (BDTs). The TMVA package contains a built-in testing step to measure certain parameters to help determine the goodness of the training. This step is used to measure deviations of the reconstruction of the testing data-set and the training data-set. A large difference between the performance on the training and testing sets could mean the method has been trained on noise in the training data-set rather than on relevant parameters. This misinterpretation of noise in the training sample as relevant effects is referred to as \it{overtraining}.
+The implementation of the \disp method in \vegas (and \ed) uses the ROOT Toolkit for Multi-Variate Analysis (TMVA) package. The TMVA package contains implementations of several complex algorithms including neural networks, Fisher discriminants and boosted decision trees (BDTs). The TMVA package contains a built-in testing step to measure certain parameters to help determine the goodness of the training. This step is used to measure deviations of the reconstruction of the testing data-set and the training data-set. A large difference between the performance on the training and testing sets could mean the method has been trained on noise in the training data-set rather than on relevant parameters. This misinterpretation of noise in the training sample as relevant effects is referred to as \textit{overtraining}.
 
 \section{Noise in Simulations}
+The night sky background (NSB) level is also a priori expected to influence the reconstruction efficiency. A higher level of NSB photons increases the threshold needed to remove background photons, thereby causing a greater loss of lower energy gamma rays. This decreases the sensitivity to lower energy photons and affects the gamma-ray effective area.
 
+To incorporate this effect in the simulations, gamma-ray shower simulations are created with multiple different noise levels. For the purposes of this work, simulations with noise levels of 200, 250, 300, 350, and 450 MHz were used. These values should accurately recreate the NSB levels at VERITAS observations.
 
 \end{document}

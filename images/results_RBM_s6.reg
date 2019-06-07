@@ -1,0 +1,23 @@
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+ellipse(84.4112,21.1426,0.3,0.3,180) # text={Zeta Tauri}
+ellipse(81.9087,21.937,0.3,0.3,180) # text={o Tauri}
+ellipse(83.863,24.0396,0.3,0.3,180) # text={121 Tauri}
+ellipse(83.4118,20.4742,0.2,0.2,180) # text={HIP26072}
+ellipse(85.8312,23.2044,0.2,0.2,180) # text={HIP26964}
+ellipse(84.8629,21.763,0.2,0.2,180) # text={HIP26616}
+ellipse(85.4781,23.3263,0.2,0.2,180) # text={HIP26836}
+ellipse(81.2932,20.5837,0.2,0.2,180) # text={HIP25337}
+ellipse(82.5628,20.5516,0.2,0.2,180) # text={HIP25777}
+ellipse(83.3781,24.6289,0.2,0.2,180) # text={HIP26062}
+ellipse(84.0108,19.5494,0.2,0.2,180) # text={HIP26298}
+ellipse(84.11,21.9933,0.2,0.2,180) # text={HIP26328}
+ellipse(82.6805,22.4623,0.2,0.2,180) # text={HIP25806}
+ellipse(84.9646,24.2254,0.2,0.2,180) # text={HIP26651}
+ellipse(85.5166,22.6604,0.2,0.2,180) # text={HIP26853}
+ellipse(83.9189,21.4033,0.2,0.2,180) # text={HIP26272}
+ellipse(85.0399,19.6803,0.2,0.2,180) # text={HIP26677}
+ellipse(83.7649,24.2908,0.2,0.2,180) # text={HIP26201}
+ellipse(85.4882,24.3185,0.2,0.2,180) # text={HIP26839}
+ellipse(83.0918,19.1226,0.2,0.2,180) # text={HIP25965}
+ellipse(83.633,22.015,0.4,0.4,180) # text={Crab}

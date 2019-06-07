@@ -10,16 +10,16 @@ The \disp method is able to reconstruct events down to larger zenith angles than
 
 \begin{figure}[H]
   \begin{center}
-    \subfigure[Crab reconstructed spectral index using Method0 and Method5t]{ 
+    \subfigure[Crab reconstructed spectral index using Method0 and Method5t.]{ 
       \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Index_compare}
       \label{fig:index_compare}
     }  
-    \subfigure[Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t]{ 
+    \subfigure[Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t.]{ 
       \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Intf_compare}
       \label{fig:intf_compare}
     }
   \end{center}
-  \caption[Crab spectrum reconstruction]{Reconstruction of the Crab spectrum using Method0 (standard reconstruction from \vegas) and Method5t (\disp)}
+  \caption[Crab spectrum reconstruction.]{Reconstruction of the Crab spectrum using Method0 (standard reconstruction from \vegas) and Method5t (\disp).}
   \label{fig:spectrum_compare}
 \end{figure}
 
@@ -34,7 +34,7 @@ The test \disp table and the standard \disp tables were used to reconstruct simu
 \begin{figure}[htbp]
   \begin{center}
       \includegraphics[width=0.8\linewidth]{images/disp_standard_ratio_xzen}
-      \caption[``standard'' \disp table reconstruction]{Ratio of 68\% containment of the ``standard'' \disp table to that from Method0}  
+      \caption[``standard'' \disp table reconstruction.]{Ratio of 68\% containment of the ``standard'' \disp table to that from Method0.}  
       \label{fig:olddisp_ratio}
   \end{center}
 \end{figure}
@@ -42,7 +42,7 @@ The test \disp table and the standard \disp tables were used to reconstruct simu
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{images/disp_250_ratio_xzen}
-  \caption[Test \disp table reconstruction (noise = $250$ MHz)]{Ratio of the 68\% containment from reconstruction using test \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0}
+  \caption[Test \disp table reconstruction (noise = $250$ MHz).]{Ratio of the 68\% containment from reconstruction using test \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0.}
   \label{fig:disp_ratio_250}
 \end{figure}
 
@@ -54,31 +54,31 @@ There remains however, the possibility of effects related to noise level that mi
 
 \begin{figure}[H]
   \centering
-  \subfigure[Deviation of reconstructed \disp parameter from Monte-Carlo \disp parameter in training sample]{
+  \subfigure[Deviation of reconstructed \disp parameter from Monte-Carlo \disp parameter in training sample.]{
     \includegraphics[width=.47\linewidth]{images/trueDisp_Train}
     \label{fig:disp_train_overtraining}
   }
-  \subfigure[Deviation of reconstructed \disp parameter from Monte-Carlo \disp parameter in testing sample]{
+  \subfigure[Deviation of reconstructed \disp parameter from Monte-Carlo \disp parameter in testing sample.]{
     \includegraphics[width=.47\linewidth]{images/trueDisp_Test}
     \label{fig:disp_test_overtraining}
   }
-  \subfigure[Deviation of reconstructed \disp Error parameter from Monte-Carlo \disp Error parameter in training sample]{
+  \subfigure[Deviation of reconstructed \disp Error parameter from Monte-Carlo \disp Error parameter in training sample.]{
     \includegraphics[width=.47\linewidth]{images/DispError_Train}
     \label{fig:dispErr_train_overtraining}
   }
-  \subfigure[Deviation of reconstructed \disp Error parameter from Monte-Carlo \disp Error parameter in testing sample]{
+  \subfigure[Deviation of reconstructed \disp Error parameter from Monte-Carlo \disp Error parameter in testing sample.]{
     \includegraphics[width=.47\linewidth]{images/DispError_Test}
     \label{fig:dispErr_test_overtraining}
   }
-  \subfigure[Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample]{
+  \subfigure[Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample.]{
     \includegraphics[width=.47\linewidth]{images/MAError_Train}
     \label{fig:MAErr_train_overtraining}
   }
-  \subfigure[Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample]{
+  \subfigure[Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample.]{
     \includegraphics[width=.47\linewidth]{images/MAError_Test}
     \label{fig:MAErr_test_overtraining}
   }
-  \caption[Over-training test]{Over-training check on reconstruction using a \disp table generated at a single noise level.}
+  \caption[Over-training test.]{Over-training check on reconstruction using a \disp table generated at a single noise level. The left column shows the deviation of the reconstructed parameter from the true value in the training sample and the column on the right shows the same in the testing sample. The difference between the two columns is small which suggests there is little or no overtraining.}
   \label{fig:overtraining}
 \end{figure}
 
@@ -88,7 +88,7 @@ The first set of \disp tables was also generated at a single noise level ($250$ 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{images/disp_450_ratio_xzen}
-  \caption[\disp table reconstruction vs noise]{Ratio of 68\% containment of the noise=450MHz \disp table ($\sim 2.1\e6$ events) to that from Method0}
+  \caption[\disp table reconstruction vs noise.]{Ratio of 68\% containment of the noise=450MHz \disp table ($\sim 2.1\e6$ events) to that from Method0.}
   \label{fig:disp_ratio_450}
 \end{figure}
 
@@ -104,10 +104,45 @@ A new set of \disp tables was generated with a training sample four times that o
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\linewidth]{images/disp_450x4size_ratio_xzen}
-  \caption[\disp table reconstruction vs noise]{Ratio of 68\% containment of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0}
+  \caption[Higher statistics \disp table reconstruction vs noise.]{Ratio of 68\% containment of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0 for a higher statistics \disp table.}
   \label{fig:disp_ratio_450x4}
 \end{figure}
 
+\subsection{Acceptance Correction for Offset from Camera Center}
+Showers arriving further from the camera center have a larger fraction of the shower arriving outside of the camera and therefore being lost. These showers are therefore reconstructed with a lower efficiency and resolution than showers arriving closer to the camera center. To compensate for this in the BDT training, so that the training sample does not mis-characterize the overabundance of events closer to the camera center as an anisotropy in incoming gamma rays, we fold in an acceptance correction by assigning a larger weight to events that are further away from the camera center.
+
+The acceptance correction used here affects the training sample and therefore might be assumed to affect the resolution in a zenith dependent way, explaining the difference in performance between the new \disp tables and the old ones. This was tested by using a number of different correction functions in the training sample, as shown in Fig. \ref{fig:weights}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.78\linewidth]{images/weights}
+  \caption[Weight functions for offset from camera center.]{The weight functions used in the training samples in the new tables (Default, Test 1, Test 2 and Test 3) and those found in the scripts used to generate the older tables (Old Script 1, Old Script 2).}
+  \label{fig:weights}
+\end{figure}
+
+These tests reveal small changes in the 68\% containment value despite large changes in the correction function (Fig. \ref{fig:weight_tests}). This suggests that the \disp tables are not sensitive to changes in acceptance and therefore the different acceptance functions are unlikely to be the reason why the new \disp tables perform worse at smaller zenith angles.
+
+\begin{figure}[htbp]
+  \centering
+
+  \subfigure[Camera offset acceptance correction default]{
+    \includegraphics[width=.45\linewidth]{images/disp_450size_val_xzen}
+    \label{fig:weight_test_default}}
+  \subfigure[Camera offset acceptance correction test 1]{
+    \includegraphics[width=.45\linewidth]{images/disp_450size_wtfix_val_xzen}
+    \label{fig:weight_test_1}}
+  \subfigure[Camera offset acceptance correction test 2]{
+    \includegraphics[width=.45\linewidth]{images/disp_450x4size_wtfix_val_xzen}
+    \label{fig:weight_test_2}}
+  \subfigure[Camera offset acceptance correction test 3]{
+    \includegraphics[width=.45\linewidth]{images/disp_broken_wtfix_val_xzen}
+    \label{fig:weight_test_3}}
+
+  \caption[68\% containment for the acceptance correction functions]{68\% containment for each acceptance correction function shown in Fig. \ref{fig:weights}. The changes in acceptance correction do not meaningfully change the 68\% containment for the reconstruction.}
+  \label{fig:weight_tests}
+\end{figure}
+
+\subsection{Energy Dependence}
+Another important dependence of the reconstruction resolution (and therefore the 68\% containment) is that on energy. Higher energy photons are expected to comprise a large fraction of all LZA photons which have to travel through longer through the atmosphere and therefore must have showers that remain above the threshold energy deeper into the atmosphere. Conversely, high energy photons are expected to make up a small fraction of SZA photons due to the relative overabundance of generating processes as well as the greater relative likelihood of down-scattering than up-scattering.
 
 \end{document}
-

@@ -99,7 +99,7 @@ To generate a set of \disp tables with better angular resolution (as measured by
 \subsection{Higher Statistics Tables}
 Once it was determined that there was no significant over-training in the small sample \disp tables, and the noise level had little bearing on the 68\% containment measure of the reconstruction, it was determined that different noise level simulation events could be used as independent training events to have a higher statistics \disp table, and make small improvements on the statistical uncertainty on the reconstruction. The simulation data from across the noise spectrum and zenith range was used to generate a \disp table that sampled the entire parameter space more exhaustively.
 
-A new set of \disp tables was generated with a training sample four times that of the initial test tables. The improvements in resolution due to change in sample size were modest, and confined to the range of zenith angles where the standard method outperforms the \disp method quite considerably.
+A new set of \disp tables was generated (Fig. \ref{fig:disp_ratio_450x4}) with a training sample four times that of the initial test tables. The improvements in resolution due to change in sample size were modest, and confined to the range of zenith angles where the standard method outperforms the \disp method quite considerably.
 
 \begin{figure}[htbp]
   \centering
@@ -107,6 +107,8 @@ A new set of \disp tables was generated with a training sample four times that o
   \caption[Higher statistics \disp table reconstruction vs noise.]{Ratio of 68\% containment of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0 for a higher statistics \disp table.}
   \label{fig:disp_ratio_450x4}
 \end{figure}
+
+As expected from the small statistical uncertainty on the 68\% containment values, this increase in sample size did not lead to any meaningful improvements and a training sample of $\sim 2\e6$ was determined to be sufficient to achieve the desired resolution with small uncertainties.
 
 \subsection{Acceptance Correction for Offset from Camera Center}
 Showers arriving further from the camera center have a larger fraction of the shower arriving outside of the camera and therefore being lost. These showers are therefore reconstructed with a lower efficiency and resolution than showers arriving closer to the camera center. To compensate for this in the BDT training, so that the training sample does not mis-characterize the overabundance of events closer to the camera center as an anisotropy in incoming gamma rays, we fold in an acceptance correction by assigning a larger weight to events that are further away from the camera center.
@@ -143,6 +145,41 @@ These tests reveal small changes in the 68\% containment value despite large cha
 \end{figure}
 
 \subsection{Energy Dependence}
-Another important dependence of the reconstruction resolution (and therefore the 68\% containment) is that on energy. Higher energy photons are expected to comprise a large fraction of all LZA photons which have to travel through longer through the atmosphere and therefore must have showers that remain above the threshold energy deeper into the atmosphere. Conversely, high energy photons are expected to make up a small fraction of SZA photons due to the relative overabundance of generating processes as well as the greater relative likelihood of down-scattering than up-scattering.
+Another important dependence of the reconstruction resolution (and therefore the 68\% containment) is that on energy. Higher energy photons are expected to comprise a large fraction of LZA photons which have to travel longer through the atmosphere and therefore must remain above the threshold energy deeper into the atmosphere. Conversely, high energy photons are expected to make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the relative overabundance of generating processes as well as the greater relative likelihood of down-scattering than up-scattering. A much better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\linewidth]{images/reg_energy}
+  \caption{Energy Dependence of Method0}
+  \label{fig:energy_reg}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\linewidth]{images/disp_standard_energy}
+  \caption{Energy Dependence of the old Method5t}
+  \label{fig:energy_disp_standard}    
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\linewidth]{images/disp_450_energy}
+  \caption{Energy Dependence of the new Method5t}
+  \label{fig:energy_disp_450}    
+\end{figure}
+
+The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend as in Fig. \ref{fig:disp_res}. The energy dependence for the older \disp tables (Fig. \ref{fig:energy_disp_standard}) appears to have a minimum in 68\% containment close to 1 TeV and performs worse at lower \textit{and} higher energies, though there is large variation with zenith angle. The energy dependence for the newer \disp tables (Fig. \ref{fig:energy_disp_450}) on the other hand appears to do better at higher energies for all zenith angles. At energies above $\sim 1$ TeV and zenith above $30^\circ$, the 68\% containment is at or better than $.07^\circ$ (see Fig. \ref{fig:energy_contour}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\linewidth]{images/disp_450size_contour}
+  \caption{Energy and Zenith dependence of the new Method5t, with contours at intervals of $0.025^\circ$ up to $0.5^\circ$.}
+  \label{fig:energy_contour}
+\end{figure}
+
+
+\section{Crab Extension}
+
+The Crab is expected to have a GeV-TeV extension of $\sim .03^\circ$ \cite{Fermi_LAT_Crab_extension} \cite{HESS_Crab_extension}. For this, a 68\% containment of at least $.03^\circ$ is desirable. This is achieved above $40^\circ$ zenith and above $10^{3.5}$ GeV.
 
 \end{document}

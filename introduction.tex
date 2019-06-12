@@ -98,7 +98,8 @@ Relativistic muons in the atmosphere radiate Cherenkov radiation and comprise a 
 The shower image parameters are the input to the direction reconstruction that is the focus of this work. In any given telescope, the shower image is parameterized using various measurements including
 \begin{itemize}
 \item the image axis -- defined as the line minimizing the signal-weighted sum of squares of perpendicular distance between triggering pixels (see \ref{fig:image_axis}).
-\item the time gradient -- a measure of the difference in time of arrival, along the image axis, of the signal at a pixel (see \ref{fig:time_gradient}).
+\item the time gradient -- a measure of the difference in time of arrival, along the image axis, of the signal at a pixel % (see \ref{fig:time_gradient})
+  .
 \item the length of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels parallel to the image axis \cite{Hillas:1985}.
 \item the width of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels perpendicular to the image axis. The length and width together provide the major and minor axis of an ellipse containing the majority of the signal, and are referred to as the Hillas parameters and the Hillas ellipse.
 \end{itemize}
@@ -108,14 +109,14 @@ A number of other parameters are used in the complete reconstruction of the show
       \includegraphics[width=0.45\linewidth]{images/img_axis}
       \label{fig:image_axis}
       \caption[The image axis parameter.]{The image axis parameter is the line of best fit for the shower image on a single telescope. This best fit is measured by minimizing the signal-weighted sum of squares of residuals. Picture taken from \cite{veritas_web}.}
+\end{figure}
 
-\end{figure}
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.45\linewidth]{images/placeholder}
-  \caption[Time gradient parameter.]{Time gradient parameter for a shower.}
-  \label{fig:time_gradient}
-\end{figure}
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.45\linewidth]{images/placeholder}
+%   \caption[Time gradient parameter.]{Time gradient parameter for a shower.}
+%   \label{fig:time_gradient}
+% \end{figure}
 
 \subsection{The \disp Parameter}
 The \disp parameter is a measure of the displacement between the center of the Hillas ellipse (the center of gravity of a shower image at a telescope), and the origin of the shower in the camera plane (Fig. \ref{fig:Disp_FOV}). This is a telescope-level parameter with a head-tail ambiguity, but with multiple telescope images, it can be used in estimating the direction of the initiating gamma ray. This is based on the idea in method (c) described in Hofmann\cite{Hofmann:1999dx}.

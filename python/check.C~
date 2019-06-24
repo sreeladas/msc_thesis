@@ -1,0 +1,50 @@
+// provide either a root file or text file with root file paths
+int check(TString infile, TString outfile="tmva_save.root")
+{
+	ifstream file_names(infile.Data());
+	TString fname;
+	TChain* cc = new TChain("diagnosticTree");
+	while(file_names >> fname)
+		{
+			cout << "Added File " << fname << endl;
+			cc->Add(fname);
+		}
+	// Load all files
+	TTree* diagTree = dynamic_cast<TTree*>(cc);
+	
+	Double_t r = 0.15; // right margin (default right margin = 0.1)
+	Double_t w = 1200 * (1.0 - 0.1 - 0.1) / (1.0 - 0.1 - r); // left margin = 0.1
+	Double_t h = 1200 * (0.1 + 0.8 + 0.1); // bottom and top margins = 0.1
+	TCanvas *dispCanvas = new TCanvas("DispDev", "Disp Deviation");
+	dispCanvas->SetWindowSize( w + (w-dispCanvas->GetWw()), h + (h-dispCanvas->GetWh()) );
+	dispCanvas->SetCanvasSize(w, h);
+	dispCanvas->SetRightMargin(r);
+	TH3F *histo = new TH3F("Energy_vs_Zenith", "Energy_vs_Zenith", 100, 2, 5, 100, 15, 70, 100, 0, 0.7);
+	diagTree->Draw("(TMath::Log10(fEnergyGeV)):PrimaryZenithDeg:DevDeg>>histo", "fEnergyGeV>100&&fEnergyGeV<100000&&DevDeg<0.7&&PrimaryZenithDeg>15&&PrimaryZenithDeg<70");
+	histo->GetXaxis()->SetTitle("Deviation in Reconstructed Direction (deg^2)");
+	histo->GetXaxis()->SetRangeUser(0, 0.7);
+	histo->GetYaxis()->SetTitle("Simulation Zenith Angle (deg)");
+	histo->GetYaxis()->SetRangeUser(15, 70);
+	histo->GetZaxis()->SetTitle("Reconstructed Energy (Log10(GeV))");
+	histo->GetZaxis()->SetRangeUser(2, 5);
+	
+
+	gPad->Modified(); 
+	gPad->Update();
+	TPaveStats *st = ((TPaveStats *)(gPad->GetPrimitive("stats")));
+	if (st) {
+		st->SetX1NDC(st->GetX1NDC() - 0.65);
+		st->SetX2NDC(st->GetX2NDC() - 0.65);
+		st->SetY1NDC(st->GetY1NDC() - 0.02);
+		st->SetY2NDC(st->GetY2NDC() - 0.02);
+		gPad->Modified();
+		gPad->Update();
+	}
+
+	TString   saveName = "images/";
+	saveName.Append(outfile(0, outfile.Length()-5));
+	saveName.Append("_Dev.png");
+	dispCanvas->SaveAs(saveName);
+
+	return 0;   //great job!
+} // Diagnostics done

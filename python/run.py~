@@ -1,0 +1,15 @@
+import ROOT
+
+zenith = [20, 30, 35, 40, 45, 50, 55, 60, 65]
+markerstyle = ['o', 'v', 'D', '^', 's', '<', 'p', '>', '*']
+energy = np.power(10, np.linspace(2, 5, 10))
+c=TCanvas()
+c.Draw()
+i=4
+# for i in range(9):
+
+f = ROOT.TFile("zen20/zendisp.root")
+tr = f.Get("diagnosticTree")
+tr.SetBranchAddress("fEnergyGev")
+histo=TH1F("histo", "", 100, 0, 10)
+tree.Draw("DevDeg>>histo", "fEnergyGeV>100&&fEnergyGeV<126", "COLZ")

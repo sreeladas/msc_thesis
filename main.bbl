@@ -6,8 +6,9 @@ Nahee Park.
 \newblock {\em PoS}, ICRC2017:1116, 2018.
 
 \bibitem{veritas_web}
-VERITAS collaboration.
-\newblock Veritas website.
+{VERITAS collaboration}.
+\newblock {VERITAS website}.
+\newblock \url{https://veritas.sao.arizona.edu/}.
 
 \bibitem{EAS_2018}
 S.~{Mollerach} and E.~{Roulet}.
@@ -55,5 +56,29 @@ Mathieu {de Naurois} and Lo{\"\i}c {Rolland}.
 \newblock {A high performance likelihood reconstruction of
   {\ensuremath{\gamma}}-rays for imaging atmospheric Cherenkov telescopes}.
 \newblock {\em Astroparticle Physics}, 32:231--252, Dec 2009.
+
+\bibitem{hess_web}
+{HESS collaboration}.
+\newblock {H.E.S.S. website}.
+\newblock \url{https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2005/10/}.
+
+\bibitem{Fermi_LAT_Crab_extension}
+M.~Ackermann et~al.
+\newblock {The Search for Spatial Extension in High-latitude Sources Detected
+  by the $Fermi$ Large Area Telescope}.
+\newblock {\em Astrophys. J. Suppl.}, 237(2):32, 2018.
+
+\bibitem{HESS_Crab_extension}
+M.~{Holler}, D.~{Berge}, J.~{Hahn}, D.~{Khangulyan}, R.~D. {Parsons}, and
+  {H.~E.~S.~S.~Collaboration}.
+\newblock {Advanced search for the extension of unresolved TeV sources with
+  H.E.S.S.}
+\newblock {\em International Cosmic Ray Conference}, 35:676, January 2017.
+
+\bibitem{Yeung:energy_extension}
+Paul K.~H. Yeung and Dieter Horns.
+\newblock {The Energy-dependent $\gamma$-ray Morphology of the Crab Nebula
+  Observed with the Fermi Large Area Telescope}.
+\newblock {\em Astrophys. J.}, 875(2):123, 2019.
 
 \end{thebibliography}

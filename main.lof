@@ -26,26 +26,25 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Crab reconstructed spectral index using Method0 and Method5t.}}}{26}{figure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t.}}}{26}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces ``standard'' \textit {Disp }table reconstruction.}}{28}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Test \textit {Disp }table reconstruction (noise = $250$ MHz).}}{28}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Over-training test.}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in training sample.}}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in testing sample.}}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in training sample.}}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in testing sample.}}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample.}}}{30}{figure.3.4}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample.}}}{30}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit {Disp }table reconstruction vs noise.}}{31}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Higher statistics \textit {Disp }table reconstruction vs noise.}}{33}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Weight functions for offset from camera center.}}{34}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces R$_{68}$ for the acceptance correction functions.}}{34}{figure.3.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Camera offset acceptance correction default.}}}{34}{figure.3.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Camera offset acceptance correction test 1.}}}{34}{figure.3.8}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Camera offset acceptance correction test 2.}}}{34}{figure.3.8}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Camera offset acceptance correction test 3.}}}{34}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0.}}{35}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t.}}{36}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t.}}{36}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{37}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{38}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Energy and zenith contours for the new Method5t.}}{39}{figure.3.14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Test \textit {Disp }table reconstruction (noise = $250$ MHz).}}{29}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Over-training test.}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in training sample.}}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in testing sample.}}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in training sample.}}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in testing sample.}}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample.}}}{31}{figure.3.4}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample.}}}{31}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit {Disp }table reconstruction vs noise.}}{32}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Higher statistics \textit {Disp }table reconstruction vs noise.}}{34}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Weight functions for offset from camera center.}}{35}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces R$_{68}$ for the acceptance correction functions.}}{35}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Camera offset acceptance correction default.}}}{35}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Camera offset acceptance correction test 1.}}}{35}{figure.3.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Camera offset acceptance correction test 2.}}}{35}{figure.3.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Camera offset acceptance correction test 3.}}}{35}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0.}}{36}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t.}}{37}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t.}}{37}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{38}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{39}{figure.3.13}
 \addvspace {10\p@ }

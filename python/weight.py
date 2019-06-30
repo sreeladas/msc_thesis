@@ -10,7 +10,6 @@ test1 = [(i*4.0/.5+1.0)/3.0 for i in x]
 test2 = [(i*6.25/.5+1.0)/3.0 for i in x]
 test3 = [min((i*15/.5+1.0)/3.0, 8.25) for i in x]
 
-ax1=plt.subplot(1,2,2)
 plt.plot(x, ty, 'b-', label='Default')
 plt.plot(x, oy, 'r-', label='Old Script 1')
 plt.plot(x, oy2, 'g-', label='Old Script 2')
@@ -21,14 +20,14 @@ plt.legend()
 plt.xlabel("Offset from camera center (deg)")
 plt.ylabel("Relative weight")
 
-ax2=plt.subplot(1,2,1)
-plt.plot(x, ty, 'b-', label='Default')
-plt.plot(x, test1, 'c-', label='Test 1')
-plt.plot(x, test2, 'm-', label='Test 2')
-plt.plot(x, test3, 'k-', label='Test 3')
-plt.legend()
-plt.xlabel("Offset from camera center (deg)")
-plt.ylabel("Relative weight")
+# ax2=plt.subplot(1,2,1)
+# plt.plot(x, ty, 'b-', label='Default')
+# plt.plot(x, test1, 'c-', label='Test 1')
+# plt.plot(x, test2, 'm-', label='Test 2')
+# plt.plot(x, test3, 'k-', label='Test 3')
+# plt.legend()
+# plt.xlabel("Offset from camera center (deg)")
+# plt.ylabel("Relative weight")
 plt.show()
 
 plt.savefig("../images/weights.png")

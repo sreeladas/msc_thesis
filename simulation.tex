@@ -50,7 +50,10 @@ The standard method (henceforth method0) of shower direction reconstruction is b
 \end{figure}
 
 
-To compensate for this loss of predictive power, the \disp \textit{method}, calculates the \disp parameter (quasi-analytically, using lookup tables and interpolating, or using \textbf{boosted decision trees}) for each individual telescope image to determine two potential locations for the arrival direction -- along the major axis on either side of the weighted centroid of the image (see Fig. \ref{fig:hillas_ellipse}). The method then compares this pair of coordinates (one at the head, and one at the tail) for each pair of telescopes in the event reconstruction to find the pair of coordinates, one from either telescope, closest to each other (see Fig \ref{fig:head_tail} for visual explanation). The mean of this pair of coordinates is determined to be the reconstructed shower direction.
+\subsection{The \disp Method}
+To compensate for this loss of predictive power, the \disp \textit{method}, calculates the \disp parameter (quasi-analytically, using lookup tables and interpolating, or using \textbf{boosted decision trees}) for each individual telescope image to determine two potential locations for the arrival direction -- along the major axis on either side of the weighted centroid of the image (see Fig. \ref{fig:hillas_ellipse}). This parameter is the (angular) vector displacement between the weighted centroid of the shower image and the estimated arrival direction of the initiating photon. In addition, the method also determines the two-dimensional uncertainty on this parameter which is expressed in terms of the radial ({\it DispError}) and angular ({\it MAError}) uncertainties. Together, these three parameters fully specify the direction of the initiating photon and the uncertainty on it, up to the head-tail ambiguity.
+
+The method then compares this pair of coordinates (one at the head, and one at the tail) for each pair of telescopes in the event reconstruction to find the pair of coordinates, one from either telescope, that are closest to each other (see Fig \ref{fig:head_tail} for visual explanation). The weighted mean of this pair of coordinates is taken as the reconstructed shower direction, with the weights given by {\it DispError} and {\it MAError}. The RMS distance of the two closest points (the points in the red circle in Fig. \ref{fig:head_tail_full}) is taken to be the uncertainty on this position.
 \begin{figure}[htbp]
   \centering
 \subfigure[First pair of telescopes in reconstruction, with the pair of closest coordinates.]{
@@ -64,17 +67,19 @@ To compensate for this loss of predictive power, the \disp \textit{method}, calc
 }
 \subfigure[All telescopes in reconstruction, with the pair of closest coordinates from \textit{all} pairs of telescopes.]{
   \includegraphics[width=.6\linewidth]{images/head_tail_full}
+  \label{fig:head_tail_full}
 }
   \caption[Combining multiple telescopes in \disp reconstruction.]{Iterating through the unique pairs of telescopes, the closest coordinate pair is chosen, and the mean of those coordinates is taken as the direction of the initiating particle.}
   \label{fig:head_tail}
 \end{figure}
 
+While using a quasi-analytic lookup table already provides substantial improvements on the LZA performance of the direction reconstruction, using boosted decision trees (BDTs) provides significantly better resolution comparable to (and perhaps better than) that from the geometric reconstruction in the MZA range.
 
 \section{Boosted Decision Trees}
-Decision trees use a predictive model, which maps parameters for an event to the value of the \disp parameter for the event. The predictive model may be based on Monte Carlo simulations (as in the case of this work) or analytic calculations. A basic algorithm for boosted decision tree (BDT) learning takes an input sample of data, generates a decision tree, uses a boosting algorithm to better discriminate mis-modeled inputs, and runs tests to provide some measures of its own performance. BDTs are especially robust for variables with non-linear correlations and have a fast application to data, relative to some of the other algorithms. This section contains a brief description of these individual steps.
+Decision trees use a predictive model, which maps parameters for an event to the value of the \disp parameter for the event. The predictive model may be based on Monte Carlo simulations (as in the case of this work) or analytic calculations. A basic algorithm for boosted decision tree (BDT) learning takes an input sample of data, generates a decision tree, uses a boosting algorithm to better discriminate mis-modeled inputs, and runs tests to provide some measures of its own performance. BDTs are especially robust for variables with non-linear correlations and have a fast application to data, relative to some other algorithms. This section contains a brief description of these individual steps.
 
 \subsection{Training}
-Decision trees are a type of supervised learning algorithms. For our purposes, this means the algorithm is provided with a training sample comprised of the values of the parameters used for the reconstruction of each event along with the true value (from simulations) of the parameter to be reconstructed. The training process then generates correlation matrices for the dependent variables. With this information the algorithm is able to create a decision tree where each non-leaf node denotes a test on an attribute and each branch represents an outcome of the test, at each step using a test that best discriminates the input data.
+Decision trees are a type of supervised learning algorithm. For our purposes, this means the algorithm is provided with a training sample comprised of the values of the parameters used for the reconstruction of each event along with the true value (from simulations) of the parameter to be reconstructed. The training process then generates correlation matrices for the dependent variables. With this information the algorithm is able to create a decision tree where each non-leaf node denotes a test on an attribute and each branch represents an outcome of the test, at each step using a test that best bifurcates the input data.
 
 \subsection{Boosting}
 To avoid having multiple identical trees, a higher weight is assigned to events that are canonically hard to discriminate. This means that within the training, more time is spent on discriminating between events that are hard to distinguish and this assigning of weights to preferentially train more on specific parts of parameter space is referred to as boosting.

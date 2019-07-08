@@ -14,6 +14,7 @@
 \newcommand{\vegas}{\textit{VEGAS }}
 \newcommand{\ed}{\textit{EventDisplay}}
 \newcommand{\rse}{R$_{68}$ }
+\graphicspath{{images/}{./}}
 \makeatletter
 \renewcommand*\cleardoublepage{\clearpage\if@twoside
   \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
@@ -40,8 +41,7 @@
 \subfile{abstract}
 \clearpage
 \chapter{Abr\'eg\'e}
-% Something something
-% \subfile{abrege}
+\subfile{abrege}
 \clearpage
 \tableofcontents
 \listoffigures
@@ -74,13 +74,13 @@
 % \chapter{Appendix A}
 % \subfile{appendix_a}
 
-% crab data stability files
-% \chapter{Appendix B}
-% \subfile{appendix_b} 
-
 % crab LZA resolution files
+% \chapter{Appendix B}
+% \subfile{appendix_b}
+
+% crab data stability files
 % \chapter{Appendix C}
-% \subfile{appendix_c}
+% \subfile{appendix_c} 
 
 \bibliographystyle{unsrt}
 \bibliography{thesis}

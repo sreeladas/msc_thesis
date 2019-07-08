@@ -21,28 +21,44 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Second pair of telescopes in reconstruction, with the pair of closest coordinates.}}}{21}{figure.2.3}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Third pair of telescopes in reconstruction, with the pair of closest coordinates.}}}{21}{figure.2.3}
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {All telescopes in reconstruction, with the pair of closest coordinates from \textit {all} pairs of telescopes.}}}{21}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of a BDT}}{23}{figure.2.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Crab spectrum reconstruction.}}{27}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Crab reconstructed spectral index using Method0 and Method5t.}}}{27}{figure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t.}}}{27}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces ``standard'' \textit {Disp }table reconstruction.}}{29}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Test \textit {Disp }table reconstruction (noise = $250$ MHz).}}{29}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Over-training test.}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in training sample.}}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in testing sample.}}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in training sample.}}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in testing sample.}}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample.}}}{31}{figure.3.4}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample.}}}{31}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit {Disp }table reconstruction vs noise.}}{32}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Higher statistics \textit {Disp }table reconstruction vs noise.}}{34}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Weight functions for offset from camera center.}}{35}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces R$_{68}$ for the acceptance correction functions.}}{35}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0.}}{36}{figure.3.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Energy Dependence of Method0 at small and medium zenith angles.}}}{36}{figure.3.9}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy Dependence of Method0 at large zenith angles.}}}{36}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t.}}{37}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t.}}{37}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{38}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{38}{figure.3.13}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Crab direction reconstruction using Method0.}}{27}{figure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Crab reconstructed resolution using Method0.}}}{27}{figure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Crab binned significance.}}}{27}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ``standard'' \textit {Disp }table reconstruction.}}{28}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Small \textit {Disp }table reconstruction (noise = $250$ MHz).}}{29}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Over-training test.}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in training sample.}}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation of reconstructed \textit {Disp }parameter from Monte-Carlo \textit {Disp }parameter in testing sample.}}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in training sample.}}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Deviation of reconstructed \textit {Disp }Error parameter from Monte-Carlo \textit {Disp }Error parameter in testing sample.}}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in training sample.}}}{30}{figure.3.4}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Deviation of reconstructed MAError parameter from Monte-Carlo MAError parameter in testing sample.}}}{30}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit {Disp }table reconstruction vs noise.}}{31}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Higher statistics \textit {Disp }table reconstruction vs noise.}}{33}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Weight functions for offset from camera center.}}{34}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces R$_{68}$ for the acceptance correction functions.}}{34}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0.}}{35}{figure.3.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Energy Dependence of Method0 at small and medium zenith angles.}}}{35}{figure.3.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy Dependence of Method0 at large zenith angles.}}}{35}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t.}}{36}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t.}}{36}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{37}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{37}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Mrk421 direction reconstruction using Method5t.}}{39}{figure.3.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{39}{figure.3.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{39}{figure.3.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{39}{figure.3.14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{39}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Crab direction reconstruction using Method5t.}}{40}{figure.3.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{40}{figure.3.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{40}{figure.3.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{40}{figure.3.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{40}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces PKS1510 direction reconstruction using Method5t.}}{41}{figure.3.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{41}{figure.3.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{41}{figure.3.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{41}{figure.3.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{41}{figure.3.16}
 \addvspace {10\p@ }

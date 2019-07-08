@@ -22,21 +22,22 @@
 \contentsline {subsection}{\numberline {2.4.1}The \textit {Disp }Method}{20}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Boosted Decision Trees}{22}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Training}{22}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Boosting}{22}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Testing}{23}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}Noise in Simulations}{23}{section.2.6}
-\contentsline {chapter}{\numberline {3}Analysis Methods}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Preliminary Test and Motivation}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {Disp }Table and R$_{68}$ Dependencies}{28}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Zenith Angle Dependence}{28}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Over-training}{30}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Noise Related Effects}{32}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Higher Statistics Tables}{33}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Acceptance Correction for Offset from Camera Center}{33}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Energy Dependence}{36}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}R$_{68}$ for the Crab}{39}{section.3.3}
-\contentsline {section}{\numberline {3.4}R$_{68}$ for Mrk421}{40}{section.3.4}
-\contentsline {section}{\numberline {3.5}R$_{68}$ for PKS1510-089}{40}{section.3.5}
+\contentsline {subsection}{\numberline {2.5.2}Boosting}{23}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Testing}{24}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Noise in Simulations}{24}{section.2.6}
+\contentsline {chapter}{\numberline {3}Analysis Methods}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Preliminary Test and Motivation}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textit {Disp }Table and R$_{68}$ Dependencies}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Zenith Angle Dependence}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Over-training}{28}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Noise Related Effects}{31}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Higher Statistics Tables}{32}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Acceptance Correction for Offset from Camera Center}{32}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Energy Dependence}{35}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}R$_{68}$ for Known Objects}{38}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}R$_{68}$ for Mrk421}{38}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}R$_{68}$ for the Crab Nebula}{39}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}R$_{68}$ for PKS1510-089}{40}{subsection.3.3.3}
 \contentsline {chapter}{\numberline {4}Conclusions}{42}{chapter.4}
 \contentsline {section}{\numberline {4.1}Summary}{42}{section.4.1}
 \contentsline {section}{\numberline {4.2}Discussion}{43}{section.4.2}

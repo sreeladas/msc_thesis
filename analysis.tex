@@ -2,34 +2,54 @@
 
 \begin{document}
 \section{Preliminary Test and Motivation}
-The first part of this work was to examine the stability of the reconstructed Crab spectrum looking at the photon index and the integral flux above a threshold value based on the lowest energy where photons were reconstructed across zenith angles. The data used were from nights of horizon-to-horizon Crab runs (Jan 12 2018, Jan 13 2018, and Jan 04, 2019), where Crab runs were taken from the horizon to culmination and back to the horizon.
+The motivation for this work was to refine, understand, and document the \disp method of direction reconstruction. This method was expected to be useful to better resolve objects observed close to the horizon and facilitate studying the stability of the reconstruction to zenith angle of observation. There was also the possibility of using machine learning algorithms to improve resolution beyond that of the standard geometric reconstruction. In particular, an improved angular resolution on the Crab opens up the possibility of resolving the extension of the Crab Nebula with the VERITAS instrument.
 
-For Method0, the reconstructed energy spectra appear to be largely stable under variations in zenith angle (Fig. \ref{fig:index_compare} and \ref{fig:intf_compare}). The slopes of the best fit gradient lines are insignificant for both the integral flux above the threshold energy ($10^{0.35} \approx 2.24$TeV) and the spectral index -- as they should be since physically these quantities are independent of zenith angle.
-
-The \disp method is able to reconstruct events down to larger zenith angles than the standard method although lower statistics at large zenith angles lead to larger uncertainties. However, the integral flux from the \disp method fit has a significant positive correlation with zenith angle, and lies significantly below the integral flux reconstructed from Method0.
+A preliminary test for this was enabled by a set of runs where the Crab was tracked from horizon to culmination and back to the horizon (from the nights of Jan 12 2018, Jan 13 2018, and Jan 04, 2019). This provided a reference data set with high significance to track energy and zenith dependence of the direction reconstruction in stable (and therefore directly comparable) weather conditions. The differential resolution for the Crab data was measured in several energy and zenith bins and is presented in Fig. \ref{fig:crab_initial}
 
 \begin{figure}[H]
   \begin{center}
-    \subfigure[Crab reconstructed spectral index using Method0 and Method5t.]{ 
-      \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Index_compare}
-      \label{fig:index_compare}
+    \subfigure[Crab reconstructed resolution using Method0.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_reg_rse.png}
+      \label{fig:crab_reg_res}
     }  
-    \subfigure[Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t.]{ 
-      \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Intf_compare}
-      \label{fig:intf_compare}
+    \subfigure[Crab binned significance.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_reg_LiMa.png}
+      \label{fig:crab_res_num}
     }
   \end{center}
-  \caption[Crab spectrum reconstruction.]{Reconstruction of the Crab spectrum using Method0 (standard reconstruction from \vegas) and Method5t (\disp).}
-  \label{fig:spectrum_compare}
+  \caption[Crab direction reconstruction using Method0.]{Reconstruction of the Crab direction using Method0 (standard geometric reconstruction from \textit{VEGAS}).}
+  \label{fig:crab_initial}
 \end{figure}
 
+% The first part of this work was to examine the stability of the reconstructed Crab spectrum looking at the photon index and the integral flux above a threshold value based on the lowest energy where photons were reconstructed across zenith angles. The data used were from nights of horizon-to-horizon Crab runs (Jan 12 2018, Jan 13 2018, and Jan 04, 2019), where Crab runs were taken from the horizon to culmination and back to the horizon.
+
+% For Method0, the reconstructed energy spectra appear to be largely stable under variations in zenith angle (Fig. \ref{fig:index_compare} and \ref{fig:intf_compare}). The slopes of the best fit gradient lines are insignificant for both the integral flux above the threshold energy ($10^{0.35} \approx 2.24$TeV) and the spectral index -- as they should be since physically these quantities are independent of zenith angle.
+
+% The \disp method is able to reconstruct events down to larger zenith angles than the standard method although lower statistics at large zenith angles lead to larger uncertainties. However, the integral flux from the \disp method fit has a significant positive correlation with zenith angle, and lies significantly below the integral flux reconstructed from Method0.
+
+% \begin{figure}[H]
+%   \begin{center}
+%     \subfigure[Crab reconstructed spectral index using Method0 and Method5t.]{ 
+%       \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Index_compare}
+%       \label{fig:index_compare}
+%     }  
+%     \subfigure[Crab reconstructed integral flux above 2.24 TeV ($10^{0.35}$ TeV) using Method0 and Method5t.]{ 
+%       \includegraphics[width=0.9\linewidth]{images/Crab_C2C/Intf_compare}
+%       \label{fig:intf_compare}
+%     }
+%   \end{center}
+%   \caption[Crab spectrum reconstruction.]{Reconstruction of the Crab spectrum using Method0 (standard reconstruction from \vegas) and Method5t (\disp).}
+%   \label{fig:spectrum_compare}
+% \end{figure}
+
+
 \section{\disp Table and \rse Dependencies}
-This effect in integral flux hints at some systematic effects that are not yet understood. In order to determine and/or resolve the underlying causes, the scripts to generate the BDT weight tables were re-written and the tables generated independently. For the purposes of this work, the 68\% containment radius in angular offset (\rse\hspace{-4pt}) is used as a measure of angular resolution and performance of the reconstruction.
+The BDT weight tables were generated independently of the old \disp method in order to have clear documentation of the underlying effects and dependencies. For the purposes of this work, the 68\% containment radius in angular offset (\rse\hspace{-4pt}) is used as a measure of angular resolution and performance of the reconstruction.
 
 \subsection{Zenith Angle Dependence}
 A set of \disp tables was generated with a small sample of events ($n\approx 1.9\e6$) across the range of zenith angles of interest ($20^\circ-65^\circ$). This was compared to the regular \disp method. Since there was no record of the training sample size for the standard tables, this test sample was useful in determining the resolution of the \disp method with a relatively small computational footprint. Additionally, it allowed for some simple tests of dependence of the \disp table on parameters not explicitly in the \disp tables.
 
-The test \disp table and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle), but the test \disp table fared 30-50\% worse across zenith angles, and for zenith angles in the range $45^\circ-50^\circ$, Method0 performed better than the test model. 
+This small \disp table and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle). From here it is clear that the regime of interest for the \disp method is $\geq45^\circ$. 
 
 \begin{figure}[htbp]
   \begin{center}
@@ -42,7 +62,7 @@ The test \disp table and the standard \disp tables were used to reconstruct simu
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.75\linewidth]{images/disp_250_ratio_xzen}
-  \caption[Test \disp table reconstruction (noise = $250$ MHz).]{Ratio of the \rse from reconstruction using test \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0. Note the horizontal blue line denotes the performance using Method0, so this method performs better than Method0 for zenith $>45^\circ$.}
+  \caption[Small \disp table reconstruction (noise = $250$ MHz).]{Ratio of the \rse from reconstruction using the small \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0. Note the horizontal blue line denotes the performance using Method0, so this method performs better than Method0 for zenith $>45^\circ$.}
   \label{fig:disp_ratio_250}
 \end{figure}
 
@@ -132,7 +152,7 @@ These tests reveal small changes in the \rse value despite large changes in the 
 \end{figure}
 
 \subsection{Energy Dependence}
-Another important dependence of the reconstruction resolution (and therefore the \rse\hspace{-4pt}) is that on energy. Higher energy photons are expected to comprise a large fraction of LZA photons which have to travel longer through the atmosphere and therefore must remain above the threshold energy deeper into the atmosphere. Conversely, high energy photons are expected to make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the relative overabundance of generating processes as well as the greater relative likelihood of down-scattering than up-scattering. A much better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
+Another important dependence of the reconstruction resolution (and therefore the R$_{68}$) is that on energy. Higher energy photons are expected to comprise a large fraction of LZA photons which have to travel longer through the atmosphere and therefore must have higher energies to remain above the energy threshold. Conversely, high energy photons make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the $\sim E^{-2}$ shape of the spectrum. A better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
 
 \begin{figure}[htbp]
   \centering
@@ -157,183 +177,147 @@ Another important dependence of the reconstruction resolution (and therefore the
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=.9\linewidth]{images/disp_450_energy}
+  \includegraphics[width=.9\linewidth]{images/disp_450x4size_energy}
   \caption{Energy Dependence of the new Method5t.}
   \label{fig:energy_disp_450}    
 \end{figure}
 
-The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend as in Fig. \ref{fig:disp_res}. The energy dependence for the older \disp tables (Fig. \ref{fig:energy_disp_standard}) appears to have a minimum in \rse close to 1 TeV. These old \disp tables perform worse on either side of the 1 TeV mark. The energy dependence for the newer \disp tables (Fig. \ref{fig:energy_disp_450}) on the other hand appears to do {\bf better at higher energies for all zenith angles}. At energies above $\sim 2.4$ TeV and zenith angle greater than $30^\circ$, the \rse is at or better than $0.075^\circ$ (see Fig. \ref{fig:energy_new_contour}).
+The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend as in Fig. \ref{fig:disp_res}. The energy dependence for the older \disp tables (Fig. \ref{fig:energy_disp_standard}) appears to have a minimum in \rse close to 1 TeV. These old \disp tables perform worse on either side of the 1 TeV mark. The energy dependence for the newer \disp tables (Fig. \ref{fig:energy_disp_450}) on the other hand appears to do {\bf better at higher energies for all zenith angles}. At energies above $\sim 2.4$ TeV and zenith angle greater than $30^\circ$, the \rse is at or better than $0.3^\circ$ (see Fig. \ref{fig:energy_new_contour}).
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=.9\linewidth]{images/disp_450x4size_contour}
-  \caption[Energy and zenith dependence of the new Method5t.]{Energy and zenith dependence of the new Method5t, with contours for \rse at intervals of $0.025^\circ$ up to $0.5^\circ$. The upper-left corner shows a sharp loss in resolution in the large-zenith low-energy region, this is due to low statistics. The boxed regions show regions of minimum resolution as described in table \ref{tab:res_energy}}
+  \includegraphics[width=.9\linewidth]{images/disp_450x4size_rse}
+  \caption[Energy and zenith dependence of the new Method5t.]{Energy and zenith dependence of the new Method5t, with colors denoting the \rse and red denoting \rse$>=0.60^\circ$. The upper-left corner shows regions of loss in resolution in the large-zenith low-energy region, this is due to low statistics.}
   \label{fig:energy_new_contour}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \subfigure{
-    \includegraphics[width=0.47\linewidth]{images/reg_contour}
+    \includegraphics[width=0.47\linewidth]{images/reg_rse}
   }
   \subfigure{
-    \includegraphics[width=0.47\linewidth]{images/disp_standard_contour}
+    \includegraphics[width=0.47\linewidth]{images/disp_standard_rse}
   }
-  \caption[Energy and zenith dependence of Method0 and the old Method5t]{Energy and zenith dependence of the geometric reconstruction (left) and the old Method5t (right), with contours for \rse at intervals of $0.025^\circ$ up to $0.5^\circ$. The range of usefulness for Method5t (relative to Method0) now extends to $E>1$TeV and $\phi>55^\circ$.}
+  \caption[Energy and zenith dependence of Method0 and the old Method5t]{Energy and zenith dependence of the geometric reconstruction (left) and the old Method5t (right), with colors denoting the \rse and red denoting \rse$>=0.60^\circ$. The range of usefulness for Method5t (relative to Method0) now extends to $E>1$TeV and $\phi>55^\circ$.}
   \label{fig:energy_contour}
 \end{figure}
 
-\begin{table}[htbp]
-  \begin{center}
-    \begin{tabularx}{0.85\textwidth}{ X | X | X | X }
-      \hline
-      \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$(E/GeV))} & \textbf{\rse (deg)} \\
-      \hline\hline
-      45 & 10.0 & 4.0 & 0.025 \\
-      40 & 3.16 & 3.5 & 0.05 \\
-      35 & 1.78 & 3.25 & 0.075 \\
-      30 & 2.37 & 3.375 & 0.075 \\
-    \end{tabularx}
-    \caption[\rse for simulations with energy and zenith.]{\rse for simulations with energy and zenith as shown in Fig. \ref{fig:energy_new_contour}\label{tab:res_energy}.}
-  \end{center}
-\end{table}
-Because the best resolution contours strongly constrain the parameter space to regions where statistics are low, constraints were used that were not simple rectangles. Instead an effective lower Reimann sum was used to construct an approximation that maximized the usable parameter space while imposing the most conservative constraints on parameter space between the simulated zenith values. The resulting contours are shown in Fig. \ref{fig:contour_boxplot}. These can be denoted as the sums of rectangles as shown in table \ref{tab:contour_boxplot}
 % \begin{table}[htbp]
 %   \begin{center}
 %     \begin{tabularx}{0.85\textwidth}{ X | X | X | X }
 %       \hline
-%       & \textbf{Zenith range (deg)} & \textbf{Energy (Log$_{10}$(E/GeV))} & \textbf{\rse (deg)} \\
+%       \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$(E/GeV))} & \textbf{\rse (deg)} \\
 %       \hline\hline
-%       % \res = 0.025
-%       % (fEnergyGeV>TMath::Power(10.0, 3.875) && ZenithDeg>
-%       1. & $>45$ & $>3.75$ & 0.025 \\
-%       \hline
-%       % \res = 0.03
-%       % (fEnergyGeV>TMath::Power(10.0, 3.875) && ZenithDeg>40) ||
-%       % (fEnergyGeV>TMath::Power(10.0, 3.625) && ZenithDeg>50 && ZenithDeg<60)
-%       \multirow{2}{*}{2.} & $>40$ & $>3.75$ & \multirow{2}{*}{0.03} \\
-%       &$50-60$ & $>3.5$ \\
-%       \hline
-%       % \res = 0.05
-%       % (fEnergyGeV>TMath::Power(10.0, 3.625) && ZenithDeg>35) ||
-%       % (ZenithDeg>40 && ZenithDeg<60 && fEnergyGeV>TMath::Power(10.0, 3.375)) ||
-%       % (ZenithDeg>45 && ZenithDeg<55 && fEnergyGeV>TMath::Power(10.0, 3.125)) ||
-%       % (fEnergyGeV>TMath::Power(10.0, 3.875) && fEnergyGeV<TMath::Power(10.0, 4.625)
-%       \multirow{4}{*}{3.} & $>30$ & $3.75-4.25$ & \multirow{4}{*}{0.05} \\
-%       &$>35$ & $>3.5$ \\
-%       &$40-60$ & $>3.25$ \\
-%       &$45-55$ & $>3.0$ \\
-%       \hline
-%       % \res = 0.06
-%       % (fEnergyGeV>TMath::Power(10.0, 3.625) && ZenithDeg>30) ||
-%       % (fEnergyGeV>TMath::Power(10.0, 3.375) && ZenithDeg>35) ||
-%       % (fEnergyGeV>TMath::Power(10.0, 3.125) && ZenithDeg>40 && ZenithDeg<60)
-%       \multirow{3}{*}{4.} & $>30$ & $>3.5$ & \multirow{3}{*}{0.06} \\
-%       &$>35$ & $>3.25$ \\
-%       &$40-60$ & $>3.0$ \\
+%       45 & 10.0 & 4.0 & 0.025 \\
+%       40 & 3.16 & 3.5 & 0.05 \\
+%       35 & 1.78 & 3.25 & 0.075 \\
+%       30 & 2.37 & 3.375 & 0.075 \\
 %     \end{tabularx}
-%     \caption[\rse for simulations with energy and zenith.]{\rse for simulations with energy and zenith as shown in Fig. \ref{fig:contour_boxplot}\label{tab:contour_boxplot}.}
+%     \caption[\rse for simulations with energy and zenith.]{\rse for simulations with energy and zenith as shown in Fig. \ref{fig:energy_new_contour}\label{tab:res_energy}.}
 %   \end{center}
 % \end{table}
 
+Because the best resolution contours strongly constrain the parameter space to regions where statistics are low, constraints were used that were not simple rectangles. Instead an effective lower Reimann sum was used to construct an approximation that maximized the usable parameter space while imposing the most conservative constraints on parameter space between the simulated zenith values.
+\section{\rse for Known Objects}
+In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Objects considered for this were Mrk421 and PKS1510-089. Additionally, since our initial test was performed on the Crab Nebula and it is the known object with the longest exposure time at LZA, the Crab was also used to generate some benchmarks.
 
-% \begin{figure}[htbp]
-%   \centering
-%   \includegraphics[width=.8\linewidth]{images/boxplot}
-%   \caption[Energy and zenith contours for the new Method5t.]{Contours for parameter space with the underestimating-box-sum of conditions used to select relevant events for a comparison with data. The contours correspond to $0.06^\circ$ (upper-left), $0.05^\circ$ (upper-right), $0.03^\circ$ (bottom-left) and $0.025^\circ$ (bottom-right).}
-%   \label{fig:contour_boxplot}
-% \end{figure}
+\subsection{\rse for Mrk421}
+Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>40$). Even with a short total duration of observation, because Mrk 421 is a high-flux object, it is still observable to high significance.
 
-\section{\rse for the Crab}
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Angular resolution using Method5t.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_rse.png}
+      \label{fig:mrk_rse}
+    }  
+    \subfigure[Deviation from simulations.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_sim.png}
+      \label{fig:mrk_sim}
+    }
+    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_Log_nevent.png}
+      \label{fig:mrk_nevent}
+    }  
+    \subfigure[Li \& Ma significance.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_LiMa.png}
+      \label{fig:mrk_li_ma}
+    }
+  \end{center}
+  \caption[Mrk421 direction reconstruction using Method5t.]{Reconstruction of the direction of Mrk421 using the new \disp tables. In each case red denotes regions of no statistics.}
+  \label{fig:mrk_disp}
+\end{figure}
 
-The Crab Nebula is expected to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required. This is achieved at zenith angles of $45^\circ$ and greater and above $10^{4}$ GeV with the new \disp method. Due to small number statistics in the Crab data (as well as other observed data) in this region of parameter space, the criteria for this work were loosened to include zenith above $40^\circ$ and energies above $10^{3.5}$ GeV.
+\subsection{\rse for the Crab Nebula}
+
+The Crab Nebula is expected to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required.
+
+% This is achieved at zenith angles of $45^\circ$ and greater and above $10^{4}$ GeV with the new \disp method. Due to small number statistics in the Crab data (as well as other observed data) in this region of parameter space, the criteria for this work were loosened to include zenith above $40^\circ$ and energies above $10^{3.5}$ GeV.
 % Although this \rse is expected to be insufficient to \textit{measure} the GeV-TeV extension of the Crab due to low statistics, this can be used to demonstrate it \cite{Yeung:energy_extension}.
 
-% \begin{table}[htbp]
-%   \begin{center}
-%     \begin{tabularx}{\textwidth}{ X | X | X | X | X }
-%       \hline
-%       \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$($\frac{E}{GeV}$))} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
-%       \hline\hline
-%       45 & 10.0 & 4.0 & $0.055 \pm 0.008$ & 155\\
-%       40 & 3.16 & 3.5 & $0.048 \pm 0.001$ & 913\\
-%       40 & 1.0 & 3.0 & $0.1 \pm 4.0$ & 3364\\
-%     \end{tabularx}
-%     \caption[\rse for the Crab.]{\rse for the Crab from a live time of 35 hours.}
-%     \label{tab:crab_res}
-%   \end{center}
-% \end{table}
-
-\begin{table}[htbp]
+\begin{figure}[H]
   \begin{center}
-    \begin{tabularx}{\textwidth}{ X | X | X | X }
-      \hline
-      \textbf{Contour \#} & \textbf{Simulated \rse (deg)} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
-      \hline\hline
-      1 & $0.025$ & $0.046 \pm 0.0008$ & 796\\
-       2 & $0.03$ & $0.047 \pm 0.0006$ & 1577\\
-      3 & $0.05$ & $0.047 \pm 0.0003$ & 5251\\
-      4 & $0.06$ & $0.048 \pm 0.0003$ & 6262\\
-    \end{tabularx}
-    \caption[\rse for the Crab.]{\rse for the Crab from a live time of 35 hours.}
-    \label{tab:crab_res_contour}
+    \subfigure[Angular resolution using Method5t.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_disp_rse.png}
+      \label{fig:crab_disp_rse}
+    }  
+    \subfigure[Deviation from simulations.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_disp_sim.png}
+      \label{fig:crab_disp_sim}
+    }
+    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
+      \includegraphics[width=0.47\linewidth]{crab_disp_Log_nevent.png}
+      \label{fig:crab_disp_nevent}
+    }  
+    \subfigure[Li \& Ma significance.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_disp_LiMa.png}
+      \label{fig:crab_disp_li_ma}
+    }
   \end{center}
-\end{table}
+  \caption[Crab direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula using the new \disp tables. In each case red denotes regions of no statistics.}
+  \label{fig:crab_disp}
+\end{figure}
 
-The numbers for the Crab in Table \ref{tab:crab_res} suggest that, if the \rse calculated for simulations is valid for data, we can detect the extension of the Crab. In order to test the validity of the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Objects considered for this were Mrk421 and PKS1510-089.
+The numbers for the Crab in Fig. \ref{fig:crab_disp} suggest that we can detect the extension of the Crab.
 
-\section{\rse for Mrk421}
-Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>40$). 
-
-% \begin{table}[htbp]
-%   \begin{center}
-%     \begin{tabularx}{\textwidth}{ X | X | X | X | X }
-%       \hline
-%       \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$($\frac{E}{GeV}$))} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
-%       \hline\hline
-%       45 & 10.0 & 4.0 & $0.8 \pm 2.0$ & 11\\
-%       40 & 3.16 & 3.5 & $0.06 \pm 4.2$ & 328\\
-%       40 & 1.0 & 3.0 & $0.047 \pm 0.0006$ & 1850\\
-%     \end{tabularx}
-%     \caption[\rse for Mrk421.]{\rse for Mrk421 from a live time of 4.62 hours.}
-%   \end{center}
-% \end{table}
-
-\begin{table}[htbp]
-  \begin{center}
-    \begin{tabularx}{\textwidth}{ X | X | X | X }
-      \hline
-      \textbf{Contour \#} & \textbf{Simulated \rse (deg)} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
-      \hline\hline
-      1 & $0.025$ & $0.044 \pm 0.002$ & 174\\
-      2 & $0.03$ & $0.045 \pm 0.001$ & 489\\
-      3 & $0.05$ & $0.051 \pm 0.0005$ & 2914\\
-      4 & $0.06$ & $0.050 \pm 0.0004$ & 4556\\
-      5 & $0.075$ & $0.048 \pm 0.0003$ & 5989\\
-      6 & $0.1$ & $0.048 \pm 0.0002$ & 9984\\
-      7 & $0.2$ & $0.048 \pm 0.0002$ & 19005\\
-      8 & $0.3$ & $0.048 \pm 0.0002$ & 22127\\
-    \end{tabularx}
-    \caption[\rse for Mrk 421.]{\rse for Mrk421 from a live time of 35 hours.}
-    \label{tab:mrk421_res_contour}
-  \end{center}
-\end{table}
-
-\section{\rse for PKS1510-089}
+\subsection{\rse for PKS1510-089}
 PKS1510-089 is an extra-galactic source ($z=0.361$) with a softer spectrum (spectral index $\Gamma=3.26$), but 17 hours of observation in the zenith range of interest ($\phi>40$). Analysis of the data reveals that none of this falls in the region of best performance ($\phi>45$ and $E>10$TeV)
 
-\begin{table}[htbp]
+% \begin{table}[htbp]
+%   \begin{center}
+%     \begin{tabularx}{\textwidth}{ X | X | X | X | X }
+%       \hline
+%       \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$($\frac{E}{GeV}$))} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
+%       \hline\hline
+%       45 & 10.0 & 4.0 & N/A & 0\\
+%       40 & 3.16 & 3.5 & $0.7 \pm 2.0$ & 24\\
+%       40 & 1.0 & 3.0 & $0.09 \pm 0.02$ & 128\\
+%     \end{tabularx}
+%     \caption[\rse for PKS1510-089.]{\rse for PKS1510-089 from a live time of 17.1 hours.}
+%   \end{center}
+% \end{table}
+
+\begin{figure}[H]
   \begin{center}
-    \begin{tabularx}{\textwidth}{ X | X | X | X | X }
-      \hline
-      \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$($\frac{E}{GeV}$))} & \textbf{\rse (deg)} & \textbf{N$_{\rm{on}}$}\\
-      \hline\hline
-      45 & 10.0 & 4.0 & N/A & 0\\
-      40 & 3.16 & 3.5 & $0.7 \pm 2.0$ & 24\\
-      40 & 1.0 & 3.0 & $0.09 \pm 0.02$ & 128\\
-    \end{tabularx}
-    \caption[\rse for PKS1510-089.]{\rse for PKS1510-089 from a live time of 17.1 hours.}
+    \subfigure[Angular resolution using Method5t.]{ 
+      \includegraphics[width=0.47\linewidth]{PKS1510_rse.png}
+      \label{fig:PKS1510_rse}
+    }  
+    \subfigure[Deviation from simulations.]{ 
+      \includegraphics[width=0.47\linewidth]{PKS1510_sim.png}
+      \label{fig:PKS1510_sim}
+    }
+    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
+      \includegraphics[width=0.47\linewidth]{PKS1510_Log_nevent.png}
+      \label{fig:PKS1510_nevent}
+    }  
+    \subfigure[Li \& Ma significance.]{ 
+      \includegraphics[width=0.47\linewidth]{PKS1510_LiMa.png}
+      \label{fig:PKS1510_li_ma}
+    }
   \end{center}
-\end{table}
+  \caption[PKS1510 direction reconstruction using Method5t.]{Reconstruction of the direction of PKS1510 using the new \disp tables.  In each case red denotes regions of no statistics.}
+  \label{fig:PKS1510_disp}
+\end{figure}
 
 \end{document}

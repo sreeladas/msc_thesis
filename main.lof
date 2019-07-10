@@ -39,26 +39,32 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Higher statistics \textit {Disp }table reconstruction vs noise.}}{33}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Weight functions for offset from camera center.}}{34}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces R$_{68}$ for the acceptance correction functions.}}{34}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0.}}{35}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy Dependence of Method0. Colored bands are intended to guide the eye and do not represent data points.}}{35}{figure.3.9}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Energy Dependence of Method0 at small and medium zenith angles.}}}{35}{figure.3.9}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Energy Dependence of Method0 at large zenith angles.}}}{35}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t.}}{36}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t.}}{36}{figure.3.11}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Energy Dependence of the old Method5t. Colored bands are intended to guide the eye and do not represent data points.}}{36}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Energy Dependence of the new Method5t. Colored bands intended to guide the eye and do not represent data points.}}{36}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{37}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{37}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Mrk421 direction reconstruction using Method5t.}}{39}{figure.3.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{39}{figure.3.14}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{39}{figure.3.14}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{39}{figure.3.14}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{39}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Crab direction reconstruction using Method5t.}}{40}{figure.3.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{40}{figure.3.15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{40}{figure.3.15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{40}{figure.3.15}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{40}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces PKS1510 direction reconstruction using Method5t.}}{41}{figure.3.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{41}{figure.3.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{41}{figure.3.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{41}{figure.3.16}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{41}{figure.3.16}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Performance of the new \textit {Disp }method compared to Method0 and the old \textit {Disp }method}}{38}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Crab (horizon-to-horizon runs) direction reconstruction using Method5t.}}{39}{figure.3.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{39}{figure.3.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{39}{figure.3.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{39}{figure.3.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{39}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Crab (LZA runs) direction reconstruction using Method5t.}}{40}{figure.3.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{40}{figure.3.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{40}{figure.3.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{40}{figure.3.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{40}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Mrk421 direction reconstruction using Method5t.}}{41}{figure.3.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{41}{figure.3.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{41}{figure.3.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{41}{figure.3.17}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{41}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces PKS1510 direction reconstruction using Method5t.}}{42}{figure.3.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{42}{figure.3.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{42}{figure.3.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{42}{figure.3.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{42}{figure.3.18}
 \addvspace {10\p@ }

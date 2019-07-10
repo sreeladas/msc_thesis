@@ -47,9 +47,9 @@ A preliminary test for this was enabled by a set of runs where the Crab was trac
 The BDT weight tables were generated independently of the old \disp method in order to have clear documentation of the underlying effects and dependencies. For the purposes of this work, the 68\% containment radius in angular offset (\rse\hspace{-4pt}) is used as a measure of angular resolution and performance of the reconstruction.
 
 \subsection{Zenith Angle Dependence}
-A set of \disp tables was generated with a small sample of events ($n\approx 1.9\e6$) across the range of zenith angles of interest ($20^\circ-65^\circ$). This was compared to the regular \disp method. Since there was no record of the training sample size for the standard tables, this test sample was useful in determining the resolution of the \disp method with a relatively small computational footprint. Additionally, it allowed for some simple tests of dependence of the \disp table on parameters not explicitly in the \disp tables.
+A set of \disp tables was generated with a small sample of events ($n\approx 1.9\e6$) across the range of zenith angles of interest ($20^\circ-65^\circ$). This was compared to the regular \disp method. Since there was no record of the training sample size for the standard tables, this test sample was useful in determining the resolution of the \disp method with a relatively small computational footprint. Additionally, it allowed for some simple tests of dependence of the \disp tables on parameters not explicitly in the \disp tables.
 
-This small \disp table and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle). From here it is clear that the regime of interest for the \disp method is $\geq45^\circ$. 
+This small \disp tables and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle). From here it is clear that the regime of interest for the \disp method is $\geq45^\circ$. 
 
 \begin{figure}[htbp]
   \begin{center}
@@ -152,7 +152,7 @@ These tests reveal small changes in the \rse value despite large changes in the 
 \end{figure}
 
 \subsection{Energy Dependence}
-Another important dependence of the reconstruction resolution (and therefore the R$_{68}$) is that on energy. Higher energy photons are expected to comprise a large fraction of LZA photons which have to travel longer through the atmosphere and therefore must have higher energies to remain above the energy threshold. Conversely, high energy photons make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the $\sim E^{-2}$ shape of the spectrum. A better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
+Another important dependence of the reconstruction resolution (and therefore the R$_{68}$) is that on energy. Higher energy photons are expected to comprise a large fraction of LZA photons since they have to travel longer through the atmosphere and therefore must have higher energies to remain above the energy threshold. Conversely, high energy photons make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the $\sim E^{-2}$ shape of the spectrum. A better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
 
 \begin{figure}[htbp]
   \centering
@@ -164,25 +164,25 @@ Another important dependence of the reconstruction resolution (and therefore the
     \includegraphics[width=.44\linewidth]{images/reg_energy_LZA}
     \label{fig:energy_reg_LZA}
   }
-  \caption{Energy Dependence of Method0.}
+  \caption{Energy Dependence of Method0. Colored bands are intended to guide the eye and do not represent data points.}
   \label{fig:energy_reg}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=.9\linewidth]{images/disp_standard_energy}
-  \caption{Energy Dependence of the old Method5t.}
+  \includegraphics[width=.8\linewidth]{images/disp_standard_energy}
+  \caption{Energy Dependence of the old Method5t. Colored bands are intended to guide the eye and do not represent data points.}
   \label{fig:energy_disp_standard}    
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=.9\linewidth]{images/disp_450x4size_energy}
-  \caption{Energy Dependence of the new Method5t.}
+  \includegraphics[width=.8\linewidth]{images/disp_450x4size_energy}
+  \caption{Energy Dependence of the new Method5t. Colored bands intended to guide the eye and do not represent data points.}
   \label{fig:energy_disp_450}    
 \end{figure}
 
-The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend as in Fig. \ref{fig:disp_res}. The energy dependence for the older \disp tables (Fig. \ref{fig:energy_disp_standard}) appears to have a minimum in \rse close to 1 TeV. These old \disp tables perform worse on either side of the 1 TeV mark. The energy dependence for the newer \disp tables (Fig. \ref{fig:energy_disp_450}) on the other hand appears to do {\bf better at higher energies for all zenith angles}. At energies above $\sim 2.4$ TeV and zenith angle greater than $30^\circ$, the \rse is at or better than $0.3^\circ$ (see Fig. \ref{fig:energy_new_contour}).
+The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend as in Fig. \ref{fig:disp_res} -- seeing the best resolution for all zeniths in the 3-30TeV range as well as a low energy improvement likely driven by high statistics. The energy dependence for the older \disp tables (Fig. \ref{fig:energy_disp_standard}) appears to have a minimum in \rse close to 1 TeV. These old \disp tables also see a degradation in resolution at the highest energies. The newer \disp tables (Fig. \ref{fig:energy_disp_450}) on the other hand appears to do {\bf better at higher energies for all zenith angles}. At energies above $\sim 1$ TeV and zenith angle greater than $30^\circ$, the \rse is at or better than $0.3^\circ$ (see Fig. \ref{fig:energy_new_contour}).
 
 \begin{figure}[htbp]
   \centering
@@ -199,58 +199,29 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
   \subfigure{
     \includegraphics[width=0.47\linewidth]{images/disp_standard_rse}
   }
-  \caption[Energy and zenith dependence of Method0 and the old Method5t]{Energy and zenith dependence of the geometric reconstruction (left) and the old Method5t (right), with colors denoting the \rse and red denoting \rse$>=0.60^\circ$. The range of usefulness for Method5t (relative to Method0) now extends to $E>1$TeV and $\phi>55^\circ$.}
+  \caption[Energy and zenith dependence of Method0 and the old Method5t]{Energy and zenith dependence of the geometric reconstruction (left) and the old Method5t (right), with colors denoting the \rse and red denoting \rse$>=0.60^\circ$.}
   \label{fig:energy_contour}
 \end{figure}
 
-% \begin{table}[htbp]
-%   \begin{center}
-%     \begin{tabularx}{0.85\textwidth}{ X | X | X | X }
-%       \hline
-%       \textbf{Min. Zenith (deg)} & \textbf{Min. Energy (TeV)} & \textbf{Min. Energy (Log$_{10}$(E/GeV))} & \textbf{\rse (deg)} \\
-%       \hline\hline
-%       45 & 10.0 & 4.0 & 0.025 \\
-%       40 & 3.16 & 3.5 & 0.05 \\
-%       35 & 1.78 & 3.25 & 0.075 \\
-%       30 & 2.37 & 3.375 & 0.075 \\
-%     \end{tabularx}
-%     \caption[\rse for simulations with energy and zenith.]{\rse for simulations with energy and zenith as shown in Fig. \ref{fig:energy_new_contour}\label{tab:res_energy}.}
-%   \end{center}
-% \end{table}
-
-Because the best resolution contours strongly constrain the parameter space to regions where statistics are low, constraints were used that were not simple rectangles. Instead an effective lower Reimann sum was used to construct an approximation that maximized the usable parameter space while imposing the most conservative constraints on parameter space between the simulated zenith values.
-\section{\rse for Known Objects}
-In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Objects considered for this were Mrk421 and PKS1510-089. Additionally, since our initial test was performed on the Crab Nebula and it is the known object with the longest exposure time at LZA, the Crab was also used to generate some benchmarks.
-
-\subsection{\rse for Mrk421}
-Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>40$). Even with a short total duration of observation, because Mrk 421 is a high-flux object, it is still observable to high significance.
-
-\begin{figure}[H]
-  \begin{center}
-    \subfigure[Angular resolution using Method5t.]{ 
-      \includegraphics[width=0.47\linewidth]{Mrk421_rse.png}
-      \label{fig:mrk_rse}
-    }  
-    \subfigure[Deviation from simulations.]{ 
-      \includegraphics[width=0.47\linewidth]{Mrk421_sim.png}
-      \label{fig:mrk_sim}
-    }
-    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
-      \includegraphics[width=0.47\linewidth]{Mrk421_Log_nevent.png}
-      \label{fig:mrk_nevent}
-    }  
-    \subfigure[Li \& Ma significance.]{ 
-      \includegraphics[width=0.47\linewidth]{Mrk421_LiMa.png}
-      \label{fig:mrk_li_ma}
-    }
-  \end{center}
-  \caption[Mrk421 direction reconstruction using Method5t.]{Reconstruction of the direction of Mrk421 using the new \disp tables. In each case red denotes regions of no statistics.}
-  \label{fig:mrk_disp}
+\begin{figure}[htbp]
+  \centering
+  \subfigure{
+    \includegraphics[width=0.47\linewidth]{images/rel_reg_sim}
+  }
+  \subfigure{
+    \includegraphics[width=0.47\linewidth]{images/rel_standard_sim}
+  }
+  \caption[Performance of the new \disp method compared to Method0 and the old \disp method]{Performance of the new \disp method compared to Method0 and the old \disp method, with colors denoting the \rse and red denoting $\frac{R_{68, \tx{new \disp}}}{R_{68, \tx{old \disp}}}-1>=1$ or  $\frac{R_{68, \tx{new \disp}}}{R_{68, \tx{reg}}}-1>=1$. The range of usefulness for Method5t (relative to Method0) now extends to $E>1$TeV and $\phi>=55^\circ$.}
+  \label{fig:energy_rel}
 \end{figure}
+
+% Because the best resolution contours strongly constrain the parameter space to regions where statistics are low, constraints were used that were not simple rectangles. Instead an effective lower Reimann sum was used to construct an approximation that maximized the usable parameter space while imposing the most conservative constraints on parameter space between the simulated zenith values.
+\section{\rse for Known Objects}
+In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Since our initial test was performed on the Crab Nebula and, in the VERITAS archival data it is the known object with the longest total exposure time at LZA, the Crab was used to generate some benchmarks. Additional objects considered for this were the Mrk421 and PKS1510-089.
 
 \subsection{\rse for the Crab Nebula}
 
-The Crab Nebula is expected to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required.
+The Crab Nebula is expected to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required which, based on the simulations, we do not achieve. This however provides another metric by which to quantify our resolution, as well as to measure future gains in resolution.
 
 % This is achieved at zenith angles of $45^\circ$ and greater and above $10^{4}$ GeV with the new \disp method. Due to small number statistics in the Crab data (as well as other observed data) in this region of parameter space, the criteria for this work were loosened to include zenith above $40^\circ$ and energies above $10^{3.5}$ GeV.
 % Although this \rse is expected to be insufficient to \textit{measure} the GeV-TeV extension of the Crab due to low statistics, this can be used to demonstrate it \cite{Yeung:energy_extension}.
@@ -274,11 +245,62 @@ The Crab Nebula is expected to have a GeV-TeV extension of $\sim 0.03^\circ$ \ci
       \label{fig:crab_disp_li_ma}
     }
   \end{center}
-  \caption[Crab direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula using the new \disp tables. In each case red denotes regions of no statistics.}
+  \caption[Crab (horizon-to-horizon runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula horizon-to-horizon runs using the new \disp tables. In each case red denotes regions of no statistics.}
   \label{fig:crab_disp}
 \end{figure}
 
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Angular resolution using Method5t.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_all_disp_rse.png}
+      \label{fig:crab_all_disp_rse}
+    }  
+    \subfigure[Deviation from simulations.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_all_disp_sim.png}
+      \label{fig:crab_all_disp_sim}
+    }
+    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
+      \includegraphics[width=0.47\linewidth]{crab_all_disp_Log_nevent.png}
+      \label{fig:crab_all_disp_nevent}
+    }  
+    \subfigure[Li \& Ma significance.]{ 
+      \includegraphics[width=0.47\linewidth]{crab_all_disp_LiMa.png}
+      \label{fig:crab_all_disp_li_ma}
+    }
+  \end{center}
+  \caption[Crab (LZA runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula LZA runs using the new \disp tables. In each case red denotes regions of no statistics.}
+  \label{fig:crab_all_disp}
+\end{figure}
+
 The numbers for the Crab in Fig. \ref{fig:crab_disp} suggest that we can detect the extension of the Crab.
+
+\subsection{\rse for Mrk421}
+Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>40$). Even with a short total duration of observation, because Mrk421 is a high-flux object, it is still observable to high significance.
+
+The result of this analysis was that the smallest values of \rse for Mrk421 ($\sim 0.08^\circ$) is found in a region of parameter space where the Li \& Ma significance is negligible.
+
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Angular resolution using Method5t.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_rse.png}
+      \label{fig:mrk_rse}
+    }  
+    \subfigure[Deviation from simulations.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_sim.png}
+      \label{fig:mrk_sim}
+    }
+    \subfigure[Number of events ($\log(N_{on}-\alpha N_{off})$).]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_Log_nevent.png}
+      \label{fig:mrk_nevent}
+    }  
+    \subfigure[Li \& Ma significance.]{ 
+      \includegraphics[width=0.47\linewidth]{Mrk421_LiMa.png}
+      \label{fig:mrk_li_ma}
+    }
+  \end{center}
+  \caption[Mrk421 direction reconstruction using Method5t.]{Reconstruction of the direction of Mrk421 using the new \disp tables. In each case red denotes regions of no statistics.}
+  \label{fig:mrk_disp}
+\end{figure}
 
 \subsection{\rse for PKS1510-089}
 PKS1510-089 is an extra-galactic source ($z=0.361$) with a softer spectrum (spectral index $\Gamma=3.26$), but 17 hours of observation in the zenith range of interest ($\phi>40$). Analysis of the data reveals that none of this falls in the region of best performance ($\phi>45$ and $E>10$TeV)

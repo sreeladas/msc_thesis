@@ -36,7 +36,7 @@ Based on the distribution of the deviation of reconstructed direction of the sim
   \centering
   \includegraphics[width=.78\linewidth]{fit/gauss_fit_both}
   \caption[\rse from the Gaussian fit and the numerical integral.]{The \rse calculated for a simulation using a fit to a superposition of two Gaussians (green vertical line) and a numerical integration from $1^\circ$ inwards (blue vertical line), overlaid on a radial slice for Monte-Carlo simulations.}
-  \label{fig:weights}
+  \label{fig:gauss_fit_both}
 \end{figure}
 
 A preliminary test for the \rse of the data was enabled by a set of runs where the Crab was tracked from horizon to culmination and back to the horizon (from the nights of Jan 12 2018, Jan 13 2018, and Jan 04, 2019). This provided a reference data set with high significance to track the energy and zenith dependences of the direction reconstruction in stable (and therefore directly comparable) weather conditions. The differential resolution for the Crab data was measured in several energy and zenith bins and is presented in Fig. \ref{fig:crab_initial}.
@@ -44,15 +44,15 @@ A preliminary test for the \rse of the data was enabled by a set of runs where t
 \begin{figure}[H]
   \begin{center}
     \subfigure[Crab reconstructed resolution using Method0.]{ 
-      \includegraphics[width=0.47\linewidth]{num/crab_reg_rse.png}
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_reg_rse.png}
       \label{fig:crab_reg_res}
     }  
     \subfigure[Crab binned significance.]{ 
-      \includegraphics[width=0.47\linewidth]{num/crab_reg_LiMa.png}
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_reg_LiMa.png}
       \label{fig:crab_res_num}
     }
   \end{center}
-  \caption[Crab direction reconstruction using Method0.]{Reconstruction of the Crab direction using Method0 (standard geometric reconstruction from \textit{VEGAS}).}
+  \caption[Crab direction reconstruction using Method0.]{Reconstruction of the Crab direction using Method0 (standard geometric reconstruction from \textit{VEGAS}). On the left, the regions of white denote regions where significance $<3\sigma$.}
   \label{fig:crab_initial}
 \end{figure}
 
@@ -190,7 +190,7 @@ The acceptance correction used here affects the training sample and therefore mi
 
 These tests reveal small changes in the \rse value despite large changes in the correction function (Fig. \ref{fig:weight_tests}). This suggests that the \disp tables are not sensitive to changes in acceptance and therefore the different acceptance functions are unlikely to be the reason why the new \disp tables perform worse at smaller zenith angles.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \subfigure[Numerically determined R$_{68}$.]{
     \includegraphics[width=.75\linewidth]{num/disp_wts}
@@ -207,6 +207,8 @@ These tests reveal small changes in the \rse value despite large changes in the 
 \subsection{Energy Dependence}
 Another important dependence of the reconstruction resolution (and therefore the R$_{68}$) is that on energy. Higher energy photons are expected to comprise a larger fraction of LZA photons because lower energy showers suffer more absorption in the atmosphere. Conversely, high energy photons make up a small fraction of SZA photons (and more generally, all cosmic photons) due to the $\sim E^{-2}$ shape of the spectrum. A better resolution at higher energy would also be expected to contribute to the improved resolution at LZA.
 
+Due to the slicing in energy in addition to zenith and therefore smaller number statistics, this is expected to lead to relatively sparse data in each bin. For this reason, in this section we address only the \rse determined from the numerical integral, and not that from the fit.
+
 \begin{figure}[htbp]
   \centering
   \subfigure[Energy Dependence of Method0 at small and medium zenith angles.]{
@@ -217,7 +219,7 @@ Another important dependence of the reconstruction resolution (and therefore the
     \includegraphics[width=.44\linewidth]{num/reg_LZA_energy}
     \label{fig:energy_reg_LZA}
   }
-  \caption[Energy Dependence of Method0.]{Energy Dependence of Method0 with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Colored bands are intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of Method0.]{Energy Dependence of Method0 with \rse for small zenith angles (left) and that for large zenith angles (right). Colored bands are intended to guide the eye and do not represent data points.}
   \label{fig:energy_reg}
 \end{figure}
 
@@ -269,7 +271,7 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
     \includegraphics[width=0.47\linewidth]{num/rel_standard_sim}
     \label{fig:disp_standard_sim}
   }
-  \caption[Performance of the new \disp method compared to Method0 and the old \disp method]{Performance of the new \disp method compared to Method0 (left) and the old \disp method (right), with purple at $-1.0$ denoting $100\%$ improvement over the older method and bright red (in the upper left corners) at $1.0$ denoting $100\%$ worse performance in that bin or regions of insufficient statistics. The range of usefulness for Method5t (relative to Method0) now extends to $E>1$TeV and $\phi\geq50^\circ$ (upper left corner).}
+  \caption[Performance of the new \disp method compared to Method0 and the old \disp method]{Performance of the new \disp method compared to Method0 (left) and the old \disp method (right), with purple at $-1.0$ denoting $100\%$ improvement over the older method and bright red (in the upper left corners) at $1.0$ denoting $100\%$ worse performance in that bin or regions of insufficient statistics. The range of usefulness for Method5t (relative to Method0) now extends to $E\geq1$TeV and $\phi\gtrsim55^\circ$ (upper left corner).}
   \label{fig:energy_rel}
 \end{figure}
 
@@ -280,9 +282,11 @@ In order to test the validity of the results from the simulations, a known point
 
 For the data analysis, unlike with the simulations, a ``true'' direction was not knowable. Instead, the true direction must be assumed to be that of the known object, and we must restrict our analysis to those showers determined to be from the source object, and where the source object is in fact detected.
 
-As a measure of detection, we use both the number of excess events -- defined as the number of events determined to be from the source over the number of events from the off-source regions scaled by the ratio of the exposures of the on and off-source regions. For a number of events from the source region is $N_{on}$, a number of events from the off-source region is $N_{off}$, and a ratio of exposure $\frac{A_{on}}{A_{off}}=\alpha$, the number of excess events is given by $N_{on}-\alpha N_{off}$. This corresponds to the number of events observed above the number expected given the background observation.
+As a measure of detection, we use both the number of excess events -- defined as the number of events determined to be from the source over the number of events from the off-source regions scaled by the ratio of the exposures of the on and off-source regions. For a number of events from the source region is $N_{on}$, a number of events from the off-source region is $N_{off}$, and a ratio of exposure $\frac{A_{on}}{A_{off}}=\alpha$, the number of excess events is given by $N_{on}-\alpha N_{off}$. This corresponds to the number of events observed above the number expected given the background observation, and statements regarding the small- or large-number statistics refer to this number being small or large.
 
 As a measure of the robustness of the \rse determined for the data, we also use the gamma-ray astronomy standard Li \& Ma\cite{LiMa} significance, with a threshold significance of $3\sigma$. A high significance measurement of the object in a given energy and zenith bin should provide a measure of \rse in that bin that is relatively stable against statistical fluctuations.
+
+Lastly, as a measure of how the data analysis performs relative to expectations from the simulation analysis we also use a direct bin-wise comparison of the resulting numerical \rse defined as $\xi = \frac{R_{68, \text{data}}}{R_{68, \text{sim}}}-1$. This provides a numerical quantity that is expected to be zero and provides a simple percentage deviation from expectation. A $\xi$ of $0.3$ means the \rse from data in a given bin was 30\% larger than that from simulations, with positive values signifying ``under-performance'' and negative values signifying ``over-performance''.
 
 \subsection{\rse for the Crab Nebula}
 
@@ -296,7 +300,7 @@ The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \ci
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_disp_rse.png}
       \label{fig:crab_disp_rse}
     }  
-    \subfigure[Deviation from simulations.]{ 
+    \subfigure[Deviation from simulations ($\xi$).]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_disp_sim.png}
       \label{fig:crab_disp_sim}
     }
@@ -309,17 +313,17 @@ The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \ci
       \label{fig:crab_disp_li_ma}
     }
   \end{center}
-  \caption[Crab (horizon-to-horizon runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula horizon-to-horizon runs using the new \disp tables. In each case red denotes regions of low or no statistics and .}
+  \caption[Crab (horizon-to-horizon runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula horizon-to-horizon runs using the new \disp tables. In the top two plots, white denotes regions of significance $<3\sigma$. Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the highest zenith angles, and is able to reconstruct higher-energy events in the $45-55^\circ$ region.}
   \label{fig:crab_disp}
 \end{figure}
-
+Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the highest zenith angles and is able to reconstruct higher-energy events in the $45-55^\circ$ region. This provides a proof-of-principle that the \disp method is an improvement on the standard method at the highest energies and at the large zenith angles. In the region $\phi\geq50$ and $E\geq 1$ TeV the Crab nebula has a \rse of $\sim 0.15^\circ$.
 \begin{figure}[H]
   \begin{center}
     \subfigure[Angular resolution using Method5t.]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_rse.png}
       \label{fig:crab_all_disp_rse}
     }  
-    \subfigure[Deviation from simulations.]{ 
+    \subfigure[Deviation from simulations ($\xi$).]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_sim.png}
       \label{fig:crab_all_disp_sim}
     }
@@ -332,16 +336,16 @@ The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \ci
       \label{fig:crab_all_disp_li_ma}
     }
   \end{center}
-  \caption[Crab (LZA runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula LZA runs using the new \disp tables. In each case red denotes regions of low or no statistics.}
+  \caption[Crab (LZA runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula LZA runs using the new \disp tables. In the top two plots, white denotes regions of significance $<3\sigma$.}
   \label{fig:crab_all_disp}
 \end{figure}
 
-The numbers for the Crab in Fig. \ref{fig:crab_disp} suggest that we can not detect the extension of the Crab.
+The numbers for the Crab Nebula in Fig. \ref{fig:crab_disp} suggest that we can not yet detect the extension of the Crab, which is consistent with the simulation analysis. Also expected from the simulation results, the \rse decreases with increasing energy. In the regime of interest, ($E>1$ TeV and $\phi\gtrsim 50^\circ$), the data reconstruction under-performs relative to simulations with $\xi\sim 0.3$, and the dependence of the \rse (see Fig. \ref{fig:crab_all_disp_rse}) on zenith angle is smaller than expected. This is perhaps due to lower statistics in the region (see Fig. \ref{fig:crab_all_disp_nevent}), since for most of our parameter space, $|\xi| \leq 0.15$ (Fig. \ref{fig:crab_all_disp_sim}).
 
 \subsection{\rse for Mrk421}
-Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>45^\circ$). Even with a short total duration of observation, because Mrk421 is a high-flux object, it is still observable at high significance.
+Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>45^\circ$). Even with a short total duration of observation, because Mrk421 is a high-flux object, it is still observable at high significance. In the region $\phi\geq50$ and $E\geq 1$ TeV Mrk 421 has a \rse of $\sim 0.11^\circ$.
 
-The result of this analysis was that the smallest values of \rse for Mrk421 ($\sim 0.08^\circ$) are found in a region of parameter space where the Li \& Ma significance is negligible.
+The result of this analysis was that the smallest values of \rse for Mrk421 ($\sim 0.09^\circ$, Fig. \ref{fig:mrk_rse}) are found in a region of parameter space where the Li \& Ma significance is small (Fig. \ref{fig:mrk_li_ma}) and more generally that the high values of $\xi$ are found where Li \& Ma significance is low, suggesting that a more robust analysis would require more statistics. Consequently this point-source analysis does not definitively validate the results from the simulations but it does demonstrate the simulation result that the point-source reconstruction in the regime of interest is $<0.2^\circ$ (Fig. \ref{fig:mrk_rse}).
 
 \begin{figure}[H]
   \begin{center}
@@ -349,7 +353,7 @@ The result of this analysis was that the smallest values of \rse for Mrk421 ($\s
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_rse.png}
       \label{fig:mrk_rse}
     }  
-    \subfigure[Deviation from simulations.]{ 
+    \subfigure[Deviation from simulations ($\xi$).]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_sim.png}
       \label{fig:mrk_sim}
     }
@@ -362,7 +366,7 @@ The result of this analysis was that the smallest values of \rse for Mrk421 ($\s
       \label{fig:mrk_li_ma}
     }
   \end{center}
-  \caption[Mrk421 direction reconstruction using Method5t.]{Reconstruction of the direction of Mrk421 using the new \disp tables. In each case red denotes regions of low or no statistics.}
+  \caption[Mrk421 direction reconstruction using Method5t.]{Reconstruction of the direction of Mrk421 using the new \disp tables. In the top two plots, white denotes regions of significance $<3\sigma$.}
   \label{fig:mrk_disp}
 \end{figure}
 
@@ -375,7 +379,7 @@ The result of this analysis was that the smallest values of \rse for Mrk421 ($\s
 %       \includegraphics[width=0.47\linewidth]{PKS1510_rse.png}
 %       \label{fig:PKS1510_rse}
 %     }  
-%     \subfigure[Deviation from simulations.]{ 
+%     \subfigure[Deviation from simulations ($\xi$).]{ 
 %       \includegraphics[width=0.47\linewidth]{PKS1510_sim.png}
 %       \label{fig:PKS1510_sim}
 %     }

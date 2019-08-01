@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.27)  1 AUG 2019 09:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.27)  1 AUG 2019 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -938,9 +938,6 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 LaTeX Warning: Label `fig:Disp_FOV' multiply defined.
 
 
-LaTeX Warning: Label `fig:weights' multiply defined.
-
-
 LaTeX Warning: Label `fig:weight_tests_num' multiply defined.
 
 
@@ -1102,14 +1099,14 @@ Chapter 1.
 
 
 ]
-<images/veritas_standard.png, id=358, 719.3274pt x 233.673pt>
+<images/veritas_standard.png, id=353, 719.3274pt x 233.673pt>
 File: images/veritas_standard.png Graphic file (type png)
 
 <use images/veritas_standard.png>
 Package pdftex.def Info: images/veritas_standard.png used on input line 16.
 (pdftex.def)             Requested size: 469.75502pt x 152.60233pt.
  [2] [3 <./images/veritas_standard.png>]
-<images/gamma_hadron_illustration.png, id=375, 715.473pt x 488.5452pt>
+<images/gamma_hadron_illustration.png, id=370, 715.473pt x 488.5452pt>
 File: images/gamma_hadron_illustration.png Graphic file (type png)
 
 <use images/gamma_hadron_illustration.png>
@@ -1117,14 +1114,14 @@ Package pdftex.def Info: images/gamma_hadron_illustration.png used on input lin
 e 30.
 (pdftex.def)             Requested size: 319.42996pt x 218.11385pt.
  [4 <./images/gamma_hadron_illustration.png (PNG copy)>] <images/Cherenkov.png,
- id=383, 374.39874pt x 319.1925pt>
+ id=378, 374.39874pt x 319.1925pt>
 File: images/Cherenkov.png Graphic file (type png)
 
 <use images/Cherenkov.png>
 Package pdftex.def Info: images/Cherenkov.png used on input line 44.
 (pdftex.def)             Requested size: 281.85587pt x 240.30943pt.
  [5 <./images/Cherenkov.png>]
-<images/IACT.png, id=392, 413.545pt x 385.44pt>
+<images/IACT.png, id=387, 413.545pt x 385.44pt>
 File: images/IACT.png Graphic file (type png)
  <use images/IACT.png>
 Package pdftex.def Info: images/IACT.png used on input line 60.
@@ -1143,7 +1140,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./images/Stereo-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/Stereo-eps-converted-to.pdf, id=395, 922.44624pt x 470.75874pt>
+<images/Stereo-eps-converted-to.pdf, id=390, 922.44624pt x 470.75874pt>
 File: images/Stereo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Stereo-eps-converted-to.pdf>
@@ -1151,28 +1148,28 @@ Package pdftex.def Info: images/Stereo-eps-converted-to.pdf used on input line
 66.
 (pdftex.def)             Requested size: 450.96797pt x 230.14224pt.
  [6] [7 <./images/IACT.png>] [8 <./images/Stereo-eps-converted-to.pdf>]
-<images/Camera_PMT.pdf, id=418, 351.69063pt x 264.49054pt>
+<images/Camera_PMT.pdf, id=413, 351.69063pt x 264.49054pt>
 File: images/Camera_PMT.pdf Graphic file (type pdf)
 
 <use images/Camera_PMT.pdf>
 Package pdftex.def Info: images/Camera_PMT.pdf used on input line 80.
 (pdftex.def)             Requested size: 272.45877pt x 204.90135pt.
  [9 <./images/Camera_PMT.pdf>] [10]
-<images/img_axis.png, id=445, 579.16376pt x 589.20125pt>
+<images/img_axis.png, id=440, 579.16376pt x 589.20125pt>
 File: images/img_axis.png Graphic file (type png)
 
 <use images/img_axis.png>
 Package pdftex.def Info: images/img_axis.png used on input line 109.
 (pdftex.def)             Requested size: 211.38832pt x 215.05217pt.
 
-<images/Disp_param.png, id=450, 831.105pt x 287.0725pt>
+<images/Disp_param.png, id=445, 831.105pt x 287.0725pt>
 File: images/Disp_param.png Graphic file (type png)
 
 <use images/Disp_param.png>
 Package pdftex.def Info: images/Disp_param.png used on input line 125.
 (pdftex.def)             Requested size: 272.45877pt x 94.10782pt.
  [11]
-<images/Disp_FOV.png, id=458, 521.95pt x 494.84875pt>
+<images/Disp_FOV.png, id=453, 521.95pt x 494.84875pt>
 File: images/Disp_FOV.png Graphic file (type png)
 
 <use images/Disp_FOV.png>
@@ -1184,21 +1181,21 @@ Chapter 2.
 (./simulation.tex [14
 
 ] [15] [16]
-<images/Method0_res.jpg, id=492, 472.6458pt x 414.1071pt>
+<images/Method0_res.jpg, id=487, 472.6458pt x 414.1071pt>
 File: images/Method0_res.jpg Graphic file (type jpg)
 
 <use images/Method0_res.jpg>
 Package pdftex.def Info: images/Method0_res.jpg used on input line 34.
 (pdftex.def)             Requested size: 281.85587pt x 246.95598pt.
  [17]
-<images/LZA_lightpool.jpg, id=502, 314.67563pt x 136.25906pt>
+<images/LZA_lightpool.jpg, id=497, 314.67563pt x 136.25906pt>
 File: images/LZA_lightpool.jpg Graphic file (type jpg)
 
 <use images/LZA_lightpool.jpg>
 Package pdftex.def Info: images/LZA_lightpool.jpg used on input line 44.
 (pdftex.def)             Requested size: 375.80544pt x 162.73866pt.
 
-<images/LZA_stereo_ellipse.png, id=505, 722.7pt x 542.025pt>
+<images/LZA_stereo_ellipse.png, id=500, 722.7pt x 542.025pt>
 File: images/LZA_stereo_ellipse.png Graphic file (type png)
 
 <use images/LZA_stereo_ellipse.png>
@@ -1206,28 +1203,28 @@ Package pdftex.def Info: images/LZA_stereo_ellipse.png used on input line 47.
 (pdftex.def)             Requested size: 281.85587pt x 211.38889pt.
  [18 <./images/Method0_res.jpg>] [19 <./images/LZA_lightpool.jpg> <./images/LZA
 _stereo_ellipse.png>]
-<images/head_tail_1.png, id=522, 722.7pt x 542.025pt>
+<images/head_tail_1.png, id=517, 722.7pt x 542.025pt>
 File: images/head_tail_1.png Graphic file (type png)
 
 <use images/head_tail_1.png>
 Package pdftex.def Info: images/head_tail_1.png used on input line 61.
 (pdftex.def)             Requested size: 145.6229pt x 109.2136pt.
 
-<images/head_tail_2.png, id=523, 722.7pt x 542.025pt>
+<images/head_tail_2.png, id=518, 722.7pt x 542.025pt>
 File: images/head_tail_2.png Graphic file (type png)
 
 <use images/head_tail_2.png>
 Package pdftex.def Info: images/head_tail_2.png used on input line 64.
 (pdftex.def)             Requested size: 145.6229pt x 109.2136pt.
 
-<images/head_tail_3.png, id=524, 722.7pt x 542.025pt>
+<images/head_tail_3.png, id=519, 722.7pt x 542.025pt>
 File: images/head_tail_3.png Graphic file (type png)
 
 <use images/head_tail_3.png>
 Package pdftex.def Info: images/head_tail_3.png used on input line 67.
 (pdftex.def)             Requested size: 145.6229pt x 109.2136pt.
 
-<images/head_tail_full.png, id=525, 722.7pt x 542.025pt>
+<images/head_tail_full.png, id=520, 722.7pt x 542.025pt>
 File: images/head_tail_full.png Graphic file (type png)
 
 <use images/head_tail_full.png>
@@ -1235,7 +1232,7 @@ Package pdftex.def Info: images/head_tail_full.png used on input line 71.
 (pdftex.def)             Requested size: 281.85587pt x 211.38889pt.
  [20] [21 <./images/head_tail_1.png> <./images/head_tail_2.png> <./images/head_
 tail_3.png> <./images/head_tail_full.png>]
-<images/BDT_flowchart.png, id=547, 597.23125pt x 343.2825pt>
+<images/BDT_flowchart.png, id=542, 597.23125pt x 343.2825pt>
 File: images/BDT_flowchart.png Graphic file (type png)
 
 <use images/BDT_flowchart.png>
@@ -1244,28 +1241,28 @@ Package pdftex.def Info: images/BDT_flowchart.png used on input line 84.
  [22] [23 <./images/BDT_flowchart.png>] [24])
 [25]
 Chapter 3.
-(./analysis.tex <images/sim_gauss_2D.png, id=567, 1178.4025pt x 1008.76875pt>
+(./analysis.tex <images/sim_gauss_2D.png, id=562, 1178.4025pt x 1008.76875pt>
 File: images/sim_gauss_2D.png Graphic file (type png)
 
 <use images/sim_gauss_2D.png>
 Package pdftex.def Info: images/sim_gauss_2D.png used on input line 14.
 (pdftex.def)             Requested size: 206.69334pt x 176.93738pt.
 
-<images/radial_sim_gauss.png, id=568, 1178.4025pt x 870.25125pt>
+<images/radial_sim_gauss.png, id=563, 1178.4025pt x 870.25125pt>
 File: images/radial_sim_gauss.png Graphic file (type png)
 
 <use images/radial_sim_gauss.png>
 Package pdftex.def Info: images/radial_sim_gauss.png used on input line 19.
 (pdftex.def)             Requested size: 206.69334pt x 152.6415pt.
 
-<images/slice_sim_gauss1.png, id=569, 1001.7425pt x 809.0225pt>
+<images/slice_sim_gauss1.png, id=564, 1001.7425pt x 809.0225pt>
 File: images/slice_sim_gauss1.png Graphic file (type png)
 
 <use images/slice_sim_gauss1.png>
 Package pdftex.def Info: images/slice_sim_gauss1.png used on input line 23.
 (pdftex.def)             Requested size: 206.69334pt x 166.92467pt.
 
-<images/slice_sim_gauss2.png, id=570, 1001.7425pt x 793.96625pt>
+<images/slice_sim_gauss2.png, id=565, 1001.7425pt x 793.96625pt>
 File: images/slice_sim_gauss2.png Graphic file (type png)
 
 <use images/slice_sim_gauss2.png>
@@ -1274,11 +1271,7 @@ Package pdftex.def Info: images/slice_sim_gauss2.png used on input line 28.
  [26
 
 ]
-
-LaTeX Warning: Reference `fig:gauss_fit_both' on page 27 undefined on input lin
-e 34.
-
-<images/fit/gauss_fit_both.png, id=577, 1084.05pt x 722.7pt>
+<images/fit/gauss_fit_both.png, id=573, 1084.05pt x 722.7pt>
 File: images/fit/gauss_fit_both.png Graphic file (type png)
 
 <use images/fit/gauss_fit_both.png>
@@ -1287,43 +1280,21 @@ Package pdftex.def Info: images/fit/gauss_fit_both.png used on input line 37.
  [27 <./images/sim_gauss_2D.png> <./images/radial_sim_gauss.png> <./images/slic
 e_sim_gauss1.png> <./images/slice_sim_gauss2.png>] [28 <./images/fit/gauss_fit_
 both.png>]
+<images/num/LZA_data_25/crab_reg_rse.png, id=593, 1084.05pt x 722.7pt>
+File: images/num/LZA_data_25/crab_reg_rse.png Graphic file (type png)
 
-LaTeX Warning: File `num/crab_reg_rse.png' not found on input line 49.
+<use images/num/LZA_data_25/crab_reg_rse.png>
+Package pdftex.def Info: images/num/LZA_data_25/crab_reg_rse.png used on input 
+line 49.
+(pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
+<images/num/LZA_data_25/crab_reg_LiMa.png, id=594, 1084.05pt x 722.7pt>
+File: images/num/LZA_data_25/crab_reg_LiMa.png Graphic file (type png)
 
-./analysis.tex:49: Package pdftex.def Error: File `num/crab_reg_rse.png' not fo
-und.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49     }
-          
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 49.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-
-LaTeX Warning: File `num/crab_reg_LiMa.png' not found on input line 53.
-
-
-./analysis.tex:53: Package pdftex.def Error: File `num/crab_reg_LiMa.png' not f
-ound.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53     }
-          
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use images/num/LZA_data_25/crab_reg_LiMa.png>
+Package pdftex.def Info: images/num/LZA_data_25/crab_reg_LiMa.png used on input
+ line 53.
+(pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1337,7 +1308,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
 
-[29] <images/num/disp_standard_ratio_xzen.png, id=607, 1084.05pt x 722.7pt>
+[29 <./images/num/LZA_data_25/crab_reg_rse.png> <./images/num/LZA_data_25/crab_
+reg_LiMa.png>]
+<images/num/disp_standard_ratio_xzen.png, id=606, 1084.05pt x 722.7pt>
 File: images/num/disp_standard_ratio_xzen.png Graphic file (type png)
 
 <use images/num/disp_standard_ratio_xzen.png>
@@ -1345,7 +1318,7 @@ Package pdftex.def Info: images/num/disp_standard_ratio_xzen.png used on input
 line 74.
 (pdftex.def)             Requested size: 375.80544pt x 250.53377pt.
 
-<images/fit/disp_standard_ratio_xzen.png, id=608, 1084.05pt x 722.7pt>
+<images/fit/disp_standard_ratio_xzen.png, id=607, 1084.05pt x 722.7pt>
 File: images/fit/disp_standard_ratio_xzen.png Graphic file (type png)
 
 <use images/fit/disp_standard_ratio_xzen.png>
@@ -1358,7 +1331,7 @@ Overfull \vbox (15.29092pt too high) has occurred while \output is active []
 
 [31 <./images/num/disp_standard_ratio_xzen.png> <./images/fit/disp_standard_rat
 io_xzen.png>]
-<images/num/disp_250_ratio_xzen.png, id=624, 1084.05pt x 722.7pt>
+<images/num/disp_250_ratio_xzen.png, id=623, 1084.05pt x 722.7pt>
 File: images/num/disp_250_ratio_xzen.png Graphic file (type png)
 
 <use images/num/disp_250_ratio_xzen.png>
@@ -1366,7 +1339,7 @@ Package pdftex.def Info: images/num/disp_250_ratio_xzen.png used on input line
 91.
 (pdftex.def)             Requested size: 375.80544pt x 250.53377pt.
 
-<images/fit/disp_250_ratio_xzen.png, id=625, 1084.05pt x 722.7pt>
+<images/fit/disp_250_ratio_xzen.png, id=624, 1084.05pt x 722.7pt>
 File: images/fit/disp_250_ratio_xzen.png Graphic file (type png)
 
 <use images/fit/disp_250_ratio_xzen.png>
@@ -1378,42 +1351,42 @@ Overfull \vbox (18.03654pt too high) has occurred while \output is active []
 
 
 [33 <./images/num/disp_250_ratio_xzen.png> <./images/fit/disp_250_ratio_xzen.pn
-g>] <images/trueDisp_Train.png, id=640, 1202.4925pt x 776.9025pt>
+g>] <images/trueDisp_Train.png, id=639, 1202.4925pt x 776.9025pt>
 File: images/trueDisp_Train.png Graphic file (type png)
 
 <use images/trueDisp_Train.png>
 Package pdftex.def Info: images/trueDisp_Train.png used on input line 111.
 (pdftex.def)             Requested size: 220.78543pt x 142.63408pt.
 
-<images/trueDisp_Test.png, id=641, 1202.4925pt x 776.9025pt>
+<images/trueDisp_Test.png, id=640, 1202.4925pt x 776.9025pt>
 File: images/trueDisp_Test.png Graphic file (type png)
 
 <use images/trueDisp_Test.png>
 Package pdftex.def Info: images/trueDisp_Test.png used on input line 115.
 (pdftex.def)             Requested size: 220.78543pt x 142.63408pt.
 
-<images/DispError_Train.png, id=642, 1202.4925pt x 776.9025pt>
+<images/DispError_Train.png, id=641, 1202.4925pt x 776.9025pt>
 File: images/DispError_Train.png Graphic file (type png)
 
 <use images/DispError_Train.png>
 Package pdftex.def Info: images/DispError_Train.png used on input line 119.
 (pdftex.def)             Requested size: 220.78543pt x 142.63408pt.
 
-<images/DispError_Test.png, id=643, 1202.4925pt x 776.9025pt>
+<images/DispError_Test.png, id=642, 1202.4925pt x 776.9025pt>
 File: images/DispError_Test.png Graphic file (type png)
 
 <use images/DispError_Test.png>
 Package pdftex.def Info: images/DispError_Test.png used on input line 123.
 (pdftex.def)             Requested size: 220.78543pt x 142.63408pt.
 
-<images/MAError_Train.png, id=644, 1202.4925pt x 776.9025pt>
+<images/MAError_Train.png, id=643, 1202.4925pt x 776.9025pt>
 File: images/MAError_Train.png Graphic file (type png)
 
 <use images/MAError_Train.png>
 Package pdftex.def Info: images/MAError_Train.png used on input line 127.
 (pdftex.def)             Requested size: 220.78543pt x 142.63408pt.
 
-<images/MAError_Test.png, id=645, 1202.4925pt x 776.9025pt>
+<images/MAError_Test.png, id=644, 1202.4925pt x 776.9025pt>
 File: images/MAError_Test.png Graphic file (type png)
 
 <use images/MAError_Test.png>
@@ -1426,7 +1399,7 @@ Overfull \vbox (34.53656pt too high) has occurred while \output is active []
 [35 <./images/trueDisp_Train.png> <./images/trueDisp_Test.png> <./images/DispEr
 ror_Train.png> <./images/DispError_Test.png> <./images/MAError_Train.png> <./im
 ages/MAError_Test.png>]
-<images/num/disp_450_ratio_xzen.png, id=663, 1084.05pt x 722.7pt>
+<images/num/disp_450_ratio_xzen.png, id=662, 1084.05pt x 722.7pt>
 File: images/num/disp_450_ratio_xzen.png Graphic file (type png)
 
 <use images/num/disp_450_ratio_xzen.png>
@@ -1434,7 +1407,7 @@ Package pdftex.def Info: images/num/disp_450_ratio_xzen.png used on input line
 144.
 (pdftex.def)             Requested size: 375.80544pt x 250.53377pt.
 
-<images/fit/disp_450_ratio_xzen.png, id=664, 1084.05pt x 722.7pt>
+<images/fit/disp_450_ratio_xzen.png, id=663, 1084.05pt x 722.7pt>
 File: images/fit/disp_450_ratio_xzen.png Graphic file (type png)
 
 <use images/fit/disp_450_ratio_xzen.png>
@@ -1447,7 +1420,7 @@ LaTeX Warning: Float too large for page by 3.11435pt on input line 152.
 
 [36] [37 <./images/num/disp_450_ratio_xzen.png> <./images/fit/disp_450_ratio_xz
 en.png>]
-<images/num/disp_450x4size_ratio_xzen.png, id=679, 1084.05pt x 722.7pt>
+<images/num/disp_450x4size_ratio_xzen.png, id=678, 1084.05pt x 722.7pt>
 File: images/num/disp_450x4size_ratio_xzen.png Graphic file (type png)
 
 <use images/num/disp_450x4size_ratio_xzen.png>
@@ -1455,7 +1428,7 @@ Package pdftex.def Info: images/num/disp_450x4size_ratio_xzen.png used on input
  line 168.
 (pdftex.def)             Requested size: 375.80544pt x 250.53377pt.
 
-<images/fit/disp_450x4size_ratio_xzen.png, id=680, 1084.05pt x 722.7pt>
+<images/fit/disp_450x4size_ratio_xzen.png, id=679, 1084.05pt x 722.7pt>
 File: images/fit/disp_450x4size_ratio_xzen.png Graphic file (type png)
 
 <use images/fit/disp_450x4size_ratio_xzen.png>
@@ -1464,20 +1437,20 @@ Package pdftex.def Info: images/fit/disp_450x4size_ratio_xzen.png used on input
 (pdftex.def)             Requested size: 375.80544pt x 250.53377pt.
  [38] [39 <./images/num/disp_450x4size_ratio_xzen.png> <./images/fit/disp_450x4
 size_ratio_xzen.png>]
-<images/weights.png, id=695, 536.2434pt x 346.896pt>
+<images/weights.png, id=694, 536.2434pt x 346.896pt>
 File: images/weights.png Graphic file (type png)
  <use images/weights.png>
 Package pdftex.def Info: images/weights.png used on input line 186.
 (pdftex.def)             Requested size: 366.40834pt x 237.03477pt.
 
-<images/num/disp_wts.png, id=697, 1084.05pt x 722.7pt>
+<images/num/disp_wts.png, id=696, 1084.05pt x 722.7pt>
 File: images/num/disp_wts.png Graphic file (type png)
 
 <use images/num/disp_wts.png>
 Package pdftex.def Info: images/num/disp_wts.png used on input line 198.
 (pdftex.def)             Requested size: 352.31625pt x 234.87471pt.
 
-<images/fit/disp_wts.png, id=698, 1084.05pt x 722.7pt>
+<images/fit/disp_wts.png, id=697, 1084.05pt x 722.7pt>
 File: images/fit/disp_wts.png Graphic file (type png)
 
 <use images/fit/disp_wts.png>
@@ -1485,310 +1458,293 @@ Package pdftex.def Info: images/fit/disp_wts.png used on input line 202.
 (pdftex.def)             Requested size: 352.31625pt x 234.87471pt.
  [40 <./images/weights.png>] [41 <./images/num/disp_wts.png> <./images/fit/disp
 _wts.png>]
-<images/num/reg_SZA_energy.png, id=714, 1084.05pt x 722.7pt>
+<images/num/reg_SZA_energy.png, id=713, 1084.05pt x 722.7pt>
 File: images/num/reg_SZA_energy.png Graphic file (type png)
 
 <use images/num/reg_SZA_energy.png>
-Package pdftex.def Info: images/num/reg_SZA_energy.png used on input line 215.
+Package pdftex.def Info: images/num/reg_SZA_energy.png used on input line 217.
 (pdftex.def)             Requested size: 206.69334pt x 137.7886pt.
 
-<images/num/reg_LZA_energy.png, id=715, 1084.05pt x 722.7pt>
+<images/num/reg_LZA_energy.png, id=714, 1084.05pt x 722.7pt>
 File: images/num/reg_LZA_energy.png Graphic file (type png)
 
 <use images/num/reg_LZA_energy.png>
-Package pdftex.def Info: images/num/reg_LZA_energy.png used on input line 219.
+Package pdftex.def Info: images/num/reg_LZA_energy.png used on input line 221.
 (pdftex.def)             Requested size: 206.69334pt x 137.7886pt.
 
-Underfull \hbox (badness 1097) in paragraph at lines 219--219
+Underfull \hbox (badness 1097) in paragraph at lines 221--221
 []\T1/cmr/m/n/10 (b) En-ergy De-pen-dence of Method0 at large
  []
 
-<images/num/disp_standard_energy.png, id=716, 1084.05pt x 722.7pt>
+<images/num/disp_standard_energy.png, id=715, 1084.05pt x 722.7pt>
 File: images/num/disp_standard_energy.png Graphic file (type png)
 
 <use images/num/disp_standard_energy.png>
 Package pdftex.def Info: images/num/disp_standard_energy.png used on input line
- 226.
+ 228.
 (pdftex.def)             Requested size: 352.31625pt x 234.87471pt.
 
-<images/num/disp_450x4size_energy.png, id=717, 1084.05pt x 722.7pt>
+<images/num/disp_450x4size_energy.png, id=716, 1084.05pt x 722.7pt>
 File: images/num/disp_450x4size_energy.png Graphic file (type png)
 
 <use images/num/disp_450x4size_energy.png>
 Package pdftex.def Info: images/num/disp_450x4size_energy.png used on input lin
-e 233.
+e 235.
 (pdftex.def)             Requested size: 352.31625pt x 234.87471pt.
-
-<images/num/disp_450x4size_rse.png, id=727, 1084.05pt x 722.7pt>
+ [42 <./images/num/reg_SZA_energy.png> <./images/num/reg_LZA_energy.png>] [43 <
+./images/num/disp_standard_energy.png> <./images/num/disp_450x4size_energy.png>
+]
+<images/num/disp_450x4size_rse.png, id=740, 1084.05pt x 722.7pt>
 File: images/num/disp_450x4size_rse.png Graphic file (type png)
 
 <use images/num/disp_450x4size_rse.png>
 Package pdftex.def Info: images/num/disp_450x4size_rse.png used on input line 2
-42.
+44.
 (pdftex.def)             Requested size: 422.77664pt x 281.85185pt.
 
-<images/num/reg_rse.png, id=728, 1084.05pt x 722.7pt>
+<images/num/reg_rse.png, id=741, 1084.05pt x 722.7pt>
 File: images/num/reg_rse.png Graphic file (type png)
 
 <use images/num/reg_rse.png>
-Package pdftex.def Info: images/num/reg_rse.png used on input line 252.
+Package pdftex.def Info: images/num/reg_rse.png used on input line 254.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/disp_standard_rse.png, id=729, 1084.05pt x 722.7pt>
+<images/num/disp_standard_rse.png, id=742, 1084.05pt x 722.7pt>
 File: images/num/disp_standard_rse.png Graphic file (type png)
 
 <use images/num/disp_standard_rse.png>
 Package pdftex.def Info: images/num/disp_standard_rse.png used on input line 25
-6.
+8.
+(pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
+
+<images/num/rel_reg_sim.png, id=743, 1084.05pt x 722.7pt>
+File: images/num/rel_reg_sim.png Graphic file (type png)
+
+<use images/num/rel_reg_sim.png>
+Package pdftex.def Info: images/num/rel_reg_sim.png used on input line 269.
+(pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
+
+<images/num/rel_standard_sim.png, id=744, 1084.05pt x 722.7pt>
+File: images/num/rel_standard_sim.png Graphic file (type png)
+
+<use images/num/rel_standard_sim.png>
+Package pdftex.def Info: images/num/rel_standard_sim.png used on input line 273
+.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
 
-./analysis.tex:267: LaTeX Error: File `num/rel_reg_sim' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.267   }
-         
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./analysis.tex:271: LaTeX Error: File `num/rel_standard_sim' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271   }
-         
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 278.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 276.
+(hyperref)                removing `subscript' on input line 278.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 276.
+(hyperref)                removing `math shift' on input line 278.
+
+[44 <./images/num/disp_450x4size_rse.png>] [45 <./images/num/reg_rse.png> <./im
+ages/num/disp_standard_rse.png> <./images/num/rel_reg_sim.png> <./images/num/re
+l_standard_sim.png>] [46]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 291.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 276.
-
-[42 <./images/num/reg_SZA_energy.png> <./images/num/reg_LZA_energy.png>]
-[43 <./images/num/disp_standard_energy.png> <./images/num/disp_450x4size_energy
-.png>] [44 <./images/num/disp_450x4size_rse.png> <./images/num/reg_rse.png> <./
-images/num/disp_standard_rse.png>] [45]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 287.
+(hyperref)                removing `subscript' on input line 291.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 287.
+(hyperref)                removing `math shift' on input line 291.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 287.
-
-<images/num/LZA_data_25/crab_disp_rse.png, id=766, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/crab_disp_rse.png, id=774, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_disp_rse.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_disp_rse.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_disp_rse.png used on input
- line 298.
+ line 302.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/crab_disp_sim.png, id=767, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/crab_disp_sim.png, id=775, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_disp_sim.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_disp_sim.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_disp_sim.png used on input
- line 302.
+ line 306.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
+<images/num/LZA_data_25/crab_disp_Log_nevent.png, id=776, 1084.05pt x 722.7pt>
+File: images/num/LZA_data_25/crab_disp_Log_nevent.png Graphic file (type png)
 
-LaTeX Warning: File `num/LZA_data_25/crab_disp_Log_nevent.png' not found on inp
-ut line 306.
+<use images/num/LZA_data_25/crab_disp_Log_nevent.png>
+Package pdftex.def Info: images/num/LZA_data_25/crab_disp_Log_nevent.png used o
+n input line 310.
+(pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-
-./analysis.tex:306: Package pdftex.def Error: File `num/LZA_data_25/crab_disp_L
-og_nevent.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.306     }
-           
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<images/num/LZA_data_25/crab_disp_LiMa.png, id=768, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/crab_disp_LiMa.png, id=777, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_disp_LiMa.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_disp_LiMa.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_disp_LiMa.png used on inpu
-t line 310.
+t line 314.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
- [46]
-<images/num/LZA_data_25/crab_all_disp_rse.png, id=776, 1084.05pt x 722.7pt>
+ [47]
+<images/num/LZA_data_25/crab_all_disp_rse.png, id=789, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_all_disp_rse.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_all_disp_rse.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_all_disp_rse.png used on i
-nput line 321.
+nput line 325.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/crab_all_disp_sim.png, id=777, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/crab_all_disp_sim.png, id=790, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_all_disp_sim.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_all_disp_sim.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_all_disp_sim.png used on i
-nput line 325.
+nput line 329.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/crab_all_disp_Log_nevent.png, id=778, 1084.05pt x 722.7
+<images/num/LZA_data_25/crab_all_disp_Log_nevent.png, id=791, 1084.05pt x 722.7
 pt>
 File: images/num/LZA_data_25/crab_all_disp_Log_nevent.png Graphic file (type pn
 g)
  <use images/num/LZA_data_25/crab_all_disp_Log_nevent.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_all_disp_Log_nevent.png us
-ed on input line 329.
+ed on input line 333.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/crab_all_disp_LiMa.png, id=779, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/crab_all_disp_LiMa.png, id=792, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/crab_all_disp_LiMa.png Graphic file (type png)
 
 <use images/num/LZA_data_25/crab_all_disp_LiMa.png>
 Package pdftex.def Info: images/num/LZA_data_25/crab_all_disp_LiMa.png used on 
-input line 333.
+input line 337.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
- [47 <./images/num/LZA_data_25/crab_disp_rse.png> <./images/num/LZA_data_25/cra
-b_disp_sim.png> <./images/num/LZA_data_25/crab_disp_LiMa.png>]
+ [48 <./images/num/LZA_data_25/crab_disp_rse.png> <./images/num/LZA_data_25/cra
+b_disp_sim.png> <./images/num/LZA_data_25/crab_disp_Log_nevent.png> <./images/n
+um/LZA_data_25/crab_disp_LiMa.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 341.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 341.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 341.
+(hyperref)                removing `subscript' on input line 345.
 
-[48 <./images/num/LZA_data_25/crab_all_disp_rse.png> <./images/num/LZA_data_25/
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 345.
+
+[49 <./images/num/LZA_data_25/crab_all_disp_rse.png> <./images/num/LZA_data_25/
 crab_all_disp_sim.png> <./images/num/LZA_data_25/crab_all_disp_Log_nevent.png> 
 <./images/num/LZA_data_25/crab_all_disp_LiMa.png>]
-<images/num/LZA_data_25/Mrk421_rse.png, id=805, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/Mrk421_rse.png, id=825, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/Mrk421_rse.png Graphic file (type png)
 
 <use images/num/LZA_data_25/Mrk421_rse.png>
 Package pdftex.def Info: images/num/LZA_data_25/Mrk421_rse.png used on input li
-ne 351.
+ne 355.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/Mrk421_sim.png, id=806, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/Mrk421_sim.png, id=826, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/Mrk421_sim.png Graphic file (type png)
 
 <use images/num/LZA_data_25/Mrk421_sim.png>
 Package pdftex.def Info: images/num/LZA_data_25/Mrk421_sim.png used on input li
-ne 355.
+ne 359.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/Mrk421_Log_nevent.png, id=807, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/Mrk421_Log_nevent.png, id=827, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/Mrk421_Log_nevent.png Graphic file (type png)
 
 <use images/num/LZA_data_25/Mrk421_Log_nevent.png>
 Package pdftex.def Info: images/num/LZA_data_25/Mrk421_Log_nevent.png used on i
-nput line 359.
+nput line 363.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
 
-<images/num/LZA_data_25/Mrk421_LiMa.png, id=808, 1084.05pt x 722.7pt>
+<images/num/LZA_data_25/Mrk421_LiMa.png, id=828, 1084.05pt x 722.7pt>
 File: images/num/LZA_data_25/Mrk421_LiMa.png Graphic file (type png)
 
 <use images/num/LZA_data_25/Mrk421_LiMa.png>
 Package pdftex.def Info: images/num/LZA_data_25/Mrk421_LiMa.png used on input l
-ine 363.
+ine 367.
 (pdftex.def)             Requested size: 220.78543pt x 147.18404pt.
-) [49 <./images/num/LZA_data_25/Mrk421_rse.png> <./images/num/LZA_data_25/Mrk42
-1_sim.png> <./images/num/LZA_data_25/Mrk421_Log_nevent.png> <./images/num/LZA_d
-ata_25/Mrk421_LiMa.png>]
+ [50]) [51 <./images/num/LZA_data_25/Mrk421_rse.png> <./images/num/LZA_data_25/
+Mrk421_sim.png> <./images/num/LZA_data_25/Mrk421_Log_nevent.png> <./images/num/
+LZA_data_25/Mrk421_LiMa.png>]
 Chapter 4.
-(./conclusions.tex [50
+(./conclusions.tex [52
 
-]) (./main.bbl [51] [52
+]) (./main.bbl [53]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [54
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
- [53]
+ [55]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4B21B5C5D559E9E70773F01F3AC3CF1E;3035.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: E679BF63EB49EDA969FF277592EAE1C3;2978.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11004 strings out of 494945
- 158655 string characters out of 6181032
- 260420 words of memory out of 5000000
- 13775 multiletter control sequences out of 15000+600000
+ 11022 strings out of 494945
+ 159468 string characters out of 6181032
+ 258496 words of memory out of 5000000
+ 13794 multiletter control sequences out of 15000+600000
  27690 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  35i,7n,39p,1177b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1728.60
-0pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.
-600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti100
-0.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1
-000.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-i1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/t
-crm1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecbx1728.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecsl1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecti1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecbx1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecbx2488.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/tcrm1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecrm1728.600pk> </home/sreela/.texlive2016/texmf-var/fonts/p
-k/ljfour/jknappen/ec/ecti2488.600pk> </home/sreela/.texlive2016/texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msam10.pfb>
-Output written on main.pdf (63 pages, 4736391 bytes).
+ </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.60
+0pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.
+600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi172
+8.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1
+000.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m1000.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbi1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcrm1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecbx1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecbx1728.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecsl1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecti1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1200.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx2488.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/lj
+four/jknappen/ec/tcrm1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecrm1440.600pk> </home/sreela/.texlive2016/texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecrm1728.600pk> </home/sreela/.texlive2016/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecti2488.600pk> </home/sreela/.texlive2016/texmf-var/fon
+ts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msam10.pfb>
+Output written on main.pdf (65 pages, 5036689 bytes).
 PDF statistics:
- 1500 PDF objects out of 1728 (max. 8388607)
- 796 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 646 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1529 PDF objects out of 1728 (max. 8388607)
+ 813 compressed objects within 9 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 663 words of extra memory for PDF output out of 10000 (max. 10000000)
 

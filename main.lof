@@ -61,21 +61,21 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Energy Dependence of the old Method5t.}}{43}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Energy Dependence of the new Method5t.}}{43}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Energy and zenith dependence of the new Method5t.}}{44}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{44}{figure.3.15}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Energy and zenith dependence of Method0 and the old Method5t}}{45}{figure.3.15}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Performance of the new \textit {Disp }method compared to Method0 and the old \textit {Disp }method}}{45}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Crab (horizon-to-horizon runs) direction reconstruction using Method5t.}}{47}{figure.3.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{47}{figure.3.17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{47}{figure.3.17}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{47}{figure.3.17}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{47}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Crab (LZA runs) direction reconstruction using Method5t.}}{48}{figure.3.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{48}{figure.3.18}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{48}{figure.3.18}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{48}{figure.3.18}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{48}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Mrk421 direction reconstruction using Method5t.}}{49}{figure.3.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{49}{figure.3.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations.}}}{49}{figure.3.19}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{49}{figure.3.19}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{49}{figure.3.19}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Crab (horizon-to-horizon runs) direction reconstruction using Method5t.}}{48}{figure.3.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{48}{figure.3.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations ($\xi $).}}}{48}{figure.3.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{48}{figure.3.17}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{48}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Crab (LZA runs) direction reconstruction using Method5t.}}{49}{figure.3.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{49}{figure.3.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations ($\xi $).}}}{49}{figure.3.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{49}{figure.3.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{49}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Mrk421 direction reconstruction using Method5t.}}{51}{figure.3.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Angular resolution using Method5t.}}}{51}{figure.3.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Deviation from simulations ($\xi $).}}}{51}{figure.3.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Number of excess events ($\qopname \relax o{log}(N_{on}-\alpha N_{off})$).}}}{51}{figure.3.19}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \& Ma significance.}}}{51}{figure.3.19}
 \addvspace {10\p@ }

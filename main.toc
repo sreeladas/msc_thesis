@@ -27,19 +27,19 @@
 \contentsline {section}{\numberline {2.6}Noise in Simulations}{25}{section.2.6}
 \contentsline {chapter}{\numberline {3}Analysis Methods}{26}{chapter.3}
 \contentsline {section}{\numberline {3.1}Preliminary Test and Motivation}{26}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {Disp }Table and R$_{68}$ Dependencies}{27}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Zenith Angle Dependence}{27}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Over-training}{28}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Noise Related Effects}{31}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Higher Statistics Tables}{32}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Acceptance Correction for Offset from Camera Center}{32}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Energy Dependence}{35}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}R$_{68}$ for Known Objects}{38}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}R$_{68}$ for the Crab Nebula}{38}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}R$_{68}$ for Mrk421}{40}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}R$_{68}$ for PKS1510-089}{41}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Conclusions}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Summary}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Discussion}{44}{section.4.2}
-\contentsline {section}{\numberline {4.3}Future Work}{44}{section.4.3}
-\contentsline {chapter}{Bibliography}{45}{chapter*.7}
+\contentsline {section}{\numberline {3.2}\textit {Disp }Table and R$_{68}$ Dependencies}{29}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Zenith Angle Dependence}{30}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Over-training}{34}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Noise Related Effects}{36}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Higher Statistics Tables}{38}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Acceptance Correction for Offset from Camera Center}{38}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Energy Dependence}{40}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}R$_{68}$ for Observational Data and Known Objects}{45}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Data Constraints and Li \& Ma Significance}{45}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}R$_{68}$ for the Crab Nebula}{46}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}R$_{68}$ for Mrk421}{48}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Conclusions}{50}{chapter.4}
+\contentsline {section}{\numberline {4.1}Summary}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Discussion}{51}{section.4.2}
+\contentsline {section}{\numberline {4.3}Future Work}{51}{section.4.3}
+\contentsline {chapter}{Bibliography}{52}{chapter*.7}

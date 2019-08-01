@@ -62,6 +62,13 @@ Mathieu {de Naurois} and Lo{\"\i}c {Rolland}.
 \newblock {H.E.S.S. website}.
 \newblock \url{https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2005/10/}.
 
+\bibitem{LiMa}
+T.-P. {Li} and Y.-Q. {Ma}.
+\newblock
+  \href{http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1983ApJ...272..317L&defaultprint=YES&filetype=.pdf}{Analysis
+  methods for results in gamma-ray astronomy}.
+\newblock {\em The Astrophysical Journal}, 272:317--324, sep 1983.
+
 \bibitem{Fermi_LAT_Crab_extension}
 M.~Ackermann et~al.
 \newblock {The Search for Spatial Extension in High-latitude Sources Detected
@@ -74,11 +81,5 @@ M.~{Holler}, D.~{Berge}, J.~{Hahn}, D.~{Khangulyan}, R.~D. {Parsons}, and
 \newblock {Advanced search for the extension of unresolved TeV sources with
   H.E.S.S.}
 \newblock {\em International Cosmic Ray Conference}, 35:676, January 2017.
-
-\bibitem{Yeung:energy_extension}
-Paul K.~H. Yeung and Dieter Horns.
-\newblock {The Energy-dependent $\gamma$-ray Morphology of the Crab Nebula
-  Observed with the Fermi Large Area Telescope}.
-\newblock {\em Astrophys. J.}, 875(2):123, 2019.
 
 \end{thebibliography}

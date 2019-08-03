@@ -1,44 +1,45 @@
 \BOOKMARK [0][-]{chapter*.1}{Acknowledgments}{}% 1
 \BOOKMARK [0][-]{chapter*.2}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.3}{Abr\351g\351}{}% 3
-\BOOKMARK [0][-]{chapter*.4}{Contents}{}% 4
-\BOOKMARK [0][-]{chapter*.5}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter*.6}{List of Tables}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
-\BOOKMARK [1][-]{section.1.1}{Gamma Ray Astrophysics}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.1.1}{Ground Based Gamma-Ray Astrophysics}{section.1.1}% 9
-\BOOKMARK [1][-]{section.1.2}{VERITAS Overview}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.2.1}{Gamma-Ray Initiated Extensive Air Showers}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.2}{Cherenkov Radiation}{section.1.2}% 12
-\BOOKMARK [2][-]{subsection.1.2.3}{Imaging Atmospheric Cherenkov Telescopes}{section.1.2}% 13
-\BOOKMARK [2][-]{subsection.1.2.4}{The VERITAS Instrument}{section.1.2}% 14
-\BOOKMARK [1][-]{section.1.3}{Shower Image Parameters}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.3.1}{The Disp Parameter}{section.1.3}% 16
-\BOOKMARK [0][-]{chapter.2}{Simulation and Analysis Packages}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.2}{Shower Generation}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.3}{The VEGAS Analysis Package}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.4}{Direction Reconstruction}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.4.1}{The Disp Method}{section.2.4}% 22
-\BOOKMARK [1][-]{section.2.5}{Boosted Decision Trees}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.5.1}{Training}{section.2.5}% 24
-\BOOKMARK [2][-]{subsection.2.5.2}{Boosting}{section.2.5}% 25
-\BOOKMARK [2][-]{subsection.2.5.3}{Testing}{section.2.5}% 26
-\BOOKMARK [1][-]{section.2.6}{Noise in Simulations}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{Analysis Methods}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Preliminary Test and Motivation}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.2}{Disp Table and R68 Dependencies}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Zenith Angle Dependence}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Over-training}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.3}{Noise Related Effects}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.4}{Higher Statistics Tables}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.5}{Acceptance Correction for Offset from Camera Center}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.6}{Energy Dependence}{section.3.2}% 36
-\BOOKMARK [1][-]{section.3.3}{R68 for Observational Data and Known Objects}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.1}{Data Constraints and Li \046 Ma Significance}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.2}{R68 for the Crab Nebula}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.3}{R68 for Mrk421}{section.3.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Summary}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Future Work}{chapter.4}% 43
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 44
+\BOOKMARK [0][-]{chapter*.4}{Statement of Original Contribution}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{Contents}{}% 5
+\BOOKMARK [0][-]{chapter*.6}{List of Figures}{}% 6
+\BOOKMARK [0][-]{chapter*.7}{List of Tables}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Gamma Ray Astrophysics}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.1}{Ground Based Gamma-Ray Astrophysics}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{VERITAS Overview}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.2.1}{Gamma-Ray Initiated Extensive Air Showers}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.2}{Cherenkov Radiation}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.3}{Imaging Atmospheric Cherenkov Telescopes}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.4}{The VERITAS Instrument}{section.1.2}% 15
+\BOOKMARK [1][-]{section.1.3}{Shower Image Parameters}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.3.1}{The Disp Parameter}{section.1.3}% 17
+\BOOKMARK [0][-]{chapter.2}{Simulation and Analysis Packages}{}% 18
+\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{Shower Generation}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.3}{The VEGAS Analysis Package}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.4}{Direction Reconstruction}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.4.1}{The Disp Method}{section.2.4}% 23
+\BOOKMARK [1][-]{section.2.5}{Boosted Decision Trees}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{Training}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{Boosting}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.3}{Testing}{section.2.5}% 27
+\BOOKMARK [1][-]{section.2.6}{Noise in Simulations}{chapter.2}% 28
+\BOOKMARK [0][-]{chapter.3}{Analysis Methods}{}% 29
+\BOOKMARK [1][-]{section.3.1}{Preliminary Test and Motivation}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.2}{Disp Table and R68 Dependencies}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{Zenith Angle Dependence}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{Over-training}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.3}{Noise Related Effects}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.4}{Higher Statistics Tables}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.5}{Acceptance Correction for Offset from Camera Center}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.6}{Energy Dependence}{section.3.2}% 37
+\BOOKMARK [1][-]{section.3.3}{R68 for Observational Data and Known Objects}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Data Constraints and Li \046 Ma Significance}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{R68 for the Crab Nebula}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{R68 for Mrk421}{section.3.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Summary}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Future Work}{chapter.4}% 44
+\BOOKMARK [0][-]{chapter*.8}{Bibliography}{}% 45

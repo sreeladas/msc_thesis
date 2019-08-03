@@ -4,11 +4,11 @@
 \section{Preliminary Test and Motivation}
 The motivation for this work was to understand, refine, and document the \disp method of direction reconstruction. This method was expected to be useful to better resolve objects observed close to the horizon and facilitate studying the stability of the reconstruction to the zenith angle of observation. There was also the possibility of using machine learning algorithms to improve resolution beyond that of the standard geometric reconstruction. In particular, an improved angular resolution on the Crab may open up the possibility of resolving the spatial extent of the Crab Nebula with the VERITAS instrument.
 
-For the purposes of this work, the 68\% containment radius in angular position (\rse\hspace{-4pt}) is used as a measure of angular resolution and performance of the reconstruction. This was measured in two ways - one numerically and one using a 2D Gaussian fit of the 2D projection of the 3D deviation of the reconstruction. From here (see Fig. \ref{fig:sim_gauss}) it was clear that the Gaussian fit was not an accurate representation of the underlying data, but could nevertheless provide some insight into it.
+For the purposes of this work, the 68\% containment radius in angular position (\rse\hspace{-4pt}) is used as a measure of angular resolution and performance of the reconstruction. This was measured in two ways - one numerically and one using a 2D Gaussian fit to the deviation of the reconstruction. From here (see Fig. \ref{fig:sim_gauss}) it was clear that the Gaussian fit was not an accurate representation of the underlying data, but could nevertheless provide some insight into it.
 
 \begin{figure}[H]
   \begin{center}
-    \subfigure[A histogram of the 2D projection of the 3D angular deviation of the reconstructed direction. The colors denote the number of entries in a given bin.]{ 
+    \subfigure[A histogram of the 2D projection of the angular deviation of the reconstructed direction. The colors denote the number of entries in a given bin.]{ 
       \includegraphics[width=0.44\linewidth]{sim_gauss_2D}
       \label{fig:sim_2D_gauss}
     }
@@ -27,11 +27,11 @@ For the purposes of this work, the 68\% containment radius in angular position (
       \label{fig:sim_1D_gauss2}
     }
   \end{center}
-  \caption[Gaussian shape of the simulation deviation.]{Reconstruction of the simulation direction using the \disp Method for simulations at $45^\circ$ zenith angle with $10^{3}$ GeV$<E<10^{3.5}$ GeV. From here it is evident that a \rse based on the width of the best-fit Gaussian would not be an accurate measure of the \rse, and would consistently overestimate the resolving power of the method. However, it is also clear that the vast majority of statistics fall in the central region, and that the width of this region can provide a first-order approximation to the R$_{68}$.}
+  \caption[Gaussian shape of the simulation deviation.]{Reconstruction of the simulation direction using the \disp Method for simulations at $45^\circ$ zenith angle with $10^{3}$ GeV$<E<10^{3.5}$ GeV. From (b) it is evident that a \rse based on the width of the best-fit Gaussian would not be an accurate measure of the \rse, and would consistently overestimate the resolving power of the method. However, it is also clear that the vast majority of statistics fall in the central region, and that the width of this region can provide a first-order approximation to the R$_{68}$.}
   \label{fig:sim_gauss}
 \end{figure}
 
-Based on the distribution of the deviation of reconstructed direction of the simulations (Fig. \ref{fig:sim_gauss}) from the simulated direction, it was determined that a fit to the central Gaussian could provide some useful information about the R$_{68}$, and to this end, the 2D distribution (Fig. \ref{fig:sim_2D_gauss}) was fit with the superposition of two Gaussians, with the68\% of this superposition as a first-order approximation to the R$_{68}$. Additionally, it was determined a numerical integral would provide a more accurate measure of this quantity and so the distribution of radial deviations was integrated from the tail inwards, until 32\% of the events were counted and this value of the radial deviation from the simulated direction was used as a more accurate measure of the R$_{68}$, a representative sample of the results is shown in Fig. \ref{fig:gauss_fit_both}.
+Based on the distribution of the deviation of reconstructed direction of the simulations (Fig. \ref{fig:sim_gauss}) from the simulated direction, it was determined that a fit to the central Gaussian could provide some useful information about the R$_{68}$, and to this end, the 2D distribution (Fig. \ref{fig:sim_2D_gauss}) was fit with the superposition of two Gaussians, with the 68\% of this superposition as a first-order approximation to the R$_{68}$. Additionally, it was determined a numerical integral would provide a more accurate measure of this quantity and so the distribution of radial deviations was integrated from the tail inwards, until 32\% of the events were counted and this value of the radial deviation from the simulated direction was used as a more accurate measure of the R$_{68}$; a representative sample of the results is shown in Fig. \ref{fig:gauss_fit_both}.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.78\linewidth]{fit/gauss_fit_both}
@@ -52,7 +52,7 @@ A preliminary test for the \rse of the data was enabled by a set of runs where t
       \label{fig:crab_res_num}
     }
   \end{center}
-  \caption[Crab direction reconstruction using Method0.]{Reconstruction of the Crab direction using Method0 (standard geometric reconstruction from \textit{VEGAS}). On the left, the regions of white denote regions where significance $<3\sigma$.}
+  \caption[Crab direction reconstruction using Method0.]{Reconstruction of the Crab direction using Method0 (standard geometric reconstruction from \textit{VEGAS}). On the left, the regions of white denote regions where Li \& Ma significance $<3\sigma$ (for a description of this, see section \ref{li_ma_defn}).}
   \label{fig:crab_initial}
 \end{figure}
 
@@ -64,36 +64,36 @@ The BDT weight tables were generated independently of the old \disp method in or
 \subsection{Zenith Angle Dependence}
 A set of \disp tables was generated with a small sample of simulated events ($n\approx 1.9\e6$) across the range of zenith angles of interest ($20^\circ-65^\circ$). This was compared to the regular \disp method. Since there was no record of the training sample size for the standard tables, this test sample was useful in determining the resolution of the \disp method with a relatively small computational footprint. Additionally, it allowed for some simple tests of dependence of the \disp tables on parameters not explicitly in the \disp tables.
 
-These small \disp tables and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle).
+These small \disp tables and the standard \disp tables were used to reconstruct simulation events and compared with Method0 (the standard method of direction reconstruction). In both cases, the \disp method performs better than Method0 at the largest zenith angles ($\geq 55^\circ$, see Fig. \ref{fig:olddisp_ratio}-\ref{fig:disp_ratio_250} for \rse of the \disp methods divided by that for Method0 at the same zenith angle).
 
 \begin{figure}[H]
   \begin{center}
     \subfigure[Numerically determined R$_{68}$.]{
-      \includegraphics[width=0.8\linewidth]{num/disp_standard_ratio_xzen}
+      \includegraphics[width=0.47\linewidth]{num/disp_standard_ratio_xzen}
       \label{fig:olddisp_ratio_num}
     }
     \subfigure[R$_{68}$ as determined from a fit.]{
-      \includegraphics[width=0.8\linewidth]{fit/disp_standard_ratio_xzen}
+      \includegraphics[width=0.47\linewidth]{fit/disp_standard_ratio_xzen}
       \label{fig:olddisp_ratio_fit}
     }
-      \caption[``standard'' \disp table reconstruction.]{Ratio of \rse of the ``standard'' \disp table to that from Method0, with the numerically determined \rse (left) and that found from the fit to two Gaussians. Since this is the ratio of methods, the horizontal blue line denotes the performance using Method0; and the \disp method definitively performs better than Method0 for zenith $\gtrsim50^\circ$.}  
+      \caption[``standard'' \disp table reconstruction.]{Ratio of \rse of the ``standard'' \disp table to that from Method0, with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Since this is the ratio of methods, the horizontal blue line denotes the performance using Method0; and the \disp method definitively performs better than Method0 for zenith $\gtrsim50^\circ$.}  
       \label{fig:olddisp_ratio}
   \end{center}
 \end{figure}
 
-From Fig. \ref{fig:olddisp_ratio}, we can see that the \disp method outperforms the standard method across zenith angles when using the numerical integration, i.e. the tails of the distribution from the geometric method are better behaved than those found using the \disp method. However, when using the fit which provides an understanding of the central region where most events lie, the \disp method outperforms the geometric reconstruction only in the LZA range ($\phi\gtrsim 50$). This is considered the regime of interest for the \disp method.
+From Fig. \ref{fig:olddisp_ratio}, we can see that the \disp method outperforms the standard method across zenith angles when using the numerical integration, i.e. the tails of the distribution from the geometric method are better behaved than those found using the \disp method. However, when using the 2-Gaussian fit, which provides an understanding of the central region where most events lie, the \disp method outperforms the geometric reconstruction only in the LZA range ($\phi\gtrsim 50$). This is considered the regime of interest for the \disp method.
 
 \begin{figure}[H]
   \centering
     \subfigure[Numerically determined R$_{68}$.]{
-      \includegraphics[width=0.8\linewidth]{num/disp_250_ratio_xzen}
+      \includegraphics[width=0.47\linewidth]{num/disp_250_ratio_xzen}
       \label{fig:disp_ratio_250_num}
     }
     \subfigure[R$_{68}$ as determined from a fit.]{
-      \includegraphics[width=0.8\linewidth]{fit/disp_250_ratio_xzen}
+      \includegraphics[width=0.47\linewidth]{fit/disp_250_ratio_xzen}
       \label{fig:disp_ratio_250_fit}
     }
-  \caption[Small \disp table reconstruction (noise = $250$ MHz).]{Ratio of the \rse from reconstruction using the small \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0 with the numerically determined \rse (left) and that found from the fit to two Gaussians. Note the horizontal blue line denotes the performance using Method0, so this method performs better than Method0 for zenith $\gtrsim 50^\circ$.}
+  \caption[Small \disp table reconstruction (noise = $250$ MHz).]{Ratio of the \rse from reconstruction using the small \disp table ($\sim 1.9\e6$ events all at noise $= 250$ MHz) and that from Method0 with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Note the horizontal blue line denotes the performance using Method0, so this method performs better than Method0 for zenith $\gtrsim 50^\circ$.}
   \label{fig:disp_ratio_250}
 \end{figure}
 
@@ -139,11 +139,11 @@ The first set of \disp tables was also generated at a single noise level ($250$ 
 \begin{figure}[htbp]
   \centering
   \subfigure[Numerically determined R$_{68}$.]{
-    \includegraphics[width=.8\linewidth]{num/disp_450_ratio_xzen}
+    \includegraphics[width=.47\linewidth]{num/disp_450_ratio_xzen}
     \label{fig:disp_ratio_450_num}
   }
   \subfigure[R$_{68}$ as determined from a fit.]{
-    \includegraphics[width=0.8\linewidth]{fit/disp_450_ratio_xzen}
+    \includegraphics[width=0.47\linewidth]{fit/disp_450_ratio_xzen}
     \label{fig:disp_ratio_450_fit}
   }
 
@@ -158,16 +158,16 @@ To generate a set of \disp tables with better angular resolution (as measured by
 \subsection{Higher Statistics Tables}
 Once it was determined that there was no significant over-training in the small sample \disp tables, and the noise level had little bearing on the \rse measure of the reconstruction, it was determined that different noise level simulation events could be used as independent training events to have a higher statistics \disp table, and make small improvements on the statistical uncertainty on the reconstruction. The simulation data from across the noise spectrum and zenith range was used to generate a \disp table that sampled the entire parameter space more exhaustively.
 
-A new set of \disp tables was generated (Fig. \ref{fig:disp_ratio_450x4}) with a training sample four times that of the initial test tables. The improvements in resolution due to change in sample size were modest, and confined to the range of zenith angles (zenith $>45^\circ$) where the standard method outperforms the \disp method quite considerably.
+A new set of \disp tables was generated (Fig. \ref{fig:disp_ratio_450x4}) with a training sample four times that of the initial test tables. The improvements in resolution due to change in sample size were modest, and confined to the range of zenith angles ($\phi <45^\circ$) where the standard method outperforms the \disp method quite considerably.
 
 \begin{figure}[htbp]
   \centering
   \subfigure[Numerically determined R$_{68}$.]{
-    \includegraphics[width=0.8\linewidth]{num/disp_450x4size_ratio_xzen}
+    \includegraphics[width=0.47\linewidth]{num/disp_450x4size_ratio_xzen}
     \label{fig:disp_ratio_450x4_num}
   }
   \subfigure[R$_{68}$ as determined from a fit.]{
-    \includegraphics[width=0.8\linewidth]{fit/disp_450x4size_ratio_xzen}
+    \includegraphics[width=0.47\linewidth]{fit/disp_450x4size_ratio_xzen}
     \label{fig:disp_ratio_450x4_fit}
   }
   \caption[Higher statistics \disp table reconstruction vs noise.]{Ratio of \rse of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0 for a higher statistics \disp table with the numerically determined \rse (left) and that found from the fit to two Gaussians (right).}
@@ -198,9 +198,9 @@ These tests reveal small changes in the \rse value despite large changes in the 
   }
   \subfigure[R$_{68}$ as determined from a fit.]{
     \includegraphics[width=.75\linewidth]{fit/disp_wts}
-    \label{fig:weight_tests_num}
+    \label{fig:weight_tests_fit}
   }
-  \caption[\rse for the acceptance correction functions.]{\rse for each acceptance correction function shown in Fig. \ref{fig:weights} with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). The changes in acceptance correction do not meaningfully change the \rse for the reconstruction.}
+  \caption[\rse for the acceptance correction functions.]{\rse for each acceptance correction function shown in Fig. \ref{fig:weights} with the numerically determined \rse (top) and that found from the fit to two Gaussians (bottom). The changes in acceptance correction do not meaningfully change the \rse for the reconstruction.}
   \label{fig:weight_tests}
 \end{figure}
 
@@ -226,14 +226,14 @@ Due to the slicing in energy in addition to zenith and therefore smaller number 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.75\linewidth]{num/disp_standard_energy}
-  \caption[Energy Dependence of the old Method5t.]{Energy Dependence of the old Method5t with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Colored bands are intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of the old Method5t.]{Energy Dependence of the old Method5t with the numerically determined R$_{68}$. Colored bands are intended to guide the eye and do not represent data points.}
   \label{fig:energy_disp_standard}    
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.75\linewidth]{num/disp_450x4size_energy}
-  \caption[Energy Dependence of the new Method5t.]{Energy Dependence of the new Method5t with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Colored bands intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of the new Method5t.]{Energy Dependence of the new Method5t with the numerically determined R$_{68}$. Colored bands intended to guide the eye and do not represent data points.}
   \label{fig:energy_disp_450}    
 \end{figure}
 
@@ -271,7 +271,7 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
     \includegraphics[width=0.47\linewidth]{num/rel_standard_sim}
     \label{fig:disp_standard_sim}
   }
-  \caption[Performance of the new \disp method compared to Method0 and the old \disp method]{Performance of the new \disp method compared to Method0 (left) and the old \disp method (right), with purple at $-1.0$ denoting $100\%$ improvement over the older method and bright red (in the upper left corners) at $1.0$ denoting $100\%$ worse performance in that bin or regions of insufficient statistics. The range of usefulness for Method5t (relative to Method0) now extends to $E\geq1$TeV and $\phi\gtrsim55^\circ$ (upper left corner).}
+  \caption[Performance of the new \disp method compared to Method0 and the old \disp method]{Performance of the new \disp method compared to Method0 (left) and the old \disp method (right), with purple at $-1.0$ denoting $100\%$ improvement over the older method and bright red (in the upper left corners) at $1.0$ denoting $100\%$ worse performance in that bin or regions of insufficient statistics. The range of usefulness for Method5t (relative to Method0) now extends to $E\geq1$TeV and $\phi\gtrsim55^\circ$ (upper-right corner).}
   \label{fig:energy_rel}
 \end{figure}
 
@@ -279,10 +279,10 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
 In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Since our initial test was performed on the Crab Nebula and, in the VERITAS archival data it is the known object with the longest total exposure time at LZA, the Crab was used to generate some benchmarks. Additionally, Mrk421 was used as a known point source to test the power of discrimination between point and compact sources. Each of these objects and the corresponding analysis will be discussed in greater detail in the following sections.
 
 \subsection{Data Constraints and Li \& Ma Significance}
-
+\label{li_ma_defn}
 For the data analysis, unlike with the simulations, a ``true'' direction was not knowable. Instead, the true direction must be assumed to be that of the known object, and we must restrict our analysis to those showers determined to be from the source object, and where the source object is in fact detected.
 
-As a measure of detection, we use both the number of excess events -- defined as the number of events determined to be from the source over the number of events from the off-source regions scaled by the ratio of the exposures of the on and off-source regions. For a number of events from the source region is $N_{on}$, a number of events from the off-source region is $N_{off}$, and a ratio of exposure $\frac{A_{on}}{A_{off}}=\alpha$, the number of excess events is given by $N_{on}-\alpha N_{off}$. This corresponds to the number of events observed above the number expected given the background observation, and statements regarding the small- or large-number statistics refer to this number being small or large.
+As a measure of detection, we use both the number of excess events -- defined as the number of events determined to be from the source minus the number of events from the off-source regions scaled by the ratio of the exposures of the on and off-source regions. For a number of events from the source region $N_{on}$, a number of events from the off-source region $N_{off}$, and a ratio of exposure $\frac{A_{on}}{A_{off}}=\alpha$, the number of excess events is given by $N_{on}-\alpha N_{off}$. This corresponds to the number of events observed above the number expected given the background observation, and statements regarding the small- or large-number statistics refer to this number being small or large.
 
 As a measure of the robustness of the \rse determined for the data, we also use the gamma-ray astronomy standard Li \& Ma\cite{LiMa} significance, with a threshold significance of $3\sigma$. A high significance measurement of the object in a given energy and zenith bin should provide a measure of \rse in that bin that is relatively stable against statistical fluctuations.
 
@@ -293,6 +293,27 @@ Lastly, as a measure of how the data analysis performs relative to expectations 
 The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required which, based on the simulations, we do not achieve (see Fig. \ref{fig:energy_disp_450}). This however provides another metric by which to quantify our resolution, as well as to measure possible future gains in resolution.
 
 % Although this \rse is expected to be insufficient to \textit{measure} the GeV-TeV extension of the Crab due to low statistics, this can be used to demonstrate it \cite{Yeung:energy_extension}.
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Crab skymap for $\phi<50^\circ$ and $E<1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_SZA_LE.png}
+      \label{fig:crab_skymap_SZA_LE}
+    }  
+    \subfigure[Crab skymap for $\phi>50^\circ$ and $E<1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_LZA_LE.png}
+      \label{fig:crab_skymap_LZA_LE}
+    }
+    \subfigure[Crab skymap for $\phi<50^\circ$ and $E>1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_SZA_HE.png}
+      \label{fig:crab_skymap_SZA_HE}
+    }  
+    \subfigure[Crab skymap for $\phi>50^\circ$ and $E>1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_LZA_HE.png}
+      \label{fig:crab_skymap_LZA_HE}
+    }
+  \end{center}
+  \caption[Crab skymaps using the new \disp tables.]{Reconstruction of the Crab direction using Method5t.}
+\end{figure}
 
 \begin{figure}[H]
   \begin{center}
@@ -316,7 +337,7 @@ The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \ci
   \caption[Crab (horizon-to-horizon runs) direction reconstruction using Method5t.]{Reconstruction of the direction of the Crab Nebula horizon-to-horizon runs using the new \disp tables. In the top two plots, white denotes regions of significance $<3\sigma$. Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the highest zenith angles, and is able to reconstruct higher-energy events in the $45-55^\circ$ region.}
   \label{fig:crab_disp}
 \end{figure}
-Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the highest zenith angles and is able to reconstruct higher-energy events in the $45-55^\circ$ region. This provides a proof-of-principle that the \disp method is an improvement on the standard method at the highest energies and at the large zenith angles. In the region $\phi\geq50$ and $E\geq 1$ TeV the Crab nebula has a \rse of $\sim 0.15^\circ$.
+Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the highest zenith angles and is able to reconstruct higher-energy events in the $45-55^\circ$ region. This provides a proof-of-principle that the \disp method is an improvement on the standard method at the highest energies and at large zenith angles. In the region $\phi\geq50$ and $E\geq 1$ TeV the Crab nebula has a \rse of $\sim 0.15^\circ$.
 \begin{figure}[H]
   \begin{center}
     \subfigure[Angular resolution using Method5t.]{ 
@@ -346,6 +367,27 @@ The numbers for the Crab Nebula in Fig. \ref{fig:crab_disp} suggest that we can 
 Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>45^\circ$). Even with a short total duration of observation, because Mrk421 is a high-flux object, it is still observable at high significance. In the region $\phi\geq50$ and $E\geq 1$ TeV Mrk 421 has a \rse of $\sim 0.11^\circ$.
 
 The result of this analysis was that the smallest values of \rse for Mrk421 ($\sim 0.09^\circ$, Fig. \ref{fig:mrk_rse}) are found in a region of parameter space where the Li \& Ma significance is small (Fig. \ref{fig:mrk_li_ma}) and more generally that the high values of $\xi$ are found where Li \& Ma significance is low, suggesting that a more robust analysis would require more statistics. Consequently this point-source analysis does not definitively validate the results from the simulations but it does demonstrate the simulation result that the point-source reconstruction in the regime of interest is $<0.2^\circ$ (Fig. \ref{fig:mrk_rse}).
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Crab skymap for $\phi<50^\circ$ and $E<1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_skymap_SZA_LE.png}
+      \label{fig:Mrk421_skymap_SZA_LE}
+    }  
+    \subfigure[Crab skymap for $\phi>50^\circ$ and $E<1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_skymap_LZA_LE.png}
+      \label{fig:Mrk421_skymap_LZA_LE}
+    }
+    \subfigure[Crab skymap for $\phi<50^\circ$ and $E>1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_skymap_SZA_HE.png}
+      \label{fig:Mrk421_skymap_SZA_HE}
+    }  
+    \subfigure[Crab skymap for $\phi>50^\circ$ and $E>1$ TeV.]{ 
+      \includegraphics[width=0.47\linewidth]{num/LZA_data_25/Mrk421_skymap_LZA_HE.png}
+      \label{fig:Mrk421_skymap_LZA_HE}
+    }
+  \end{center}
+  \caption[Mrk421 skymaps using the new \disp tables.]{Reconstruction of the Mrk421 direction using Method5t.}
+\end{figure}
 
 \begin{figure}[H]
   \begin{center}

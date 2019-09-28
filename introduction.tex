@@ -3,14 +3,16 @@
 
 \begin{document}
 \section{Gamma Ray Astrophysics}
-Gamma ray astrophysics studies the physics and the sources of particles at high energies (E >$1$ GeV). While astronomy is a centuries-old science, gamma-ray astrophysics has only come into play since the advent of satellite technology and subsequently of Imaging Atmospheric Cherenkov Telescopes (IACTs) in the 1980s. Due to constraints from atmospheric interactions, direct detection of high energy emissions is not feasible with traditional ground-based instruments. However satellites are able to circumvent these issues, and IACTs are able to use them to their benefit.\par
+Gamma-ray astrophysics studies the physics and the sources of particles at high energies (E >$1$ GeV). While astronomy is a centuries-old science, gamma-ray astrophysics has only come into play since the advent of satellite technology and subsequently of Imaging Atmospheric Cherenkov Telescopes (IACTs) in the 1980s \cite{IACTs_1980}\cite{Weekes:1989}. Due to constraints from atmospheric interactions, direct detection of high energy astrophysical emissions is not feasible with traditional ground-based instruments. Satellites are able to circumvent these issues by being high in the atmosphere and intercepting particles prior to these interactions. IACTs are able to use them to their benefit by using the (lower-energy) products of these atmospheric interactions to reconstruct the incident particles which themselves would be too energetic to be detected by the instrument.\par
 
-High-energy (HE, E >$1$ GeV) or very high energy (VHE, E >$100$ GeV) gamma-ray emission is a signature of extreme astrophysical processes like relativistic jets and strong electromagnetic fields. These processes are among the most energetic phenomena in the universe and are present in active galactic nuclei (AGN), pulsar wind nebulae (PWN), and pulsars. Since the penetration depth for higher energy photons in the atmosphere is shorter than their optical counterparts, they become much harder to manipulate using conventional methods like those used for photons. Instead, methods of high-energy particle physics and detector technology used for other high-energy particles are used for gamma-ray detection. Satellite-based instruments like the Fermi Large Area Telescope (LAT) are able to detect lower-energy gamma rays (30 MeV -- 100 GeV) directly through tracking pair production $e^+/e^-$ pairs, but for very high energy (VHE) gamma rays (E$> 100$ GeV) the much lower photon flux means that effective areas required for significant statistics are much larger, and not feasible for satellite-based instruments.
+High-energy (HE, E >$1$ GeV) or very high energy (VHE, E >$100$ GeV) gamma-ray emission is a signature of extreme astrophysical processes like relativistic jets and strong electromagnetic fields \cite{cta_web}. These processes are among the most energetic phenomena in the universe and are present in active galactic nuclei (AGN), pulsar wind nebulae (PWN), and pulsars. Since the penetration depth for higher energy photons in the atmosphere is shorter than their optical counterparts, they become much harder to manipulate using conventional methods used for photons. Instead, methods of high-energy particle physics and detector technology used for other high-energy particles are used for gamma-ray detection -- in this case using the atmosphere as an electromagnetic calorimeter. Satellite-based instruments like the Fermi Large Area Telescope (LAT) are able to detect lower-energy gamma rays (30 MeV -- 100 GeV) directly through tracking pair production $e^+/e^-$ pairs, but for VHE gamma rays (E$> 100$ GeV) the much lower photon flux means that effective areas required for significant statistics are much larger, and not feasible for satellite-based instruments.
+
 \subsection{Ground Based Gamma-Ray Astrophysics}
-The Whipple Collaboration pioneered the technique for indirect detection of gamma rays through the collection of Cherenkov photons emitted from extensive air showers generated from high-energy photon interactions with the atmosphere. The direction of the primary photons can be determined by imaging the air showers with telescopes. This also enables the rejection of hadronic showers from cosmic rays and provides an effective area much larger than is possible with space-based instruments. Cherenkov light used to detect these showers arrives in a region with a radius of $\sim 100$ m. The current generation of IACTs uses multiple telescopes which provide better sensitivity, better hadronic rejection and larger effective areas than individual telescopes\cite{Park:2017uxb}. In the thirty years of ground-based gamma ray astrophysics, over 200 VHE sources have been detected. \par
-The current generation of ground based gamma-ray observatories includes three major telescope arrays. The MAGIC array, located on the Canary Islands of La Palma, Spain consists of two IACTs with 17 m diameter reflectors. The H.E.S.S. array in the Khomas Highlands of Namibia, is an array of five IACTs, four of which have 13 m diameter reflectors while the fifth, in the center of the array has a 28 m reflector. The VERITAS array in Arizona, US, the subject of this thesis, is an array of four telescopes, each with reflectors 12 m in diameter.
+The Whipple Collaboration \cite{Weekes:1989} pioneered the technique for indirect detection of gamma rays through the collection of Cherenkov photons emitted from extensive air showers generated from high-energy photon interactions with the atmosphere. The direction of the primary photons can be determined by imaging the air showers with telescopes. This also enables the rejection of hadronic showers from cosmic rays and provides an effective area much larger than is possible with space-based instruments. Cherenkov light used to detect these showers arrives in a region with a radius of $\sim 100$ m. The current generation of IACTs uses multiple telescopes which provide better sensitivity, better hadronic rejection and larger effective areas than individual telescopes \cite{Park:2017uxb}. In the thirty years of ground-based gamma ray astrophysics, over 200 VHE sources have been detected \cite{DiSciascio:2019ieq}.
+
+The current generation of ground based gamma-ray observatories includes three major telescope arrays. The MAGIC array \cite{magic_web}, located on the Canary Islands of La Palma, Spain consists of two IACTs with 17 m diameter reflectors. The H.E.S.S. array \cite{hess_web} in the Khomas Highlands of Namibia, is an array of five IACTs, four of which have 13 m diameter reflectors while the fifth, in the center of the array has a 28 m reflector. The VERITAS array \cite{veritas_web} in Arizona, USA, the subject of this thesis, is an array of four telescopes, each with reflectors 12 m in diameter \cite{veritas_specs}.
 \section{VERITAS Overview}
-The Very Energetic Radiation Imaging Telescope Array System (VERITAS) is an array of four IACTs at the Fred Lawrence Whipple Observatory in southern Arizona, which started operating in 2007. Gamma rays are detected through imaging Cherenkov radiation emitted from relativistic charged particles (primarily $e^+/e^-$) in air showers initiated by VHE gamma rays. This section contains a brief description of the instrument and the technique used in this experiment. After the moving of one telescope in 2009, and upgrading the camera to higher quantum efficiency photo-multiplier tubes (PMTs) in 2012, VERITAS is sensitive to an energy range between $\sim85$GeV and $\sim30$TeV and has a field of view of $3.5^\circ$.
+The Very Energetic Radiation Imaging Telescope Array System (VERITAS) \cite{Weekes:1997np} is an array of four IACTs at the Fred Lawrence Whipple Observatory in southern Arizona (shown in Fig. \ref{veritas_standard}), which started operating in 2007. Gamma rays are detected through imaging Cherenkov radiation emitted from relativistic charged particles (primarily $e^+/e^-$) in air showers initiated by VHE gamma rays. This section contains a brief description of the instrument and the technique used in this experiment. After the moving of one telescope in 2009, and upgrading the camera to higher quantum efficiency photo-multiplier tubes (PMTs) in 2012, VERITAS is sensitive to an energy range between $\sim85$GeV and $\sim30$TeV and has a field of view of $3.5^\circ$.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\linewidth]{images/veritas_standard}
@@ -33,27 +35,31 @@ Higher energy particles are beamed more strongly forward and so in the VHE gamma
   %   \label{fig:gamma_hadron_face}
   %   Camera face showing the difference between photons and hadron images (bottom) \cite{Gamma_Hadron_Sep}
   % }
-  \caption[Processes involved in generating extensive air showers.]{Processes involved in generating extensive air showers \cite{EAS_2018}.}
+  \caption[Processes involved in generating extensive air showers.]{Processes involved in generating extensive air showers \cite{EAS_2018}.In an electromagnetic shower (left), there is only one kind of process involved, which corresponds to either pair production by a gamma-ray photon or radiation by an electron or positron. A hadronic cascade can have a number of other processes, including those involved in an electromagnetic shower, and this variety of ways in which the particles can lose momentum leads to a more dispersed set of photon showers.}
   \label{fig:EAS_img}
 \end{figure}
 \subsection{Cherenkov Radiation}
-Cherenkov radiation is electromagnetic radiation emitted by a dielectric medium when a charged particle travels through it at a speed faster than the speed of light in the medium. The mechanism is commonly described as the analog of a sonic boom and the resulting shock wave front. Cherenkov radiation, when intense, appears as a bluish glow like that noticed in the pools of water shielding some nuclear reactors. The phenomenon was experimentally studied by the Soviet physicist Pavel A. Cherenkov in 1934 and was explained by Ilya M. Frank and Igor Y. Tamm in 1937.\par
+Cherenkov radiation is electromagnetic radiation emitted by a dielectric medium when a charged particle travels through it at a speed faster than the speed of light in the medium. The mechanism is commonly described as the analog of a sonic boom and the resulting shock wave front. Cherenkov radiation, when intense, appears as a bluish glow like that noticed in the pools of water shielding some nuclear reactors. The phenomenon was experimentally studied by the Soviet physicist Pavel A. Cherenkov in 1934 \cite{Cherenkova:2008zz} and was explained by Ilya M. Frank and Igor Y. Tamm in 1937 \cite{Frank:1937fk}.\par
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.6\linewidth]{images/Cherenkov}
-  \caption[Mechanism of Cherenkov radiation.]{Mechanism of Cherenkov radiation.}
+  \caption[Mechanism of Cherenkov radiation.]{Mechanism of Cherenkov radiation where the horizontal line represents the charged particle moving through the medium, and the circles represent shock fronts from different points in the particle trajectory. These shock fronts can propagate only at $c/n$, but the particle moves through the medium at v which is larger.}
   \label{fig:Cherenkov}
 \end{figure}
 
-The speed of light in a medium is given by $c/n$ where $n$ is the refractive index of light in the medium. When the speed of the particle exceeds this speed ($v>c/n$), a shock front appears between the region where an electric field due to the charged particle is present and one where it is not because the electric field can only propagate at the speed of light in the medium ($c/n$). The shock front travels at an angle given by $\theta = \cos^{-1}(c/vn) = \cos^{-1}(1/\beta n)$ with radiation emitted in a cone with angle $\theta$ from the direction of propagation of the initiating charged particle as shown in Fig. ~\ref{fig:Cherenkov}. The number of photons per unit length of particle path per unit of wavelength is given by 
+The speed of light in a medium is given by $c/n$ where $n$ is the refractive index of light in the medium. When the speed of the particle exceeds this speed ($v>c/n$), a shock front appears between the region where an electric field due to the charged particle is present and one where it is not because the electric field can only propagate at the speed of light in the medium ($c/n$). The shock front travels at an angle given by $\theta_C = \cos^{-1}(c/vn) = \cos^{-1}(1/\beta n)$ with radiation emitted in a cone with angle $\theta_C$ from the direction of propagation of the initiating charged particle as shown in Fig. \ref{fig:Cherenkov}. The number of photons per unit length of particle path per unit of wavelength is given by 
 \begin{equation}
   \frac{d^2N}{dxd\lambda} = \frac{4\pi^2z^2e^2}{hc\lambda}\left(1-\frac{1}{n^2\beta^2}\right) = \frac{2\pi z^2}{\lambda^2}\alpha\sin^2\theta_C
 \end{equation}
-The inverse dependence on the wavelength means that the photons radiated are mostly on the low-wavelength end of the spectrum. Since Cherenkov radiation is a coherent process, the electric field is perpendicular to the surface of the emission cone and the emission is completely polarized.
+
+In Eqn. (1.1), $N$ refers to the number of radiated photons, $x$ is the length traveled through the medium, $\lambda$ is the wavelength of the radiated photons, $z$ the atomic number (the charge of the radiating particle). Finally, its uses the standard symbols for fundamental constants $e$ the electron charge, $\alpha$ the fine structure constant, $c$ the speed of light in vaccum, and $h$ Planck's constant.
+
+The equation has an inverse dependence on the wavelength means that more photons are radiated at lower wavelengths and so the radiated photons are mostly on the low-wavelength end of the spectrum. Since Cherenkov radiation is a coherent process, the electric field is perpendicular to the surface of the emission cone and the emission is completely polarized.
+
 \subsection{Imaging Atmospheric Cherenkov Telescopes}
 Imaging atmospheric Cherenkov telescopes (IACTs) detect the light produced in an extensive air shower (EAS) by the primary particle. EAS emit a cone of forward-beamed Cherenkov photons with a half-opening angle of $\sim 1^\circ$ \cite{antonelli2009}. This beam illuminates an elliptical region on the ground called the light pool which has an area of the order of $10^5$ $\tx{m}^2$, with variations depending on the altitude of the shower maximum and inclination of the shower axis. \par
-The Cherenkov technique resolves (in space and time) the shower development image captured by the telescope camera. This information is used to distinguish between different types of showers (hadronic vs $\gamma$-ray-initiated) by using the different spatial spread of the showers depending on initial particles. In particular, for VHE $\gamma$-ray showers, because the shower is compact in the transverse direction the direction of the ensuing shower is roughly along a cone with the thickness of the cone inversely dependent on the energy.% -- higher energy causes more beaming
+The Cherenkov technique resolves (in space and time) the shower development image captured by the telescope camera. This information is used to distinguish between different types of showers (hadronic vs $\gamma$-ray-initiated) by using the different spatial spread of the showers depending on initial particles. In particular, for VHE $\gamma$-ray showers, because the shower is compact in the transverse direction the direction of the ensuing shower is roughly along a cone with the thickness of the cone inversely dependent on the energy. % -- higher energy causes more beaming
  For hadronic showers, the initial interactions lead to a less compact spread in direction of the resulting particles.\par
 \begin{figure}[htbp]
   \centering
@@ -64,7 +70,7 @@ The Cherenkov technique resolves (in space and time) the shower development imag
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.96\linewidth]{images/Stereo}
-  \caption[Gamma-ray EAS at a telescope array.]{Gamma-ray induced air shower incident at a telescope array (left). Image of an air shower on the camera plane. Each telescope image is characterized by an ellipse (right).}
+  \caption[Gamma-ray EAS at a telescope array.]{Gamma-ray induced air shower incident at a telescope array (left). Image of an air shower on the camera plane where each telescope image is characterized by an ellipse (right) \cite{hess_web}. The red lines indicate where each telescope image is reconstructed on the camera plane.}
   \label{fig:camera_face}
 \end{figure}
 
@@ -72,13 +78,13 @@ Modern IACTs use multiple telescopes operating in conjunction, which increases e
 \subsection{The VERITAS Instrument}
 The VERITAS instrument consists of four telescopes, each consisting of a reflector, a camera box, and a counterweight. The reflectors on each telescope are 12 m diameter spherical Davies-Cotton mirrors \cite{DaviesCotton}. The four telescopes are arranged in order to maximize collection area while being close enough for multiple telescopes to fall within the light pool for an air shower. Having multiple telescopes within the light pool allows for better stereoscopic reconstruction as demonstrated in Fig. \ref{fig:camera_face}. The distance between adjacent telescopes is $\sim 100$ m and the radius of the light pool for energies $>100$ GeV is $\sim 130$ m.\par
 
-Each VERITAS telescope uses 345 identical hexagonal spherical mirrors (of area 0.322 m$^2$ and radius-of-curvature of approximately 24m) giving a total reflector area of nearly $110$ m$^2$. The hexagonal shape allows for more efficient packing of mirrors on the reflector surface.\par
+Each VERITAS telescope uses 345 identical hexagonal spherical mirrors (of area 0.322 m$^2$ and radius-of-curvature of approximately 24m) giving a total reflector area of nearly $110$ m$^2$ \cite{veritas_web}. The hexagonal shape allows for more efficient packing of mirrors on the reflector surface.\par
 The individual hexagonal mirrors need to be manually aligned so that the entire reflector will act as a single dish. The measure of the alignment of these mirrors is the point spread function (PSF), which describes the response of the detector to a point source at infinity. The better aligned the system, the smaller the value of the resulting PSF.\par
 % FIX ALL OF THIS PLAGIARISM
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.58\linewidth]{images/Camera_PMT}
-  \caption[PMTs in the VERITAS camera.]{The PMT ``pixels'' in the VERITAS Camera. Picture taken from \cite{Kieda:2013wom}}
+  \caption[PMTs in the VERITAS camera.]{The PMT ``pixels'' in the VERITAS Camera. Picture taken from \cite{Kieda:2013wom}.}
   \label{fig:VERITAS_Cam}
 \end{figure}
 The camera in a VERITAS telescope is located at the focal plane of the telescope (12 meters from the mirrors) in a ``focus box" of dimension 1.8m x 1.8m. The camera consists of 499 closed-packed circular photomultiplier tubes (PMTs, see Fig. \ref{fig:VERITAS_Cam}), giving an angular pixel spacing of 0.15 degree and a total field-of-view (FOV) of 3.5 degrees. The PMTs are arranged in a hexagonal pattern to maximize coverage.\par
@@ -97,18 +103,18 @@ Relativistic muons in the atmosphere radiate Cherenkov radiation and comprise a 
 \label{shower-img-params}
 The shower image parameters are the input to the direction reconstruction that is the focus of this work. In any given telescope, the shower image is parameterized using various measurements including
 \begin{itemize}
-\item the image axis -- defined as the line minimizing the signal-weighted sum of squares of perpendicular distance between triggering pixels (see \ref{fig:image_axis}).
-\item the time gradient -- a measure of the difference in time of arrival, along the image axis, of the signal at a pixel % (see \ref{fig:time_gradient})
+\item the image axis -- defined as the line minimizing the signal-weighted sum of squares of perpendicular distance between triggering pixels (see Fig. \ref{fig:hillas_image_axis}).
+\item the time gradient -- a measure of the difference in time of arrival, along the image axis, of the signal at a pixel % (see Fig. \ref{fig:time_gradient})
   .
-\item the length of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels parallel to the image axis \cite{Hillas:1985}.
-\item the width of the image (see \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels perpendicular to the image axis. The length and width together provide the major and minor axis of an ellipse containing the majority of the signal, and are referred to as the Hillas parameters and the Hillas ellipse.
+\item the length of the image (see Fig. \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels parallel to the image axis \cite{Hillas:1985}.
+\item the width of the image (see Fig. \ref{fig:hillas_ellipse}) -- the r.m.s spread of the signal-weighted triggered pixels perpendicular to the image axis. The length and width together provide the major and minor axis of an ellipse containing the majority of the signal, and are referred to as the Hillas parameters and the Hillas ellipse.
 \end{itemize}
 A number of other parameters are used in the complete reconstruction of the shower, but these are the most relevant to the direction reconstruction, and specifically to the direction reconstruction process using the boosted decision tree (BDT) angular reconstruction.
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=0.45\linewidth]{images/img_axis}
-      \label{fig:image_axis}
       \caption[The image axis parameter.]{The image axis parameter is the line of best fit for the shower image on a single telescope. This best fit is measured by minimizing the signal-weighted sum of squares of residuals. Picture taken from \cite{veritas_web}.}
+      \label{fig:hillas_image_axis}
 \end{figure}
 
 % \begin{figure}[htbp]
@@ -119,7 +125,7 @@ A number of other parameters are used in the complete reconstruction of the show
 % \end{figure}
 
 \subsection{The \disp Parameter}
-The \disp parameter is a measure of the displacement between the center of the Hillas ellipse (the center of gravity of a shower image at a telescope), and the origin of the shower in the camera plane (Fig. \ref{fig:Disp_FOV}). This is a telescope-level parameter with a head-tail ambiguity, but with multiple telescope images, it can be used in estimating the direction of the initiating gamma ray. This is based on the idea in method (c) described in Hofmann\cite{Hofmann:1999dx}.
+The \disp parameter is a measure of the displacement between the center of the Hillas ellipse (the center of gravity of a shower image at a telescope), and the origin of the shower in the camera plane (Fig. \ref{fig:Disp_FOV}). This is a telescope-level parameter with a head-tail ambiguity, but with multiple telescope images, it can be used in estimating the direction of the initiating gamma ray. This is based on the idea described in method (c) of Hofmann\cite{Hofmann:1999dx}.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.58\linewidth]{images/Disp_param}
@@ -139,3 +145,7 @@ The \disp parameter is a measure of the displacement between the center of the H
 % \footnote{As of VEGAS 2.5.4, method5t uses disp=f(zenith, mean scaled width, mean scaled height, size, azimuth, loss, time gradient), where loss is the shower image outside of the Hillas ellipse.}
 
 \end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

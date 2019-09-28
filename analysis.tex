@@ -31,7 +31,7 @@ For the purposes of this work, the 68\% containment radius in angular position (
   \label{fig:sim_gauss}
 \end{figure}
 
-Based on the distribution of the deviation of reconstructed direction of the simulations (Fig. \ref{fig:sim_gauss}) from the simulated direction, it was determined that a fit to the central Gaussian could provide some useful information about the R$_{68}$, and to this end, the 2D distribution (Fig. \ref{fig:sim_2D_gauss}) was fit with the superposition of two Gaussians, with the 68\% of this superposition as a first-order approximation to the R$_{68}$. Additionally, it was determined a numerical integral would provide a more accurate measure of this quantity and so the distribution of radial deviations was integrated from the tail inwards, until 32\% of the events were counted and this value of the radial deviation from the simulated direction was used as a more accurate measure of the R$_{68}$; a representative sample of the results is shown in Fig. \ref{fig:gauss_fit_both}.
+Based on the distribution of the deviation of reconstructed direction of the simulations (Fig. \ref{fig:sim_gauss}) from the simulated direction, it was determined that a fit to the central Gaussian could provide some useful information about the R$_{68}$, and to this end, the 2D distribution (Fig. \ref{fig:sim_2D_gauss}) was fit with the superposition of two Gaussians, with the 68\% of this superposition as a first-order approximation to the R$_{68}$. Additionally, it was determined that a numerical integral would provide a more accurate measure of this quantity and so the distribution of radial deviations was integrated from the tail inwards, until 32\% of the events were counted and this value of the radial deviation from the simulated direction was used as a more accurate measure of the R$_{68}$; a representative sample of the results is shown in Fig. \ref{fig:gauss_fit_both}.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.78\linewidth]{fit/gauss_fit_both}
@@ -39,7 +39,7 @@ Based on the distribution of the deviation of reconstructed direction of the sim
   \label{fig:gauss_fit_both}
 \end{figure}
 
-A preliminary test for the \rse of the data was enabled by a set of runs where the Crab was tracked from horizon to culmination and back to the horizon (from the nights of Jan 12 2018, Jan 13 2018, and Jan 04, 2019). This provided a reference data set with high significance to track the energy and zenith dependences of the direction reconstruction in stable (and therefore directly comparable) weather conditions. The differential resolution for the Crab data was measured in several energy and zenith bins and is presented in Fig. \ref{fig:crab_initial}.
+A preliminary test for the \rse of the data was enabled by a set of runs where the Crab was tracked from horizon to culmination and back to the horizon (from the nights of Jan. 12 2018, Jan. 13 2018, and Jan. 04, 2019). This provided a reference data set with high significance to track the energy and zenith dependences of the direction reconstruction in stable (and therefore directly comparable) weather conditions. The differential resolution for the Crab data was measured in several energy and zenith bins and is presented in Fig. \ref{fig:crab_initial}.
 
 \begin{figure}[H]
   \begin{center}
@@ -76,7 +76,7 @@ These small \disp tables and the standard \disp tables were used to reconstruct 
       \includegraphics[width=0.47\linewidth]{fit/disp_standard_ratio_xzen}
       \label{fig:olddisp_ratio_fit}
     }
-      \caption[``standard'' \disp table reconstruction.]{Ratio of \rse of the ``standard'' \disp table to that from Method0, with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Since this is the ratio of methods, the horizontal blue line denotes the performance using Method0; and the \disp method definitively performs better than Method0 for zenith $\gtrsim50^\circ$.}  
+      \caption[``standard'' \disp table reconstruction.]{Ratio of \rse of the ``standard'' \disp table to that from Method0, with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Since this is the ratio of methods, the horizontal blue line denotes the performance using Method0; and the \disp method definitively performs better than Method0 for zenith $\gtrsim50^\circ$. The large uncertainties in some of the fit values arise from the non-Gaussian shape of the overall distribution, and the long tails causing a poor fit to the superposition of two gaussians.}  
       \label{fig:olddisp_ratio}
   \end{center}
 \end{figure}
@@ -99,7 +99,7 @@ From Fig. \ref{fig:olddisp_ratio}, we can see that the \disp method outperforms 
 
 \subsection{Over-training}
 BDT-based regression is quite robust under non-linear correlations between discriminating parameters. The primary vulnerability of this method is that  to over-training - where the decision tree starts to be informed by noise and nuisance parameters in the training sample rather than relevant effects. This results in substantially different reconstruction efficiencies between training and testing samples. The ROOT TMVA package includes a test for over-training where it randomly selects a given fraction of the supplied events (for the purposes of this work, this fraction was taken to be 50\%) to use for testing. These events are then not used to train the regression trees and are instead used only to generate a measure of the over-training.
-This check of the over-training for one of the test tables (noise $= 450$ MHz), shown in Fig. \ref{fig:overtraining}, demonstrates that there was no meaningful over-training of the table, at least based on effects present only in the training sample.
+This check of the over-training for one of the test tables (noise $= 450$ MHz), shown in Fig. \ref{fig:overtraining}, demonstrates that there was no significant over-training of the table, at least based on effects present only in the training sample.
 
 There remains however, the possibility of effects related to noise level that might appear in the training \textit{and} testing samples (which are generated separately at each noise level), but not in observational data sets, which would be overlooked by this measure of over-training.
 
@@ -134,7 +134,7 @@ There remains however, the possibility of effects related to noise level that mi
 \end{figure}
 
 \subsection{Noise Related Effects}
-The first set of \disp tables was also generated at a single noise level ($250$ MHz), allowing us to test the dependence of the resolution of this method (as measured by R$_{68}$) on noise level in the testing sample -- some kind of noise-dependent effect would suggest over-training that would not be evident from the testing sample in the ROOT TMVA method since all the data provided to the package would have been at the same noise level. A comparison of angular resolution across noise levels revealed no significant dependence of the \rse on noise (see Fig. \ref{fig:olddisp_ratio}, \ref{fig:disp_ratio_250} and \ref{fig:disp_ratio_450}).
+The first set of \disp tables was also generated at a single noise level ($250$ MHz), allowing us to test the dependence of the resolution of this method (as measured by R$_{68}$) on noise level in the testing sample -- some kind of noise-dependent effect would suggest over-training that would not be evident from the testing sample in the ROOT TMVA method since all the data provided to the package would have been at the same noise level. A comparison of angular resolution across noise levels revealed no significant dependence of the \rse on noise (see Figs. \ref{fig:olddisp_ratio}, \ref{fig:disp_ratio_250} and \ref{fig:disp_ratio_450}).
 
 \begin{figure}[htbp]
   \centering
@@ -147,7 +147,7 @@ The first set of \disp tables was also generated at a single noise level ($250$ 
     \label{fig:disp_ratio_450_fit}
   }
 
-  \caption[\disp table reconstruction vs noise.]{Ratio of \rse of the noise=450MHz \disp table ($\sim 2.1\e6$ events) to that from Method0 with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Note that the result is largely independent of the noise level in the simulation sample being reconstructed.}
+  \caption[\disp table reconstruction vs noise.]{Ratio of \rse of the noise=450MHz \disp table ($\sim 2.1\e6$ events) to that from Method0 with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). Note that the result is largely independent of the noise level in the simulation sample being reconstructed. The large uncertainties in some of the fit values arise from the non-Gaussian shape of the overall distribution, and the long tails causing a poor fit to the superposition of two gaussians.}
   \label{fig:disp_ratio_450}
 \end{figure}
 
@@ -170,7 +170,7 @@ A new set of \disp tables was generated (Fig. \ref{fig:disp_ratio_450x4}) with a
     \includegraphics[width=0.47\linewidth]{fit/disp_450x4size_ratio_xzen}
     \label{fig:disp_ratio_450x4_fit}
   }
-  \caption[Higher statistics \disp table reconstruction vs noise.]{Ratio of \rse of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0 for a higher statistics \disp table with the numerically determined \rse (left) and that found from the fit to two Gaussians (right).}
+  \caption[Higher statistics \disp table reconstruction vs noise.]{Ratio of \rse of the noise=450MHz \disp table ($\sim 8.4\e6$ events) to that from Method0 for a higher statistics \disp table with the numerically determined \rse (left) and that found from the fit to two Gaussians (right). The large uncertainties in some of the fit values arise from the non-Gaussian shape of the overall distribution, and the long tails causing a poor fit to the superposition of two gaussians.}
   \label{fig:disp_ratio_450x4}
 \end{figure}
 
@@ -179,12 +179,12 @@ As expected from the small statistical uncertainty on the \rse values, this incr
 \subsection{Acceptance Correction for Offset from Camera Center}
 Showers arriving further from the camera center have a larger fraction of the shower arriving outside of the camera and therefore being lost. These showers are therefore reconstructed with a lower efficiency and resolution than showers arriving closer to the camera center. To compensate for this in the BDT training, so that the training sample does not mis-characterize the overabundance of events closer to the camera center as an anisotropy in incoming gamma rays, we fold in an acceptance correction by assigning a larger weight to events that are further away from the camera center.
 
-The acceptance correction used here affects the training sample and therefore might be assumed to affect the resolution in a zenith dependent way, perhaps explaining the difference in performance between the new \disp tables and the old ones. This was tested by using a number of different correction functions in the training sample, as shown in Fig. \ref{fig:weights}
+The acceptance correction used here, i.e. the weight assigned to each event as a function of distance from the camera center, affects the training sample and therefore might be assumed to affect the resolution in a zenith dependent way, perhaps explaining the difference in performance between the new \disp tables and the old ones. This was tested by using a number of different correction functions in the training sample, which are shown in Fig. \ref{fig:weights}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.78\linewidth]{weights}
-  \caption[Weight functions for offset from camera center.]{The weight functions used in the training samples in the new tables (Default, Test 1, Test 2 and Test 3) and those found in the scripts used to generate the older tables (Old Script 1, Old Script 2).}
+  \caption[Weight functions for offset from camera center.]{The functions used to assign relative weights to events as a function of angular distance from the camera center in the training samples in the new tables (Default, Test 1, Test 2 and Test 3) and those found in the scripts used to generate the older tables (Old Script 1, Old Script 2).}
   \label{fig:weights}
 \end{figure}
 
@@ -200,7 +200,7 @@ These tests reveal small changes in the \rse value despite large changes in the 
     \includegraphics[width=.75\linewidth]{fit/disp_wts}
     \label{fig:weight_tests_fit}
   }
-  \caption[\rse for the acceptance correction functions.]{\rse for each acceptance correction function shown in Fig. \ref{fig:weights} with the numerically determined \rse (top) and that found from the fit to two Gaussians (bottom). The changes in acceptance correction do not meaningfully change the \rse for the reconstruction.}
+  \caption[\rse for the acceptance correction functions.]{\rse for each acceptance correction function shown in Fig. \ref{fig:weights} with the numerically determined \rse (top) and that found from the fit to two Gaussians (bottom). The changes in acceptance correction do not meaningfully change the \rse for the reconstruction. The large uncertainties in some of the fit values arise from the non-Gaussian shape of the overall distribution, and the long tails causing a poor fit to the superposition of two gaussians.}
   \label{fig:weight_tests}
 \end{figure}
 
@@ -212,28 +212,28 @@ Due to the slicing in energy in addition to zenith and therefore smaller number 
 \begin{figure}[htbp]
   \centering
   \subfigure[Energy Dependence of Method0 at small and medium zenith angles.]{
-    \includegraphics[width=.44\linewidth]{num/reg_SZA_energy}
+    \includegraphics[width=.47\linewidth]{num/reg_SZA_energy}
     \label{fig:energy_reg_SZA}
   }
   \subfigure[Energy Dependence of Method0 at large zenith angles.]{
-    \includegraphics[width=.44\linewidth]{num/reg_LZA_energy}
+    \includegraphics[width=.47\linewidth]{num/reg_LZA_energy}
     \label{fig:energy_reg_LZA}
   }
-  \caption[Energy Dependence of Method0.]{Energy Dependence of Method0 with \rse for small zenith angles (left) and that for large zenith angles (right). Colored bands are intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of Method0.]{Energy Dependence of Method0 with \rse for small zenith angles (left) and that for large zenith angles (right). Colored bands are intended to guide the eye and do not represent data points. The data bin at $\phi = 65$ and Log$_{10}$(E/GeV)$\sim 3.25$ appears to be consistently under-perform, this is an artifact from low statistics in this bin.}
   \label{fig:energy_reg}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.75\linewidth]{num/disp_standard_energy}
-  \caption[Energy Dependence of the old Method5t.]{Energy Dependence of the old Method5t with the numerically determined R$_{68}$. Colored bands are intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of the old Method5t.]{Energy Dependence of the old Method5t with the numerically determined R$_{68}$. Colored bands are intended to guide the eye and do not represent data points. The data bin at $\phi = 65$ and Log$_{10}$(E/GeV)$\sim 3.25$  appears to be consistently under-perform, this is an artifact from low statistics in this bin.}
   \label{fig:energy_disp_standard}    
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=.75\linewidth]{num/disp_450x4size_energy}
-  \caption[Energy Dependence of the new Method5t.]{Energy Dependence of the new Method5t with the numerically determined R$_{68}$. Colored bands intended to guide the eye and do not represent data points.}
+  \caption[Energy Dependence of the new Method5t.]{Energy Dependence of the new Method5t with the numerically determined R$_{68}$. Colored bands intended to guide the eye and do not represent data points. The data bin at $\phi = 65$ and Log$_{10}$(E/GeV)$\sim 3.25$  appears to be consistently under-perform, this is an artifact from low statistics in this bin.}
   \label{fig:energy_disp_450}    
 \end{figure}
 
@@ -248,11 +248,11 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
 
 \begin{figure}[htbp]
   \centering
-  \subfigure{
+  \subfigure[]{
     \includegraphics[width=0.47\linewidth]{num/reg_rse}
     \label{fig:reg_rse}
   }
-  \subfigure{
+  \subfigure[]{
     \includegraphics[width=0.47\linewidth]{num/disp_standard_rse}
     \label{fig:disp_standard_rse}
   }
@@ -262,12 +262,12 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
 
 \begin{figure}[htbp]
   \centering
-  \subfigure{
+  \subfigure[]{
     \includegraphics[width=0.47\linewidth]{num/rel_reg_sim}
     \label{fig:reg_sim}
 
   }
-  \subfigure{
+  \subfigure[]{
     \includegraphics[width=0.47\linewidth]{num/rel_standard_sim}
     \label{fig:disp_standard_sim}
   }
@@ -276,7 +276,7 @@ The Method0 energy dependence (Fig. \ref{fig:energy_reg}) follows the same trend
 \end{figure}
 
 \section{\rse for Observational Data and Known Objects}
-In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Since our initial test was performed on the Crab Nebula and, in the VERITAS archival data it is the known object with the longest total exposure time at LZA, the Crab was used to generate some benchmarks. Additionally, Mrk421 was used as a known point source to test the power of discrimination between point and compact sources. Each of these objects and the corresponding analysis will be discussed in greater detail in the following sections.
+In order to test the validity of the results from the simulations, a known point-source with sufficient data collection at LZA and a hard spectrum (and therefore high statistics in the TeV range) was needed. Since our initial test was performed on the Crab Nebula, the Crab was used to perform some validation tests. This was also useful since the Crab the known object with the longest total exposure time at LZA in VERITAS archival data and therefore was largest available dataset for performing these tests. Additionally, Mrk421 \cite{mrk421} was used as a known point source to test the power of discrimination between point and compact sources. Each of these objects and the corresponding analysis will be discussed in greater detail in the following sections.
 
 \subsection{Data Constraints and Li \& Ma Significance}
 \label{li_ma_defn}
@@ -284,7 +284,7 @@ For the data analysis, unlike with the simulations, a ``true'' direction was not
 
 As a measure of detection, we use both the number of excess events -- defined as the number of events determined to be from the source minus the number of events from the off-source regions scaled by the ratio of the exposures of the on and off-source regions. For a number of events from the source region $N_{on}$, a number of events from the off-source region $N_{off}$, and a ratio of exposure $\frac{A_{on}}{A_{off}}=\alpha$, the number of excess events is given by $N_{on}-\alpha N_{off}$. This corresponds to the number of events observed above the number expected given the background observation, and statements regarding the small- or large-number statistics refer to this number being small or large.
 
-As a measure of the robustness of the \rse determined for the data, we also use the gamma-ray astronomy standard Li \& Ma\cite{LiMa} significance, with a threshold significance of $3\sigma$. A high significance measurement of the object in a given energy and zenith bin should provide a measure of \rse in that bin that is relatively stable against statistical fluctuations.
+As a measure of the robustness of the \rse determined for the data, we also use the gamma-ray astronomy standard Li \& Ma \cite{LiMa} significance, with a threshold significance of $3\sigma$. A high significance measurement of the object in a given energy and zenith bin should provide a measure of \rse in that bin that is relatively stable against statistical fluctuations.
 
 Lastly, as a measure of how the data analysis performs relative to expectations from the simulation analysis we also use a direct bin-wise comparison of the resulting numerical \rse defined as $\xi = \frac{R_{68, \text{data}}}{R_{68, \text{sim}}}-1$. This provides a numerical quantity that is expected to be zero and provides a simple percentage deviation from expectation. A $\xi$ of $0.3$ means the \rse from data in a given bin was 30\% larger than that from simulations, with positive values signifying ``under-performance'' and negative values signifying ``over-performance''.
 
@@ -292,26 +292,29 @@ Lastly, as a measure of how the data analysis performs relative to expectations 
 
 The Crab Nebula is measured to have a GeV-TeV extension of $\sim 0.03^\circ$ \cite{Fermi_LAT_Crab_extension}\cite{HESS_Crab_extension}. To observe this, a \rse of at least $0.03^\circ$ is required which, based on the simulations, we do not achieve (see Fig. \ref{fig:energy_disp_450}). This however provides another metric by which to quantify our resolution, as well as to measure possible future gains in resolution.
 
+Fig. \ref{fig:crab_skymaps} shows skymaps for zenith cuts and energy cuts for the Crab data set with $\phi\geq40^\circ$. This zenith cut was applied in order to only look at Crab data where it would be relevant to this analysis, since the Crab has several hundred hours of total data in the VERITAS archival dataset. This serves also to demonstrate the change between the dataset with $E\geq1$ TeV and $\phi\geq 50$ and that with $E<1$ TeV and $\phi<50$ without the otherwise overwhelming effects of larger statistics in the low-energy small zenith angle region. With the colors providing a log-scale representation of the number of excess events at a given 2D deviation from the source location, we can see that Fig. \ref{fig:crab_skymap_LZA_HE} has more events closer to the center of the skymap than Fig. \ref{fig:crab_skymap_SZA_LE}. It is however also clear that a more robust demonstration of this effect requires a higher significance dataset in the regions of interest.
+
 \begin{figure}[H]
   \begin{center}
     \subfigure[Crab skymap for $\phi<50^\circ$ and $E<1$ TeV.]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_SZA_LE.png}
       \label{fig:crab_skymap_SZA_LE}
     }  
-    \subfigure[Crab skymap for $\phi>50^\circ$ and $E<1$ TeV.]{ 
+    \subfigure[Crab skymap for $\phi\geq50^\circ$ and $E<1$ TeV.]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_LZA_LE.png}
       \label{fig:crab_skymap_LZA_LE}
     }
-    \subfigure[Crab skymap for $\phi<50^\circ$ and $E>1$ TeV.]{ 
+    \subfigure[Crab skymap for $\phi<50^\circ$ and $E\geq1$ TeV.]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_SZA_HE.png}
       \label{fig:crab_skymap_SZA_HE}
     }  
-    \subfigure[Crab skymap for $\phi>50^\circ$ and $E>1$ TeV.]{ 
+    \subfigure[Crab skymap for $\phi\geq50^\circ$ and $E\geq1$ TeV.]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_skymap_LZA_HE.png}
       \label{fig:crab_skymap_LZA_HE}
     }
   \end{center}
-  \caption[Crab skymaps using the new \disp tables.]{Reconstruction of the Crab direction using Method5t and with data runs where the mean zenith angle $\phi\geq40$.}
+  \caption[Crab skymaps using the new \disp tables.]{Reconstruction of the Crab direction using Method5t and with data runs such that the mean zenith angle was $\phi\geq40$, with the colors providing a log-scale representation of the number of excess events at a given 2D deviation from the source location. We can see that (d) has more events closer to the center of the skymap than (a), and while a similar effect may be visible in (b) and (c), those effects are washed out by small statistics and low significance.}
+  \label{fig:crab_skymaps}
 \end{figure}
 
 \begin{figure}[H]
@@ -350,8 +353,8 @@ Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the 
     \subfigure[Number of excess events ($\log(N_{on}-\alpha N_{off})$).]{ 
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_Log_nevent.png}
       \label{fig:crab_all_disp_nevent}
-    }  
-    \subfigure[Li \& Ma significance.]{ 
+    }
+    \subfigure[Li \& Ma significance.]{
       \includegraphics[width=0.47\linewidth]{num/LZA_data_25/crab_all_disp_LiMa.png}
       \label{fig:crab_all_disp_li_ma}
     }
@@ -363,9 +366,14 @@ Relative to Fig. \ref{fig:crab_initial}, this provides better resolution at the 
 The numbers for the Crab Nebula in Fig. \ref{fig:crab_disp} suggest that we can not yet detect the extension of the Crab, which is consistent with the simulation analysis. Also expected from the simulation results, the \rse decreases with increasing energy. In the regime of interest, ($E>1$ TeV and $\phi\gtrsim 50^\circ$), the data reconstruction under-performs relative to simulations with $\xi\sim 0.3$, and the dependence of the \rse (see Fig. \ref{fig:crab_all_disp_rse}) on zenith angle is smaller than expected. This is perhaps due to lower statistics in the region (see Fig. \ref{fig:crab_all_disp_nevent}), since for most of our parameter space, $|\xi| \leq 0.15$ (Fig. \ref{fig:crab_all_disp_sim}).
 
 \subsection{\rse for Mrk421}
-Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$), but less than 5 hours of observation in the zenith range of interest ($\phi>45^\circ$). Even with a short total duration of observation, because Mrk421 is a high-flux object, it is still observable at high significance. In the region $\phi\geq50$ and $E\geq 1$ TeV Mrk 421 has a \rse of $\sim 0.11^\circ$.
+Mrk421 is an extra-galactic source ($z=0.031$) with a hard spectrum (spectral index $\Gamma=2.2$\cite{mrk421_index}), but less than 5 hours of observation in the zenith range of interest ($\phi>45^\circ$). Even with a short total duration of observation, because Mrk421 is a high-flux object \cite{mrk421_flux}, it is still observable at high significance. In the region $\phi\geq50$ and $E\geq 1$ TeV Mrk 421 has a \rse of $\sim 0.11^\circ$.
+
+Fig. \ref{fig:Mrk421_skymaps} shows skymaps for zenith cuts and energy cuts for the Mrk421 data set with $\phi\geq15^\circ$. This zenith cut was not as tight as that used for the Crab data because the Mrk421 data was used to validate the simulation results across a larger range of zenith angles. This plot is meant to demonstrate the change in \rse between the dataset with $E\geq1$ TeV and $\phi\geq 50$ and that with $E<1$ TeV and $\phi<50$, but the low significance in the high-zenith and high-energy regions means that statements about trends in \rse are not very robust.
+
+With the colors providing a log-scale representation of the number of photons at a given 2D deviation from the source location, we can see that Fig. \ref{fig:Mrk421_skymap_SZA_HE} has more events closer to the center of the skymap than Fig. \ref{fig:Mrk421_skymap_SZA_LE} and a similar trend is visible between Fig. \ref{fig:Mrk421_skymap_LZA_LE} and Fig. \ref{fig:Mrk421_skymap_LZA_HE}. It is however also clear that a more robust demonstration of this effect requires a higher significance dataset in the regions of interest.
 
 The result of this analysis was that the smallest values of \rse for Mrk421 ($\sim 0.09^\circ$, Fig. \ref{fig:mrk_rse}) are found in a region of parameter space where the Li \& Ma significance is small (Fig. \ref{fig:mrk_li_ma}) and more generally that the high values of $\xi$ are found where Li \& Ma significance is low, suggesting that a more robust analysis would require more statistics. Consequently this point-source analysis does not definitively validate the results from the simulations but it does demonstrate the simulation result that the point-source reconstruction in the regime of interest is $<0.2^\circ$ (Fig. \ref{fig:mrk_rse}).
+
 \begin{figure}[H]
   \begin{center}
     \subfigure[Crab skymap for $\phi<50^\circ$ and $E<1$ TeV.]{ 
@@ -385,7 +393,8 @@ The result of this analysis was that the smallest values of \rse for Mrk421 ($\s
       \label{fig:Mrk421_skymap_LZA_HE}
     }
   \end{center}
-  \caption[Mrk421 skymaps using the new \disp tables.]{Reconstruction of the Mrk421 direction using Method5t.}
+  \caption[Mrk421 skymaps using the new \disp tables.]{Reconstruction of the Mrk421 direction using Method5t, with color denoting number of excess events in log scale. There is a visible increase in number of events in the center of the skymap relative to the edges with an increase in energy (from (a) to (c) and (b) to (d)), but any conclusive statement regarding this trend requires better statistics.}
+  \label{fig:Mrk421_skymaps}
 \end{figure}
 
 \begin{figure}[H]
@@ -413,3 +422,8 @@ The result of this analysis was that the smallest values of \rse for Mrk421 ($\s
 
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

@@ -1,25 +1,81 @@
 \begin{thebibliography}{10}
 
+\bibitem{IACTs_1980}
+L.~A. et.~al. {Antonelli}.
+\newblock {The Next Generation of Cherenkov Telescopes. A White Paper for the
+  Italian National Institute for Astrophysics (INAF)}.
+\newblock {\em arXiv e-prints}, page arXiv:0906.4114, Jun 2009.
+
+\bibitem{Weekes:1989}
+T.~C. et.~al. {Weekes}.
+\newblock {Observation of TeV gamma rays from the Crab nebula using the
+  atmospheric Cerenkov imaging technique}.
+\newblock {\em The Astrophysical Journal}, 342:379--395, jul 1989.
+
+\bibitem{cta_web}
+{CTA collaboration}.
+\newblock {C.T.A. website}.
+\newblock
+  \url{https://www.cta-observatory.org/science/gamma-rays-cosmic-sources/}.
+
 \bibitem{Park:2017uxb}
 Nahee Park.
 \newblock {Status of ground based gamma-ray observations}.
 \newblock {\em PoS}, ICRC2017:1116, 2018.
+
+\bibitem{DiSciascio:2019ieq}
+Giuseppe Di~Sciascio.
+\newblock {Ground-based Gamma-Ray Astronomy: an Introduction}.
+\newblock {\em J. Phys. Conf. Ser.}, 1263(1):012003, 2019.
+
+\bibitem{magic_web}
+{MAGIC collaboration}.
+\newblock {MAGIC website}.
+\newblock \url{https://magic.mpp.mpg.de/}.
+
+\bibitem{hess_web}
+{HESS collaboration}.
+\newblock {H.E.S.S. website}.
+\newblock \url{https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2005/10/}.
 
 \bibitem{veritas_web}
 {VERITAS collaboration}.
 \newblock {VERITAS website}.
 \newblock \url{https://veritas.sao.arizona.edu/}.
 
+\bibitem{veritas_specs}
+{VERITAS collaboration}.
+\newblock {VERITAS website, specifications page}.
+\newblock
+  \url{https://veritas.sao.arizona.edu/about-veritas-mainmenu-81/veritas-specifications-mainmenu-111}.
+
+\bibitem{Weekes:1997np}
+T.~C. Weekes et~al.
+\newblock {VERITAS: Very energetic radiation imaging telescope array system}.
+\newblock {\em AIP Conf. Proc.}, 515(1):515, 2000.
+\newblock [5,173(2000)].
+
 \bibitem{EAS_2018}
 S.~{Mollerach} and E.~{Roulet}.
 \newblock {Progress in high-energy cosmic ray physics}.
 \newblock {\em Progress in Particle and Nuclear Physics}, 98:85--118, Jan 2018.
 
+\bibitem{Cherenkova:2008zz}
+{Cherenkova, Elena P.}
+\newblock {The discovery of the Cherenkov radiation}.
+\newblock {\em {Nucl. Instrum. Meth.}}, {A595}:{8--11}, {2008}.
+
+\bibitem{Frank:1937fk}
+I.~M. Frank and I.~E. Tamm.
+\newblock {Coherent visible radiation of fast electrons passing through
+  matter}.
+\newblock {\em Compt. Rend. Acad. Sci. URSS}, 14(3):109--114, 1937.
+\newblock [Usp. Fiz. Nauk93,no.2,388(1967)].
+
 \bibitem{antonelli2009}
-LA~Antonelli, P~Blasi, G~Bonanno, O~Catalano, S~Covino, A~De~Angelis,
-  B~De~Lotto, M~Ghigo, G~Ghisellini, GL~Israel, et~al.
-\newblock The next generation of cherenkov telescopes. a white paper for the
-  italian national institute for astrophysics (inaf).
+LA~et.~al. Antonelli.
+\newblock {The Next Generation of Cherenkov Telescopes. A White Paper for the
+  Italian National Institute for Astrophysics (INAF)}.
 \newblock {\em arXiv preprint arXiv:0906.4114}, 2009.
 
 \bibitem{DaviesCotton}
@@ -44,6 +100,14 @@ W.~Hofmann.
 \newblock {Data analysis techniques for stereo IACT systems}.
 \newblock {\em AIP Conf. Proc.}, 515(1):318--322, 2000.
 
+\bibitem{Heck:2000nv}
+D.~Heck.
+\newblock {Extensive air shower simulations with CORSIKA and the influence of
+  highenergy hadronic interaction models}.
+\newblock In {\em From $e^+ e^-$ to Heavy Ion Collisions: Proceedings of the
+  30th International Symposium on Multiparticle Dynamics (ISMD 2000), Tihany,
+  Hungary, October 9-15, 2000}, pages 252--259, 2000.
+
 \bibitem{Vincent:2015bnj}
 Stephane Vincent.
 \newblock {A Monte Carlo template-based analysis for very high definition
@@ -57,17 +121,34 @@ Mathieu {de Naurois} and Lo{\"\i}c {Rolland}.
   {\ensuremath{\gamma}}-rays for imaging atmospheric Cherenkov telescopes}.
 \newblock {\em Astroparticle Physics}, 32:231--252, Dec 2009.
 
-\bibitem{hess_web}
-{HESS collaboration}.
-\newblock {H.E.S.S. website}.
-\newblock \url{https://www.mpi-hd.mpg.de/hfm/HESS/pages/home/som/2005/10/}.
+\bibitem{Cogan:2007ez}
+{Cogan, P.}
+\newblock {VEGAS, the VERITAS Gamma-ray Analysis Suite}.
+\newblock 3:1385, 2007.
+
+\bibitem{Maier:2017wzr}
+Gernot Maier and Jamie Holder.
+\newblock {Eventdisplay: An Analysis and Reconstruction Package for
+  Ground-based Gamma-ray Astronomy}.
+\newblock {\em PoS}, ICRC2017:747, 2018.
+\newblock [35,747(2017)].
+
+\bibitem{root_web}
+{CERN collaboration}.
+\newblock {CERN ROOT website}.
+\newblock \url{https://root.cern.ch/}.
+
+\bibitem{mrk421}
+M.~et.~al. {Punch}.
+\newblock {Detection of TeV photons from the active galaxy Markarian 421}.
+\newblock {\em Nature}, 358(6386):477--478, Aug 1992.
 
 \bibitem{LiMa}
 T.-P. {Li} and Y.-Q. {Ma}.
 \newblock
   \href{http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1983ApJ...272..317L&defaultprint=YES&filetype=.pdf}{Analysis
   methods for results in gamma-ray astronomy}.
-\newblock {\em The Astrophysical Journal}, 272:317--324, sep 1983.
+\newblock {\em The Astrophysical Journal}, 272:317--324, {Sep} 1983.
 
 \bibitem{Fermi_LAT_Crab_extension}
 M.~Ackermann et~al.
@@ -81,5 +162,16 @@ M.~{Holler}, D.~{Berge}, J.~{Hahn}, D.~{Khangulyan}, R.~D. {Parsons}, and
 \newblock {Advanced search for the extension of unresolved TeV sources with
   H.E.S.S.}
 \newblock {\em International Cosmic Ray Conference}, 35:676, January 2017.
+
+\bibitem{mrk421_index}
+J.~et.~al. {Albert}.
+\newblock {Observations of Markarian 421 with the MAGIC Telescope}.
+\newblock {\em The Astrophysical Journal}, 663:125--138, July 2007.
+
+\bibitem{mrk421_flux}
+M.~L. et.~al. {Ahnen}.
+\newblock {Long-term multi-wavelength variability and correlation study of
+  Markarian 421 from 2007 to 2009}.
+\newblock {\em Astronomy and Astrophysics}, 593:A91, September 2016.
 
 \end{thebibliography}
